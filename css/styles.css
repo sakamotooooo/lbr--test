@@ -173,4 +173,22 @@ select {
 select::-ms-expand {
   display: none;
 }
+
+.inner {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 600px;
+  max-width: 37.5rem;
+}
+@media screen and (min-width: 768px) {
+  .inner {
+    max-width: 850px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
