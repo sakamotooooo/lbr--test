@@ -22,17 +22,44 @@ text-align: left;
 color: $blue;
 font-size: rem(16);
 font-weight: $medium;
+@include mq('md') {
+font-size: rem(16);
+}
 }
 .form__required {
+	margin-left: rem(10);
 color: #CC4343;
 font-size: rem(14);
 font-weight: $regular;
+@include mq('md') {
+font-size: rem(14);
+}
 }
 .form__input {
-
+margin-top: rem(10);
+@include mq('md') {
+ margin-top: 0;
+}
 }
 .form__text {
-
+height: rem(45);
+padding: rem(11) rem(3);
+font-size: rem(16);
+border: 1px solid #D9D9D9;
+border-radius: 5px;
+background-color: #F5F5F5;
+width: 100%;
+@include mq('md') {
+ padding: rem(11) rem(12);
+}
+}
+.form__text::placeholder{
+	color: #999;
+	font-size: rem(16);
+	font-weight: $regular;
+	@include mq('md') {
+	font-size: rem(16);
+	}
 }
 .form__item--radio {
 
