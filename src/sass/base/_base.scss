@@ -11,11 +11,11 @@ html {
   font-size: 16px;
 
   @include mq("md") {
-    font-size: vw(strip-unit($inner), 16);
+    font-size: vw(strip-unit($inner-sp), 16);
   }
 
   //inner~max-screen
-  @media (min-width: $inner) {
+  @media (min-width: $inner-pc) {
     font-size: 16px;
   }
 }
