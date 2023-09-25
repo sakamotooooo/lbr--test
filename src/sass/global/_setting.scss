@@ -1,11 +1,13 @@
 @use "sass:math";
 
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1100px;
+$inner-pc: 800px;
+$inner-sp: 600px;
+
 
 // 余白
 $padding-pc: 25px;
-$padding-sp: 20px;
+$padding-sp: 15px;
 
 // フォント設定
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&family=Noto+Serif+JP&display=swap');
@@ -28,7 +30,9 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$blue: #024892;
+$text-color :#111111;
+$title-color: #231815;
 $white: #fff;
 
 
