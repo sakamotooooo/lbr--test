@@ -14,11 +14,11 @@
 .pc-nav__item a {
     position: relative;
     color: $text-color;
-    font-size: rem(16);
+    font-size: rem(14);
     height: inherit;
     display: grid;
     place-items: center;
-    padding: 0 rem(15);
+    padding: 0 rem(12.5);
     letter-spacing: 0.125em;
 }
 
@@ -62,12 +62,16 @@
 }
 
 .pc-nav__tel {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+    justify-content: center;
+    padding-left: rem(12.5);
 }
 
 .pc-nav__telimg{
-    display: block;
+    width: rem(17);
+    height: auto;
 }
 
 .pc-nav__telimg img {
@@ -76,15 +80,29 @@
     
 }
 
+.pc-nav__teldetails {
+    display: flex;
+    flex-direction: column;
+}
+
 .pc-nav__telnumber {
-    display: block;
+    display: inline-block;
     font-size: rem(20);
     font-weight: $bold;
+
+
     
 }
 
 .pc-nav__teltime {
-    display: block;
+    display: inline-block;
     font-size: rem(10);
     font-weight: $medium;
+
+}
+
+.pc-nav__contact {
+    color: $white;
+    background-color: $blue;
+    padding: rem(22) rem(65) rem(19) rem(65);
 }

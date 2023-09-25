@@ -31,13 +31,11 @@
       <?php else :?>
       </div>
       <?php endif ;?>
-      <div class="header__spright">
-        <button class="header__drawer js-hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+      <button class="header__drawer js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     <nav class="header__sp-nav sp-nav js-drawer-menu">
       <ul class="sp-nav__items">
         <li class="sp-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
@@ -53,25 +51,29 @@
         </li>
       </ul>
     </nav>
-    <nav class="header__pc-nav pc-nav">
-      <ul class="pc-nav__items">
-        <li class="pc-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
-        <li class="pc-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
-        <li class="pc-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
-        <li class="pc-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
-        <li class="pc-nav__item pc-nav__tel">
-          <a href="<?php echo $contact; ?>" class="pc-nav__telimg">
-            <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
+    <div class="header__right">
+      <nav class="header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
+          <li class="pc-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
+          <li class="pc-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
+          <li class="pc-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
+          <li class="pc-nav__item pc-nav__tel">
+            <div class="pc-nav__telimg">
+              <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" class="pc-nav__telimg" alt="電話アイコン">
+            </div>
+            <div class="pc-nav__teldetails">
+              <p class="pc-nav__telnumber">03-6276-5828</p>
+              <p class="pc-nav__teltime">平日受付:9:00～18:00</p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="pc-nav__contact">
+          <a href="<?php echo $contact; ?>">
+            <span>お問い合わせ</span>
           </a>
-          <p class="pc-nav__telnumber">03-6276-5828</p>
-          <p class="pc-nav__teltime">平日受付:9:00～18:00</p>
-        </li>
-      </ul>
-    </nav>
-    <div class="pc-nav__contact">
-        <a href="<?php echo $contact; ?>">
-          <span>お問い合わせ</span>
-        </a>
+      </div>
     </div>
   </div>
 </header>

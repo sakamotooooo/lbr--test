@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: rem(50);
+    height: rem(70);
     z-index: 99999;
     background-color: #fff;
     color: $text-color;
@@ -22,14 +22,12 @@
 }
 
 .header__logo {
-    width: rem(75);
-    padding-top: rem(13);
-    position: relative;
-    z-index: 9999;
+    width: rem(215);
 
     @include mq(md) {
-        width: rem(94);
-        padding-top: rem(10);
+        width: rem(215);
+        height: rem(60);
+        padding-top: rem(5);
     }
 }
 
@@ -45,12 +43,17 @@
     z-index: 8888;
 }
 
+.header__right {
+    display: flex;
+    gap: rem(20);
+}
 
 .header__pc-nav {
-    height: inherit;
     display: none;
 
     @include mq(md) {
         display: block;
+        display: flex;
+        align-items: center;
     }
 }
