@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.form {
+margin-top: rem(35);
+@include mq('md') {
+ margin-top: rem(45);
+}
+}
+.form__item {
+@include mq('md') {
+ display: grid;
+ grid-template-columns: rem(150) 1fr;
+ align-items: center;
+ gap: rem(28);
+}
+}
+.form__item + .form__item{
+	margin-top: rem(20);
+}
+.form__title {
+text-align: left;
+color: $blue;
+font-size: rem(16);
+font-weight: $medium;
+}
+.form__required {
+color: #CC4343;
+font-size: rem(14);
+font-weight: $regular;
+}
+.form__input {
+
+}
+.form__text {
+
+}
+.form__item--radio {
+
+}
+.form-radio {
+
+}
+.form-radio__item {
+
+}
+.form-radio__label {
+
+}
+.form__textarea {
+
+}
+.form__consent {
+
+}
+.form__submit-wrap {
+
+}
+.form__submit {
+
+}
