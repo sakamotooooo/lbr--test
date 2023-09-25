@@ -44,8 +44,12 @@
 }
 
 .header__right {
-    display: flex;
-    gap: rem(20);
+    display: none;
+
+    @include mq(md) {
+        display: flex;
+        gap: rem(20);
+    }
 }
 
 .header__pc-nav {

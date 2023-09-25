@@ -1,12 +1,14 @@
 @use "global" as *;
 
-$drawer-width: 24px; //ドロワーの幅
+$drawer-width: 28px; //ドロワーの幅
 $drawer-height: 2px; //ドロワー線の高さ
-$drawer-color: #fff; //ドロワー線の色
 
 .header__drawer{
  z-index:9999;
- margin-top: rem(-6);
+ background: $blue;
+ padding: 0 rem(21);
+
+
 
  @include mq(md) {
     display: none;
@@ -19,7 +21,7 @@ $drawer-color: #fff; //ドロワー線の色
  height: $drawer-height;
  width: $drawer-width;
  border-radius: rem(10);
- background: $drawer-color;
+ background: $white;
  transition: ease .3s;
 }
 
@@ -28,7 +30,7 @@ $drawer-color: #fff; //ドロワー線の色
 }
 
 .header__drawer span:nth-child(2) {
- margin: rem(5) 0;
+ margin: rem(10) 0;
 }
 
 .header__drawer span:nth-child(3) {

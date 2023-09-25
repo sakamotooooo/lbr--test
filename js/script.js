@@ -1,20 +1,24 @@
-//ドロワーメニュー
-jQuery(function ($) {
-$('.js-hamburger').on('click', function () {
-  if ($('.js-hamburger').hasClass('is-open')) {
-    $('.js-drawer-menu').fadeOut();
-    $(this).removeClass('is-open');
-  } else {
-    $('.js-drawer-menu').fadeIn();
-    $(this).addClass('is-open');
-  }
+jQuery(function($){
+  alert("Hello")
 });
 
-$('.js-drawer-menu a').on('click',function() {
-  $('.js-drawer-menu').fadeOut();
-  $('.js-hamburger').removeClass('is-open');
-});
-});
+//ドロワーメニュー
+jQuery(function ($) {
+  $('.js-hamburger').on('click', function () {
+    if ($('.js-hamburger').hasClass('is-open')) {
+      $('.js-drawer-menu').fadeOut();
+      $(this).removeClass('is-open');
+    } else {
+      $('.js-drawer-menu').fadeIn();
+      $(this).addClass('is-open');
+    }
+  });
+  
+  $('.js-drawer-menu a').on('click',function() {
+    $('.js-drawer-menu').fadeOut();
+    $('.js-hamburger').removeClass('is-open');
+  });
+  });
   
 
 //スライダー

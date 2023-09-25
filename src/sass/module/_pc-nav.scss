@@ -102,7 +102,13 @@
 }
 
 .pc-nav__contact {
-    color: $white;
-    background-color: $blue;
-    padding: rem(22) rem(65) rem(19) rem(65);
+    display: none;
+
+
+    @include mq(md) {
+        display: block;
+        color: $white;
+        background-color: $blue;
+        padding: rem(22) rem(65) rem(19) rem(65);
+    }
 }
