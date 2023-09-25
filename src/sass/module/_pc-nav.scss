@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.pc-nav__items {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: right;
+}
+
+.pc-nav__item {
+    height: inherit;
+}
+
+.pc-nav__item a {
+    position: relative;
+    color: $text-color;
+    font-size: rem(16);
+    height: inherit;
+    display: grid;
+    place-items: center;
+    padding: 0 rem(15);
+    letter-spacing: 0.125em;
+}
+
+.pc-nav__item a::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: rem(1);
+    background: #FFEA2E;
+    bottom: rem(8);
+    visibility: hidden;
+}
+
+.pc-nav__item a:hover::after {
+    visibility: visible;
+}
+
+.pc-nav__item.pc-nav__item--white {
+    margin-left: rem(15);
+
+    :hover {
+        background-color: #333;
+        color: $white;
+    }
+}
+
+.pc-nav__item.pc-nav__item--white a::after {
+    display: none;
+}
+
+.pc-nav__item.pc-nav__item--white a { 
+    background-color: $white;
+    color: #333;
+    padding-left: rem(32);
+    padding-right: rem(35);
+
+    :hover {
+        color: $white;
+    }
+}
+
+.pc-nav__tel {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.pc-nav__telimg{
+    display: block;
+}
+
+.pc-nav__telimg img {
+    width: rem(17);
+    height: auto;
+    
+}
+
+.pc-nav__telnumber {
+    display: block;
+    font-size: rem(20);
+    font-weight: $bold;
+    
+}
+
+.pc-nav__teltime {
+    display: block;
+    font-size: rem(10);
+    font-weight: $medium;
+}

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="news__main">
+<!-- <main class="news__main">
     <section class="mainview">
       <h1 class="mainview__title">お知らせ</h1>
       <div class="mainview__top-img-sp"><img src="<?php echo get_template_directory_uri() ?>/images//common/news-mv-sp.jpg" alt="newstop"></div>
@@ -29,6 +29,6 @@
     </section>
     <div class="news__pagenavi">
     <?php wp_pagenavi() ?>
-    </div>
+    </div> -->
 
 <?php get_footer(); ?>

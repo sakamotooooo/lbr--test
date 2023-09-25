@@ -11,11 +11,10 @@
 </head>
 <?php
   $home = esc_url( home_url( '/' ) );
-  $company = esc_url( home_url( '/company/' ) );
-  $business = esc_url( home_url( '/business/' ) );
-  $training = esc_url( home_url( '/training/' ) );
-  $blog = esc_url( home_url( '/blog/' ) );
-  $contact = esc_url( home_url( '/contact/' ) );
+  $service = esc_url( home_url( '/company/' ) );
+  $company = esc_url( home_url( '/business/' ) );
+  $recruit = esc_url( home_url( '/training/' ) );
+  $lp = esc_url( home_url( '/lp/' ) );
 ?>
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
@@ -26,7 +25,7 @@
       <?php else :?>
         <div class="header__logo">
       <?php endif ;?>
-      <a href="<?php echo $home; ?>" class="header__logo-link"><img src="<?php echo get_template_directory_uri() ?>/images/logo" alt=""></a>
+      <a href="<?php echo $home; ?>" class="header__logo-link"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt=""></a>
       <?php if(is_front_page()): ?>
         </h1>
       <?php else :?>
@@ -37,20 +36,18 @@
           <span></span>
           <span></span>
           <span></span>
-          <div class="drawer-text">MENU</div>
-          <div class="drawer-text--close">CLOSE</div>
         </button>
       </div>
     <nav class="header__sp-nav sp-nav js-drawer-menu">
       <ul class="sp-nav__items">
-        <li class="sp-nav__item"><a href="<?php echo $home; ?>">サービス</a></li>
+        <li class="sp-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
         <li class="sp-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
-        <li class="sp-nav__item"><a href="<?php echo $business; ?>">採用情報</a></li>
-        <li class="sp-nav__item"><a href="<?php echo $training; ?>">お困りの方</a></li>
+        <li class="sp-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
+        <li class="sp-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
         <li class="sp-nav__item"></li>
         <li class="sp-nav__item sp-nav__item--contact">
           <a href="<?php echo $contact; ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/images/icon-mail.svg" alt="メールアイコン">
+            <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
             <span>お問い合わせ</span>
           </a>
         </li>
@@ -58,16 +55,16 @@
     </nav>
     <nav class="header__pc-nav pc-nav">
       <ul class="pc-nav__items">
-        <li class="pc-nav__item"><a href="<?php echo $home; ?>">サービス</a></li>
+        <li class="pc-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
         <li class="pc-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
-        <li class="pc-nav__item"><a href="<?php echo $business; ?>">採用情報</a></li>
-        <li class="pc-nav__item"><a href="<?php echo $training; ?>">お困りの方</a></li>
-        <li class="sp-nav__item sp-nav__item--contact">
-          <a href="<?php echo $contact; ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/images/icon-phone.svg" alt="電話アイコン">
+        <li class="pc-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
+        <li class="pc-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
+        <li class="pc-nav__item pc-nav__tel">
+          <a href="<?php echo $contact; ?>" class="pc-nav__telimg">
+            <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
           </a>
-          <p>03-6276-5828</p>
-          <p>平日受付:9:00～18:00</p>
+          <p class="pc-nav__telnumber">03-6276-5828</p>
+          <p class="pc-nav__teltime">平日受付:9:00～18:00</p>
         </li>
       </ul>
     </nav>
