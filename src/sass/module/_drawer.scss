@@ -1,0 +1,52 @@
+@use "global" as *;
+
+$drawer-width: 24px; //ドロワーの幅
+$drawer-height: 2px; //ドロワー線の高さ
+$drawer-color: #fff; //ドロワー線の色
+
+.header__drawer{
+ z-index:9999;
+ margin-top: rem(-6);
+
+ @include mq(md) {
+    display: none;
+  }
+}
+
+.header__drawer span {
+ position: relative;
+ display: block;
+ height: $drawer-height;
+ width: $drawer-width;
+ border-radius: rem(10);
+ background: $drawer-color;
+ transition: ease .3s;
+}
+
+.header__drawer span:nth-child(1) {
+ top: 0;
+}
+
+.header__drawer span:nth-child(2) {
+ margin: rem(5) 0;
+}
+
+.header__drawer span:nth-child(3) {
+ top: 0;
+}
+/*is-OPEN時の動き*/
+.header__drawer.is-open span:nth-child(1) {
+ top: rem(10);
+ transform: rotate(45deg);
+}
+
+.header__drawer.is-open span:nth-child(2) {
+ transform: translateY(-50%);
+ opacity: 0;
+}
+
+.header__drawer.is-open span:nth-child(3) {
+ top: rem(-4);
+ transform: rotate(-45deg);
+}
+
