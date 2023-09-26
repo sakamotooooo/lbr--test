@@ -1,87 +1,182 @@
 @use "global" as *;
 
 .form {
-margin-top: rem(35);
-@include mq('md') {
- margin-top: rem(45);
-}
+  margin-top: rem(35);
+  @include mq("md") {
+    margin-top: rem(45);
+  }
 }
 .form__item {
-@include mq('md') {
- display: grid;
- grid-template-columns: rem(150) 1fr;
- align-items: center;
- gap: rem(28);
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: rem(152) 1fr;
+    align-items: center;
+    gap: rem(28);
+  }
 }
-}
-.form__item + .form__item{
-	margin-top: rem(20);
-}
-.form__title {
-text-align: left;
-color: $blue;
-font-size: rem(16);
-font-weight: $medium;
-@include mq('md') {
-font-size: rem(16);
-}
-}
-.form__required {
-	margin-left: rem(10);
-color: #CC4343;
-font-size: rem(14);
-font-weight: $regular;
-@include mq('md') {
-font-size: rem(14);
-}
-}
-.form__input {
-margin-top: rem(10);
-@include mq('md') {
- margin-top: 0;
-}
-}
-.form__text {
-height: rem(45);
-padding: rem(11) rem(3);
-font-size: rem(16);
-border: 1px solid #D9D9D9;
-border-radius: 5px;
-background-color: #F5F5F5;
-width: 100%;
-@include mq('md') {
- padding: rem(11) rem(12);
-}
-}
-.form__text::placeholder{
-	color: #999;
-	font-size: rem(16);
-	font-weight: $regular;
+.form__item--textarea{
 	@include mq('md') {
-	font-size: rem(16);
+	 align-items: start;
 	}
 }
-.form__item--radio {
-
+.form__item + .form__item {
+  margin-top: rem(20);
+}
+.form__title {
+  text-align: left;
+  color: $blue;
+  font-size: rem(16);
+  font-weight: $medium;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.form__required {
+  margin-left: rem(10);
+  color: #cc4343;
+  font-size: rem(14);
+  font-weight: $regular;
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+.form__input {
+  margin-top: rem(10);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+.form__text {
+  height: rem(45);
+  padding: rem(11) rem(14);
+  font-size: rem(16);
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  width: 100%;
+  @include mq("md") {
+    padding: rem(11) rem(12);
+    font-size: rem(16);
+  }
+}
+.form__text::placeholder {
+  color: #999;
+  font-size: rem(16);
+  font-weight: $regular;
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 .form-radio {
-
+  display: flex;
+  align-items: center;
+  margin-top: rem(10);
+  @include mq("md") {
+    margin: rem(6) 0;
+  }
 }
-.form-radio__item {
-
+.form-radio__label + .form-radio__label {
+  margin-left: rem(25);
 }
-.form-radio__label {
-
+.form-radio__input {
+  position: absolute;
+}
+.form-radio__text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: $text-color;
+  font-size: rem(16);
+  font-weight: $regular;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.form-radio__text::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  border: 2px solid $blue;
+  width: rem(15);
+  height: rem(15);
+  margin-right: rem(8);
+}
+.form-radio__input:checked + .form-radio__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: rem(3);
+  border-radius: 50%;
+  width: rem(9);
+  height: rem(9);
+  background-color: $blue;
+  top: rem(8);
 }
 .form__textarea {
-
+  font-size: rem(16);
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: rem(202);
+  padding: rem(11) rem(14);
+  @include mq("md") {
+    padding: rem(11) rem(12);
+    font-size: rem(16);
+    height: rem(154);
+  }
 }
 .form__consent {
-
+  margin-top: rem(30);
+  font-size: rem(14);
+  color: $text-color;
+  font-weight: $regular;
+  letter-spacing: -0.02em;
+  @include mq("md") {
+    text-align: center;
+    margin-top: rem(8);
+    font-size: rem(14);
+    letter-spacing: normal;
+  }
+}
+.form__consent a {
+  color: $blue;
+  border-bottom: 1px solid $blue;
 }
 .form__submit-wrap {
-
+  text-align: center;
+  margin-top: rem(24);
+  position: relative;
+}
+.form__submit-wrap::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: rem(8);
+  height: rem(8);
+  left: 70%;
+  top: 50%;
+  transform: translate(-70%, -50%) rotate(45deg);
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+	@include mq('md') {
+		left: 60%;
+		transform: translate(-60%, -50%) rotate(45deg);
+	}
 }
 .form__submit {
-
+  max-width: rem(250);
+  width: 100%;
+  padding: rem(16) rem(80);
+  background-color: $blue;
+  color: $white;
+  font-size: rem(18);
+  font-weight: $bold;
+	transition: opacity 0.3s;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+.form__submit:hover{
+	opacity: 0.75;
 }

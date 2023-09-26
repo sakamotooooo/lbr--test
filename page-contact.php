@@ -11,7 +11,7 @@
 			<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 		</div>
 		<form action="" method="post" class="contact__form form">
-			<div class="form__item">
+			<!-- <div class="form__item">
 				<label for="yourCompany" class="form__title">会社名<span class="form__required">※</span></label>
 				<div class="form__input">
 					<input type="text" id="yourCompany" name="your-company" placeholder="例：株式会社ABC" class="form__text"
@@ -32,34 +32,36 @@
 						class="form__text" required />
 				</div>
 			</div>
-			<div class="form__item form__item--radio">
+			<div class="form__item">
 				<div class="form__title">お問い合わせ項目</div>
+
 				<div class="form-radio">
-					<div class="form-radio__item">
-						<input type="radio" name="inquiry" id="request" value="清掃依頼" />
-						<label for="request" class="form-radio__label">清掃依頼</label>
-					</div>
-					<div class="form-radio__item">
-						<input type="radio" name="inquiry" id="recruit" value="採用関連" />
-						<label for="recruit" class="form-radio__label">採用関連</label>
-					</div>
-					<div class="form-radio__item">
-						<input type="radio" name="inquiry" id="other" value="その他" />
-						<label for="other" class="form-radio__label">その他</label>
-					</div>
+					<label class="form-radio__label" for="request">
+						<input name="radio" class="form-radio__input" type="radio" name="inquiry" id="request" value="清掃依頼" checked>
+						<span class="form-radio__text">清掃依頼</span>
+					</label>
+					<label class="form-radio__label" for="recruit">
+						<input name="radio" class="form-radio__input" type="radio" name="inquiry" id="recruit" value="採用関連">
+						<span class="form-radio__text">採用関連</span>
+					</label>
+					<label class="form-radio__label" for="other">
+						<input name="radio" class="form-radio__input" type="radio" name="inquiry" id="other" value="その他">
+						<span class="form-radio__text">その他</span>
+					</label>
 				</div>
 			</div>
-			<div class="form__item">
+			<div class="form__item form__item--textarea">
 				<label for="yourContent" class="form__title">お問い合わせ内容<span class="form__required">※</span></label>
-				<div class="form__textarea">
+				<div class="form__input">
 					<textarea id="yourContent" class="form__textarea" required></textarea>
 				</div>
 			</div>
-			<p class="form__consent">※入力された個人情報は<a href="">「個人情報保護方針」</a>に基づき取り扱われることに同意するものとします。</p>
+			<p class="form__consent">※入力された個人情報は「<a href="">個人情報保護方針</a>」に基づき取り扱われることに同意するものとします。</p>
 			<div class="form__submit-wrap">
 				<input id="formButton" type="submit" class="form__submit" value="送信する">
-			</div>
+			</div> -->
 		</form>
+		<?php the_content();?>
 	</div>
 </section>
 <?php get_footer() ;?>
