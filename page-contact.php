@@ -11,6 +11,8 @@
 			<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 		</div>
 		<form action="" method="post" class="contact__form form">
+			<?php the_content();?>
+
 			<!-- <div class="form__item">
 				<label for="yourCompany" class="form__title">会社名<span class="form__required">※</span></label>
 				<div class="form__input">
@@ -28,7 +30,7 @@
 			<div class="form__item">
 				<label for="yourEmail" class="form__title">メールアドレス<span class="form__required">※</span></label>
 				<div class="form__input">
-					<input type="email" id="yourEmail" name="your-email" placeholder="example@xxx-fc.jp" autocomplete="email"
+					<input type="email" id="yourEmail" name="your-email" placeholder="例：sample@abc.co.jp" autocomplete="email"
 						class="form__text" required />
 				</div>
 			</div>
@@ -36,18 +38,18 @@
 				<div class="form__title">お問い合わせ項目</div>
 
 				<div class="form-radio">
-					<label class="form-radio__label" for="request">
+					<div class="form-radio__item">
 						<input name="radio" class="form-radio__input" type="radio" name="inquiry" id="request" value="清掃依頼" checked>
-						<span class="form-radio__text">清掃依頼</span>
-					</label>
-					<label class="form-radio__label" for="recruit">
+						<label class="form-radio__label" for="request">清掃依頼</label>
+					</div>
+					<div class="form-radio__item">
 						<input name="radio" class="form-radio__input" type="radio" name="inquiry" id="recruit" value="採用関連">
-						<span class="form-radio__text">採用関連</span>
-					</label>
-					<label class="form-radio__label" for="other">
+						<label class="form-radio__label" for="recruit">採用関連</label>
+					</div>
+					<div class="form-radio__item">
 						<input name="radio" class="form-radio__input" type="radio" name="inquiry" id="other" value="その他">
-						<span class="form-radio__text">その他</span>
-					</label>
+						<label class="form-radio__label" for="other">その他</label>
+					</div>
 				</div>
 			</div>
 			<div class="form__item form__item--textarea">
@@ -61,7 +63,7 @@
 				<input id="formButton" type="submit" class="form__submit" value="送信する">
 			</div> -->
 		</form>
-		<?php the_content();?>
+
 	</div>
 </section>
 <?php get_footer() ;?>
