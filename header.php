@@ -10,6 +10,8 @@
     <?php wp_head(); ?>
 </head>
 <?php
+
+
   $home = esc_url( home_url( '/' ) );
   $service = esc_url( home_url( '/company/' ) );
   $company = esc_url( home_url( '/business/' ) );
