@@ -10,8 +10,6 @@
     <?php wp_head(); ?>
 </head>
 <?php
-
-
   $home = esc_url( home_url( '/' ) );
   $service = esc_url( home_url( '/company/' ) );
   $company = esc_url( home_url( '/business/' ) );
@@ -44,7 +42,6 @@
         <li class="sp-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
         <li class="sp-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
         <li class="sp-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
-        <li class="sp-nav__item"></li>
         <li class="sp-nav__item sp-nav__item--contact">
           <a href="<?php echo $contact; ?>">
             <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
