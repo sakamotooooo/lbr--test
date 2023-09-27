@@ -1,7 +1,8 @@
 <?php
 	/* Template Name:contactページ */
 ?>
-<?php get_header() ;?>
+<?php get_header(); ?>
+
 <section class="contact">
 	<div class="contact__inner inner">
 		<div class="contact__wrap">

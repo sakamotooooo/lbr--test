@@ -1,5 +1,5 @@
 <?php
-	/* Template Name:contact/thanksページ */
+	/* Template Name:thanksページ */
 get_header() ;
 
 ?>

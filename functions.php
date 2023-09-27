@@ -51,3 +51,19 @@ add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
    return false;
 }
+
+// Contact Form7の送信ボタンをクリックした後の遷移先設定
+add_action( 'wp_footer', 'add_origin_thanks_page' );
+ function add_origin_thanks_page() {
+ $thanks = home_url('/contact-thanks/');
+   echo <<< EOC
+     <script>
+       var thanksPage = {
+         10: '{$thanks}',
+       };
+     document.addEventListener( 'wpcf7mailsent', function( event ) {
+       location = thanksPage[event.detail.contactFormId];
+     }, false );
+     </script>
+   EOC;
+ }
