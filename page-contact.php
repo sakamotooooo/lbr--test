@@ -3,6 +3,8 @@
 ?>
 <?php get_header(); ?>
 <main>
+	<?php get_template_part('template/breadcrumb');?>
+
 	<section class="contact">
 		<div class="contact__inner inner">
 			<div class="contact__wrap">
