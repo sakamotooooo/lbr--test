@@ -68,49 +68,62 @@
   }
 }
 .form-radio {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-top: rem(10);
   @include mq("md") {
     margin: rem(6) 0;
   }
 }
-.form-radio__label + .form-radio__label {
+.form-radio__item{
+	display: inline-block;
+}
+.wpcf7-list-item + .wpcf7-list-item {
   margin-left: rem(25);
 }
-.form-radio__input {
-  position: absolute;
-}
-.form-radio__text {
+// .form-radio__input {
+//   position: absolute;
+// }
+.wpcf7-radio .wpcf7-list-item-label {
+	cursor: pointer;
+	display: inline-block;
   position: relative;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   color: $text-color;
   font-size: rem(16);
   font-weight: $regular;
+	padding-left: rem(13);
   @include mq("md") {
     font-size: rem(16);
   }
 }
-.form-radio__text::before {
+.wpcf7-radio .wpcf7-list-item-label:before {
   content: "";
   display: block;
+	position: absolute;
   border-radius: 50%;
   border: 2px solid $blue;
-  width: rem(15);
-  height: rem(15);
-  margin-right: rem(8);
+  width: rem(16);
+  height: rem(16);
+	left: rem(-8);
+	top: 50%;
+	transform: translateY(-50%);
 }
-.form-radio__input:checked + .form-radio__text::after {
+.wpcf7-radio .wpcf7-list-item-label:after {
   content: "";
   display: block;
   position: absolute;
-  left: rem(3);
+  left: rem(-5);
   border-radius: 50%;
-  width: rem(9);
-  height: rem(9);
+  width: rem(10);
+  height: rem(10);
   background-color: $blue;
-  top: rem(8);
+  top: rem(7);
+	opacity: 0;
+}
+input[type=radio]:checked + .wpcf7-list-item-label:after {
+	opacity: 1;
 }
 .form__textarea {
   font-size: rem(16);
