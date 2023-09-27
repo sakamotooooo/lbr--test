@@ -2,37 +2,22 @@
 jQuery(function ($) {
 $('.js-hamburger').on('click', function () {
   if ($('.js-hamburger').hasClass('is-open')) {
-    $('.js-drawer-menu').fadeOut();
+    // $('.js-drawer-menu').fadeOut(200);
     $(this).removeClass('is-open');
+    $(".js-drawer-menu").removeClass('panelactive');
   } else {
-    $('.js-drawer-menu').fadeIn();
+    // $('.js-drawer-menu').fadeIn(200);
     $(this).addClass('is-open');
+    $(".js-drawer-menu").toggleClass('panelactive');
   }
 });
 
 $('.js-drawer-menu a').on('click',function() {
-  $('.js-drawer-menu').fadeOut();
+  // $('.js-drawer-menu').fadeOut();
   $('.js-hamburger').removeClass('is-open');
 });
 });
   
-  $('.js-hamburger').on('click', function () {
-    if ($('.js-hamburger').hasClass('is-open')) {
-      $('.js-drawer-menu').fadeOut();
-      $(this).removeClass('is-open');
-    } else {
-      $('.js-drawer-menu').fadeIn();
-      $(this).addClass('is-open');
-    }
-  });
-
-  $('.js-drawer-menu a').on('click',function() {
-    $('.js-drawer-menu').fadeOut();
-    $('.js-hamburger').removeClass('is-open');
-  });
-
-
-
 //スライダー
 const swiper = new Swiper(".swiper", {
   loop: true,
