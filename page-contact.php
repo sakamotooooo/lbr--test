@@ -1,19 +1,20 @@
 <?php
 	/* Template Name:contactページ */
 ?>
-<?php get_header() ;?>
-<section class="contact">
-	<div class="contact__inner inner">
-		<div class="contact__wrap">
-			<p class="contact__read">弊社へのお問い合わせは、メールフォームに必須事項をご記入の上、ご送信ください。<br>
-				基本的にE-mailで返信させていただきます。</p>
-			<p class="contact__text">Eメールアドレスに誤りがあると返信できないことがございますので、ご注意ください。</p>
-			<span class="contact__fill-in">※の部分は必ずご記入ください</span>
-		</div>
-		<form action="" method="post" class="contact__form form">
-			<?php the_content();?>
+<?php get_header(); ?>
+<main>
+	<section class="contact">
+		<div class="contact__inner inner">
+			<div class="contact__wrap">
+				<p class="contact__read">弊社へのお問い合わせは、メールフォームに必須事項をご記入の上、ご送信ください。<br>
+					基本的にE-mailで返信させていただきます。</p>
+				<p class="contact__text">Eメールアドレスに誤りがあると返信できないことがございますので、ご注意ください。</p>
+				<span class="contact__fill-in">※の部分は必ずご記入ください</span>
+			</div>
+			<form action="" method="post" class="contact__form form">
+				<?php the_content();?>
 
-			<!-- <div class="form__item">
+				<!-- <div class="form__item">
 				<label for="yourCompany" class="form__title">会社名<span class="form__required">※</span></label>
 				<div class="form__input">
 					<input type="text" id="yourCompany" name="your-company" placeholder="例：株式会社ABC" class="form__text"
@@ -62,8 +63,9 @@
 			<div class="form__submit-wrap">
 				<input id="formButton" type="submit" class="form__submit" value="送信する">
 			</div> -->
-		</form>
+			</form>
 
-	</div>
-</section>
+		</div>
+	</section>
+</main>
 <?php get_footer() ;?>
