@@ -1,0 +1,86 @@
+@use "global" as *;
+/* 共通パーツ 下層ページ上のメインビュー*/
+.mainview {
+    position: relative;
+    z-index: 10;
+    width:100%;
+    height: rem(375);
+
+    @include mq(md) {
+        height: rem(338);
+    }
+}
+
+.mainview__title {
+    position: absolute;
+    top:47%;
+    left:3.8%;
+    transform: translateX(-3.8%);
+    font-weight: $medium;
+    background-color: $blue;
+    color: $white;
+    padding: rem(15) rem(25) rem(10) rem(20);
+
+    @include mq(md) {
+      font-size: rem(35);
+      letter-spacing: 0.05714em;
+      top:65%;
+      left:11.1%;
+      transform:translateX(-11.1%);
+      padding: rem(20) rem(25) rem(15) rem(25);
+
+    }
+}
+
+.mainview__title span {
+    font-size: rem(30);
+    text-transform: uppercase;
+
+    @include mq(md) {
+        font-size: rem(40);
+    }
+}
+
+.mainview__title h1 {
+    font-size: rem(16);
+    font-weight: normal;
+
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.mainview__sp {
+    width: 100%;
+    height: rem(225);
+
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.mainview__sp img{
+    width: 100%;
+    height: rem(225);
+    object-fit: cover;
+    object-position: 30% 60%;
+}
+
+.mainview__pc {
+    width: 100%;
+    height: rem(300);
+    display: none;
+
+
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.mainview__pc img {
+    @include mq(md) {
+        height: rem(300);
+        object-fit: cover;
+
+    }
+}

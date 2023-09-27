@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<!-- <main class="news__main">
+<main>
     <section class="mainview">
-      <h1 class="mainview__title">お知らせ</h1>
-      <div class="mainview__top-img-sp"><img src="<?php echo get_template_directory_uri() ?>/images//common/news-mv-sp.jpg" alt="newstop"></div>
-      <div class="mainview__top-img-pc"><img src="<?php echo get_template_directory_uri() ?>/images//common/news_MV.jpg" alt="newstop"></div>
+      <div class="mainview__title">
+        <span>news</span>
+        <h1>お知らせ</h1>
+      </div>
+      <div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-sp.jpg" alt="newstop"></div>
+      <div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-pc.jpg" alt="newstop"></div>
     </section>
-    
-    <?php custom_breadcrumb(); ?>
-
     <section class="news">
       <div class="news__inner">
         <div class="news__contents">
@@ -27,8 +27,8 @@
         </div>
       </div>
     </section>
-    <div class="news__pagenavi">
+    <!-- <div class="news__pagenavi">
     <?php wp_pagenavi() ?>
     </div> -->
-
+</main>
 <?php get_footer(); ?>
