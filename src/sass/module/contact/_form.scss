@@ -48,7 +48,7 @@
 }
 .form__text {
   height: rem(45);
-  padding: rem(11) rem(14);
+  padding: rem(11) rem(10);
   font-size: rem(16);
   border: 1px solid #d9d9d9;
   border-radius: 5px;
@@ -68,8 +68,6 @@
   }
 }
 .form-radio {
-  // display: flex;
-  // align-items: center;
   margin-top: rem(10);
   @include mq("md") {
     margin: rem(6) 0;
@@ -81,15 +79,10 @@
 .wpcf7-list-item + .wpcf7-list-item {
   margin-left: rem(25);
 }
-// .form-radio__input {
-//   position: absolute;
-// }
 .wpcf7-radio .wpcf7-list-item-label {
 	cursor: pointer;
 	display: inline-block;
   position: relative;
-  // display: flex;
-  // align-items: center;
   color: $text-color;
   font-size: rem(16);
   font-weight: $regular;
@@ -132,7 +125,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   background-color: #f5f5f5;
   width: 100%;
   height: rem(202);
-  padding: rem(11) rem(14);
+  padding: rem(11) rem(10);
   @include mq("md") {
     padding: rem(11) rem(12);
     font-size: rem(16);

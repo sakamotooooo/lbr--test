@@ -15,7 +15,7 @@ $('.js-drawer-menu a').on('click',function() {
   $('.js-hamburger').removeClass('is-open');
 });
 });
-  
+
   $('.js-hamburger').on('click', function () {
     if ($('.js-hamburger').hasClass('is-open')) {
       $('.js-drawer-menu').fadeOut();
