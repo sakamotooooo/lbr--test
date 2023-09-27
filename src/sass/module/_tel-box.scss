@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.tel-box {
+    display: flex;
+    align-items: center;
+    gap: rem(6);
+    justify-content: center;
+    text-align: start;
+}
+
+.tel-box__img{
+    width: rem(17);
+    height: auto;
+}
+
+.tel-box__img img {
+    width: rem(17);
+    height: auto;
+    
+}
+
+.tel-box__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.tel-box__number {
+    display: inline-block;
+    font-size: rem(20);
+    font-weight: $bold;
+}
+
+.tel-box__time {
+    display: inline-block;
+    font-size: rem(10);
+    font-weight: $medium;
+
+}

@@ -1,0 +1,126 @@
+@use "global" as *;
+
+.footer{
+    padding-top: rem(61);
+    padding-bottom: rem(13);
+    background-color: $blue;
+    color: $white;
+    font-weight: normal;
+
+    @include mq(md) {
+        padding-top: rem(46);
+        padding-bottom: rem(11);
+    }
+
+}
+.footer__inner{
+
+
+    @include mq(md) {
+    }
+}
+
+.footer__top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(83);
+    width: 100%;
+    margin: auto;
+    padding-inline: $padding-sp;
+    font-size: rem(14);
+    padding-bottom: rem(27);
+
+
+    @include mq(md) {
+        max-width: rem(1000);
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: $padding-pc;
+        padding-bottom: rem(27);
+    }
+}
+
+.footer__left{
+}
+
+.footer__logo{
+    width: rem(260);
+}
+
+.footer__logo-link{
+}
+
+.footer__access{
+    margin-top: rem(68);
+
+    @include mq(md) {
+        margin-top: rem(10);
+        line-height: 1.714;
+    }
+}
+.footer__right{
+    @include mq(md) {
+        width: 38%;
+    }
+}
+.footer-nav__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    max-width: rem(300);
+
+}
+.footer-nav__item{
+    width: 50%
+}
+
+.footer-nav__item a {
+    display: inline-block;
+    padding: rem(7.5) rem(3);
+    @include mq(md) {
+
+    }
+}
+
+.footer__bottom{
+    border-top: 1px solid #F4F9FD;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.footer__bottominner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(18);
+    padding-inline: $padding-sp;
+    padding-top: rem(24);
+
+
+    @include mq(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+        max-width: rem(1000);
+        padding-inline: $padding-pc;
+        padding-top: rem(9);
+    }
+}
+
+.footer__sns{
+    display: flex;
+    gap: rem(15);
+}
+
+.footer__sns a {
+    width: rem(25);
+}
+
+.header__logo-link{
+}
+.footer__copyright{
+    font-size: rem(12);
+}
