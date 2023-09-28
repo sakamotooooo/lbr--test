@@ -24,6 +24,15 @@ get_header() ;
 		<h2 class="section-heading__title section-heading__title--white">エルビーアールのこだわり</h2>
 	</div> -->
 
+	<!-- sectionのタイトル薄いのん -->
+	<!--<div>で囲ってそのdivで位置調整してください。<span></span>は共通です。
+	<div></div>はそれぞれにつけてください。 -->
+	<!-- <div class="top-contact__thin">⬅️位置調整のdiv(section-headingにposition:relativeつけてます)
+		<span class="section-heading__thin section-heading__thin--blue">
+			contact
+		</span>
+	</div> -->
+
 
 
 

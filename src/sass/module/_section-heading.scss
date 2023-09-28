@@ -1,6 +1,7 @@
 @use "global" as *;
 .section-heading {
   text-align: center;
+	position: relative;
 }
 .section-heading__subtitle {
   text-transform: uppercase;
@@ -21,10 +22,10 @@
   font-weight: $bold;
   position: relative;
   padding-bottom: rem(10);
-	padding-top: rem(5);
-	@include mq('md') {
-	 padding-bottom: rem(12);
-	}
+  padding-top: rem(5);
+  @include mq("md") {
+    padding-bottom: rem(12);
+  }
 }
 .section-heading__title::after {
   content: "";
@@ -56,4 +57,29 @@
 .section-heading__title--white::after {
   background-color: $white;
   width: rem(30);
+}
+.section-heading__thin {
+  text-transform: uppercase;
+  font-weight: $medium;
+  display: block;
+	line-height: 1;
+}
+.section-heading__thin--blue {
+  color: $blue;
+  opacity: 0.1;
+  letter-spacing: 0.03em;
+  font-size: rem(70);
+  @include mq("md") {
+    font-size: rem(135);
+		letter-spacing: 0.07em;
+  }
+}
+.section-heading__thin--white {
+  color: $white;
+  opacity: 0.07;
+  text-align: center;
+  font-size: rem(70);
+  @include mq("md") {
+    font-size: rem(150);
+  }
 }

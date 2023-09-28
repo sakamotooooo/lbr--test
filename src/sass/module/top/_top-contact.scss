@@ -1,0 +1,130 @@
+@use "global" as *;
+.top-contact {
+  padding-top: rem(78);
+  padding-bottom: rem(82);
+  position: relative;
+}
+.top-contact::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url(../images/contact-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  z-index: -1;
+	@include mq('md') {
+		background-image: url(../images/contact-bg-pc.jpg);
+
+	}
+}
+.top-contact::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(10, 56, 100, 0.45);
+  z-index: -1;
+}
+.top-contact__thin{
+	position: absolute;
+	top: rem(-19);
+	left: 50%;
+	transform: translateX(-50%);
+}
+.top-contact__read {
+  margin-top: rem(20);
+  color: $white;
+  font-size: rem(16);
+  font-weight: $regular;
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.top-contact__items {
+  margin-top: rem(31);
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+  }
+}
+.top-contact__item {
+  background-color: $white;
+  max-width: rem(230);
+  width: 100%;
+  height: rem(55);
+  margin-inline: auto;
+}
+.top-contact__item + .top-contact__item {
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(50);
+  }
+}
+.top-contact__item:first-child {
+  padding: rem(9) rem(36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-contact__item:nth-child(2) {
+}
+.top-contact__telImg {
+  width: rem(17);
+  height: auto;
+}
+.top-contact__telImg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.top-contact__telDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: rem(7);
+}
+.top-contact__telNumber {
+  display: inline-block;
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $text-color;
+  line-height: 1;
+}
+.top-contact__telTime {
+  display: inline-block;
+  font-size: rem(10);
+  font-weight: $medium;
+}
+.top-contact__item a {
+  display: block;
+  color: $blue;
+  font-weight: $bold;
+  background-color: $white;
+  text-align: center;
+  padding: rem(19) rem(55);
+  line-height: 1;
+  position: relative;
+  height: 100%;
+}
+.top-contact__item a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: rem(10);
+  height: rem(10);
+  right: rem(20);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  border-top: 1px solid $blue;
+  border-right: 1px solid $blue;
+}
