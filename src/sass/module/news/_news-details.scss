@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.news-details{
+        
+    @include mq(md) {
+        margin-top: rem(124);
+    }
+}
+.news-details__contents{
+}
+.news-details__date{
+}
+.news-details__title{
+}
+.blog-content{
+}
+.news-details__pagenavi{
+}

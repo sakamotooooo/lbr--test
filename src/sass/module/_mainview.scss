@@ -2,18 +2,17 @@
 /* 共通パーツ 下層ページ上のメインビュー*/
 .mainview {
     position: relative;
-    z-index: 10;
-    width:100%;
-    height: rem(375);
+    margin-top: rem(20);
 
     @include mq(md) {
-        height: rem(338);
+        margin-top: rem(38);
+
     }
 }
 
 .mainview__title {
     position: absolute;
-    top:47%;
+    top:76%;
     left:3.8%;
     transform: translateX(-3.8%);
     font-weight: $medium;
@@ -24,7 +23,7 @@
     @include mq(md) {
       font-size: rem(35);
       letter-spacing: 0.05714em;
-      top:65%;
+      top:83%;
       left:11.1%;
       transform:translateX(-11.1%);
       padding: rem(20) rem(25) rem(15) rem(25);
@@ -67,13 +66,13 @@
 }
 
 .mainview__pc {
-    width: 100%;
-    height: rem(300);
     display: none;
 
 
     @include mq(md) {
         display: block;
+        width: 100%;
+        height: rem(300);
     }
 }
 

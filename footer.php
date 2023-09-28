@@ -34,9 +34,9 @@
     <div class="footer__bottom">
       <div class="footer__bottominner">
         <div class="footer__sns">
-            <a href="<?php echo $home; ?>"><img src="<?php echo get_template_directory_uri() ?>/images/insta.svg" alt=""></a>
-            <a href="<?php echo $home; ?>" class="u-mobile"><img src="<?php echo get_template_directory_uri() ?>/images/tiktok.svg" alt=""></a>
-            <a href="<?php echo $home; ?>"><img src="<?php echo get_template_directory_uri() ?>/images/x.svg" alt=""></a>
+            <a href="https://www.instagram.com/lbr0018/" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri() ?>/images/insta.svg" alt=""></a>
+            <a href="https://www.tiktok.com/@lbr0018?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="u-mobile"><img src="<?php echo get_template_directory_uri() ?>/images/tiktok.svg" alt=""></a>
+            <a href="https://x.com/lbr0018" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri() ?>/images/x.svg" alt=""></a>
         </div>
         <p class="footer__copyright"><small lang="en">&copy;Copyright LBR Co.,Ltd All right reserved</small></p>
       </div>
