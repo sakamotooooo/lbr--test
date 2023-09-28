@@ -8,7 +8,7 @@ get_header() ;
 
 	<section class="thanks">
 		<div class="thanks__inner inner">
-			<h2 class="thanks__title">この度はお問い合わせをいただき誠にありがとうございます。</h2>
+			<h2 class="thanks__title">この度はお問い合わせをいただき<br class="u-mobile">誠にありがとうございます。</h2>
 			<p class="thanks__text">担当者より改めてご連絡させていただきますので、<br>お待ちいただきますようよろしくお願いいたします。</p>
 			<div class="thanks__top">
 				<a href="<?php echo home_url(''); ?>">トップページに戻る</a>

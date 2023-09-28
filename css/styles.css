@@ -1053,7 +1053,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .form__item {
     display: grid;
-    grid-template-columns: 9.5rem 1fr;
+    grid-template-columns: 9.625rem 1fr;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1199,12 +1199,13 @@ select::-ms-expand {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 13px;
-  padding-left: 0.8125rem;
+  padding-left: 7px;
+  padding-left: 0.4375rem;
 }
 @media screen and (min-width: 768px) {
   .wpcf7-radio .wpcf7-list-item-label {
     font-size: 1rem;
+    padding-left: 0.8125rem;
   }
 }
 
@@ -1218,19 +1219,24 @@ select::-ms-expand {
   width: 1rem;
   height: 16px;
   height: 1rem;
-  left: -8px;
-  left: -0.5rem;
+  left: -15px;
+  left: -0.9375rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media screen and (min-width: 768px) {
+  .wpcf7-radio .wpcf7-list-item-label:before {
+    left: -0.5rem;
+  }
 }
 
 .wpcf7-radio .wpcf7-list-item-label:after {
   content: "";
   display: block;
   position: absolute;
-  left: -5px;
-  left: -0.3125rem;
+  left: -12px;
+  left: -0.75rem;
   border-radius: 50%;
   width: 10px;
   width: 0.625rem;
@@ -1240,6 +1246,11 @@ select::-ms-expand {
   top: 7px;
   top: 0.4375rem;
   opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .wpcf7-radio .wpcf7-list-item-label:after {
+    left: -0.3125rem;
+  }
 }
 
 input[type=radio]:checked + .wpcf7-list-item-label:after {
@@ -1309,15 +1320,18 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   width: 0.5rem;
   height: 8px;
   height: 0.5rem;
-  left: 80%;
+  right: 62px;
+  right: 3.875rem;
   top: 50%;
-  -webkit-transform: translate(-80%, -50%) rotate(45deg);
-          transform: translate(-80%, -50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   border-top: 1px solid #fff;
   border-right: 1px solid #fff;
 }
 @media screen and (min-width: 768px) {
   .form__submit-wrap::after {
+    right: auto;
+    right: initial;
     left: 63%;
     -webkit-transform: translate(-63%, -50%) rotate(45deg);
             transform: translate(-63%, -50%) rotate(45deg);
@@ -1378,8 +1392,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 .thanks__text {
   text-align: center;
   color: #111111;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.75;
 }
@@ -1874,6 +1888,11 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   font-weight: 400;
   line-height: 1;
 }
+@media screen and (min-width: 768px) {
+  .company-about__title {
+    line-height: 1.75;
+  }
+}
 
 .company-about__wrap + .company-about__wrap {
   margin-top: 15px;
@@ -1912,6 +1931,11 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   margin-top: 0.1875rem;
   padding-bottom: 15px;
   padding-bottom: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .company-about__data {
+    margin-top: 0;
+  }
 }
 
 .company-about__current {
