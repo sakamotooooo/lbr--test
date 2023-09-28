@@ -42,9 +42,21 @@
         <li class="sp-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
         <li class="sp-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
         <li class="sp-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
-        <li class="sp-nav__item sp-nav__item--contact">
+        <li class="sp-nav__item">              
+          <a href="">
+            <div class="tel-box">
+              <div class="tel-box__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" class="pc-nav__telimg" alt="電話アイコン">
+              </div>
+              <div class="tel-box__details">
+                <p class="tel-box__number">03-6276-5828</p>
+                <p class="tel-box__time">平日受付:9:00～18:00</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="sp-nav__contact">
           <a href="<?php echo $contact; ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
             <span>お問い合わせ</span>
           </a>
         </li>
@@ -58,12 +70,14 @@
           <li class="pc-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
           <li class="pc-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
           <li class="pc-nav__item pc-nav__tel">
-            <div class="pc-nav__telimg">
-              <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" class="pc-nav__telimg" alt="電話アイコン">
-            </div>
-            <div class="pc-nav__teldetails">
-              <p class="pc-nav__telnumber">03-6276-5828</p>
-              <p class="pc-nav__teltime">平日受付:9:00～18:00</p>
+            <div class="tel-box">
+              <div class="tel-box__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
+              </div>
+              <div class="tel-box__details">
+                <p class="tel-box__number">03-6276-5828</p>
+                <p class="tel-box__time">平日受付:9:00～18:00</p>
+              </div>
             </div>
           </li>
         </ul>

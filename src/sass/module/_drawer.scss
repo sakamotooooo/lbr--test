@@ -8,8 +8,6 @@ $drawer-height: 2px; //ドロワー線の高さ
  background: $blue;
  padding: 0 rem(21);
 
-
-
  @include mq(md) {
     display: none;
   }
@@ -38,7 +36,7 @@ $drawer-height: 2px; //ドロワー線の高さ
 }
 /*is-OPEN時の動き*/
 .header__drawer.is-open span:nth-child(1) {
- top: rem(10);
+ top: rem(15);
  transform: rotate(45deg);
 }
 
@@ -48,7 +46,7 @@ $drawer-height: 2px; //ドロワー線の高さ
 }
 
 .header__drawer.is-open span:nth-child(3) {
- top: rem(-4);
+ top: rem(-9);
  transform: rotate(-45deg);
 }
 

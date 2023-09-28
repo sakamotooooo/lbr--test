@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.pagelink {
+    margin-top: rem(80);
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    gap: rem(48);
+
+    @include mq(md) { 
+        margin-top: rem(106);
+    }
+}
+.pagelink__prev, .pagelink__next, .pagelink__all {
+    border: 1px solid $white;
+
+    display: inline-flex;
+	color: $white;
+	background-color: $black;
+	transition: 0.2s ease-in-out;
+}
+
+.pagelink__all {
+    padding-left: rem(17);
+    padding-right: rem(20);
+}
+
+.pagelink__prev a, .pagelink__next a {
+    padding: 0 rem(13);
+}
+
+.pagelink a:hover{
+    @include mq(md) { 
+        text-decoration: none;
+        color: $black;
+        background-color: $white;
+    }
+}

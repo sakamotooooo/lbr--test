@@ -2,19 +2,37 @@
 
 .sp-nav__items {
     margin-left: rem(2);
-    padding-top: rem(192);
-    padding-bottom: rem(208);
+    padding-top: rem(70);
     height: 100vh;
     overflow: scroll;
+}
+
+.sp-nav__item {
+    border-top: 1px solid $blue;
 }
 
 .sp-nav__item a {
     display: block;
     width: 100%;
-    padding-top: rem(16);
-    padding-bottom: rem(15);
+    padding: rem(20) 0;
     text-align: center;
-    color: #fff;
+    color: $text-color;
     font-size: rem(16);
     letter-spacing: 0.125em;
+}
+
+.sp-nav__contact {
+    border-top: none;
+    max-width: rem(250);
+    margin: auto;
+}
+
+.sp-nav__contact a {
+    text-align: center;
+    font-size: rem(20);
+    font-weight: $bold;
+    display: inline-block;
+    color: $white;
+    background-color: $blue;
+    padding: rem(18) rem(65);
 }

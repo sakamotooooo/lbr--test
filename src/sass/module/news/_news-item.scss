@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(5);
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    padding: rem(15) rem(20);
+
+    @include mq(md) { 
+        flex-direction: row;
+        gap: rem(38);
+
+    }
+}
+
+.news-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: rem(116);
+    height: inherit;
+    border-bottom: 1px solid $blue;
+}
+
+.news-item__date {
+    display: block;
+    color: $blue;
+    font-size: rem(16);
+
+    @include mq(md) {
+    }
+}
+
+.news-item__title {
+    display: block;
+    font-size: rem(16);
+    line-height: 1.4375;
+
+    @include mq(md) {
+        line-height: 1.5;
+      }
+}
+
+.news-item__block {
+    margin-top: rem(18);
+    overflow: hidden;
+    height: 2.875em;
+
+    @include mq(md) {
+        //initialで初期化
+        margin-top: initial;
+        margin-left: rem(61);
+        //文字数増えた、減ったときの対応を必ずする！！
+        max-width: rem(572);
+        overflow: visible;
+        height: auto;
+      }
+}

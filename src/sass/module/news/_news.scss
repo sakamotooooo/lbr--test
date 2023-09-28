@@ -1,0 +1,27 @@
+@use "global" as *;
+.news {
+    margin-top: rem(115);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}
+
+
+.news__content {
+
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+
+.news__pagenavi {
+    margin-top: rem(55);
+    margin-bottom: rem(90);
+
+    @include mq(md) { 
+        margin-top: rem(70);
+        margin-bottom: rem(110);
+    }
+}
