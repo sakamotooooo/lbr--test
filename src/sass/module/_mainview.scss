@@ -2,10 +2,8 @@
 /* 共通パーツ 下層ページ上のメインビュー*/
 .mainview {
     position: relative;
-    margin-top: rem(20);
 
     @include mq(md) {
-        margin-top: rem(38);
 
     }
 }
