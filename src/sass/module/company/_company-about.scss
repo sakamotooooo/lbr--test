@@ -1,0 +1,66 @@
+@use "global" as *;
+.company-about {
+  margin-top: rem(60);
+  padding-top: rem(60);
+  padding-bottom: rem(90);
+  background-color: #f4f9fd;
+  @include mq("md") {
+    padding-bottom: rem(110);
+  }
+}
+.company-about__content {
+  margin-top: rem(36);
+}
+.company-about__title {
+  color: $blue;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1;
+}
+.company-about__wrap + .company-about__wrap {
+  margin-top: rem(15);
+}
+.company-about__wrap {
+  position: relative;
+	@include mq("md") {
+    display: grid;
+    grid-template-columns: rem(175) 1fr;
+  }
+}
+.company-about__wrap:not(:last-child):after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: rem(1);
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, $blue 120px, #ddd 120px, #ddd 100%);
+}
+.company-about__data {
+  color: #000;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.75;
+  margin-top: rem(3);
+  padding-bottom: rem(15);
+}
+.company-about__current {
+  font-size: rem(12);
+}
+.company-about__map {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 360 / 400;
+  margin: rem(50) auto 0;
+  @include mq("md") {
+    aspect-ratio: 800 / 400;
+    width: rem(800);
+  }
+}
+.company-about__map iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
