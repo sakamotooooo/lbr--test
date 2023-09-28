@@ -14,17 +14,19 @@ get_header() ;
 		</div>
 	</section>
 
-	<!-- sectionのタイトル -->
+	<!-- sectionのタイトル(blue)英語は小文字で入力してください（CSSで大文字にしてます） -->
 	<!-- <div class="section-heading">
 		<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
 		<h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
-	</div>
-	<div class="section-heading">
+	</div> -->
+
+	<!-- sectionのタイトル(white) -->
+	<!-- <div class="section-heading">
 		<span class="section-heading__subtitle section-heading__subtitle--white">feature</span>
 		<h2 class="section-heading__title section-heading__title--white">エルビーアールのこだわり</h2>
 	</div> -->
 
-	<!-- sectionのタイトル薄いのん -->
+	<!-- sectionのタイトル薄いのん英語は小文字で入力してください（CSSで大文字にしてます） -->
 	<!--<div>で囲ってそのdivで位置調整してください。<span></span>は共通です。
 	<div></div>はそれぞれにつけてください。 -->
 	<!-- <div class="top-contact__thin">⬅️位置調整のdiv(section-headingにposition:relativeつけてます)
@@ -32,8 +34,6 @@ get_header() ;
 			contact
 		</span>
 	</div> -->
-
-
 
 
 

@@ -2,8 +2,10 @@
 .thanks{
 	margin-top: rem(35);
 	text-align: center;
+	margin-bottom: rem(90);
   @include mq("md") {
     margin-top: rem(45);
+	margin-bottom: rem(110);
   }
 }
 .thanks__title {
