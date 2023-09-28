@@ -1,0 +1,50 @@
+@use "global" as *;
+// 詳しく見る
+.trouble__btn a {
+  color: $white;
+  font-size: rem(18);
+  font-weight: $bold;
+  max-width: rem(250);
+  width: 100%;
+  padding: rem(16) rem(80);
+  text-align: center;
+  background-color: $blue;
+  position: relative;
+}
+.trouble__btn a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: rem(8);
+  height: rem(8);
+  right: rem(20);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  border-top: 1px solid $white;
+  border-right: 1px solid $white;
+}
+// お問い合わせ
+.trouble-btn__items {
+  margin-top: rem(22);
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+.trouble-btn__item {
+  max-width: rem(280);
+}
+.trouble-btn__item:first-child {
+  background-color: $white;
+  padding: rem(9) rem(61);
+}
+.trouble-btn__item + .trouble-btn__item{
+	margin-top: rem(15);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: rem(50);
+  }
+}
+.trouble-btn__item a {
+  padding: rem(19) rem(80);
+  background-color: #ffd33a;
+}
