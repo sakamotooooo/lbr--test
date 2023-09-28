@@ -16,8 +16,11 @@ $('.js-drawer-menu a').on('click',function() {
   // $('.js-drawer-menu').fadeOut();
   $('.js-hamburger').removeClass('is-open');
 });
+  // ヘッダーの分だけコンテンツを下げる
+  var height = $(".header").height();
+  $("main").css("margin-top", height);
 });
-  
+
 //スライダー
 const swiper = new Swiper(".swiper", {
   loop: true,

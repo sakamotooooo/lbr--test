@@ -4,6 +4,8 @@
 <?php get_header(); ?>
 
 <main>
+	<?php get_template_part('template/breadcrumb');?>
+
 	<section class="privacy">
 		<div class="privacy__inner inner">
 			<p class="privacy__read">
@@ -87,5 +89,6 @@
 	</section>
 </main>
 
+<?php get_template_part('template/contact-footer');?>
 
 <?php get_footer() ;?>
