@@ -500,15 +500,7 @@ select::-ms-expand {
 /* 共通パーツ 下層ページ上のメインビュー*/
 .mainview {
   position: relative;
-  margin-top: 20px;
-  margin-top: 1.25rem;
 }
-@media screen and (min-width: 768px) {
-  .mainview {
-    margin-top: 2.375rem;
-  }
-}
-
 .mainview__title {
   position: absolute;
   top: 76%;
@@ -1280,6 +1272,56 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 @media screen and (min-width: 768px) {
   .news-details {
     margin-top: 7.75rem;
+  }
+}
+
+.news-details__date {
+  display: block;
+  color: #111111;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: right;
+}
+@media screen and (min-width: 768px) {
+  .news-details__date {
+    margin-top: 0.3125rem;
+  }
+}
+
+.news-details__title {
+  color: #024892;
+  font-weight: 700;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .news-details__title {
+    font-size: 1.5rem;
+  }
+}
+
+.news-details__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 116px;
+  width: 7.25rem;
+  height: inherit;
+  border-bottom: 1px solid #024892;
+}
+
+.blog-content {
+  color: #111111;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .blog-content {
+    margin-top: 0.9375rem;
   }
 }
 
