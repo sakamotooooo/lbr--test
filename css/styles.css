@@ -271,6 +271,58 @@ select::-ms-expand {
           transform: rotate(-45deg);
 }
 
+.errorpage {
+  margin-top: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 90px;
+  margin-bottom: 5.625rem;
+}
+@media screen and (min-width: 768px) {
+  .errorpage {
+    margin-top: 3.75rem;
+    margin-bottom: 6.875rem;
+  }
+}
+
+.errorpage__message {
+  text-align: center;
+  color: #111111;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+@media screen and (min-width: 768px) {
+  .errorpage__message {
+    font-size: 1rem;
+  }
+}
+
+.btn--subpage {
+  text-align: center;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .btn--subpage {
+    margin-top: 3rem;
+  }
+}
+
+.btn--subpage a {
+  color: #024892;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .btn--subpage a {
+    font-size: 1rem;
+  }
+}
+
 .footer {
   padding-top: 61px;
   padding-top: 3.8125rem;
@@ -1297,20 +1349,20 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .thanks {
-  margin-top: 35px;
-  margin-top: 2.1875rem;
-  text-align: center;
+  margin-top: 50px;
+  margin-top: 3.125rem;
   margin-bottom: 90px;
   margin-bottom: 5.625rem;
 }
 @media screen and (min-width: 768px) {
   .thanks {
-    margin-top: 2.8125rem;
+    margin-top: 3.75rem;
     margin-bottom: 6.875rem;
   }
 }
 
 .thanks__title {
+  text-align: center;
   color: #111111;
   font-size: 16px;
   font-size: 1rem;
@@ -1324,6 +1376,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .thanks__text {
+  text-align: center;
   color: #111111;
   font-size: 16px;
   font-size: 1rem;
@@ -1337,20 +1390,27 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .thanks__top {
+  text-align: center;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .thanks__top {
+    margin-top: 3rem;
+  }
+}
+
+.thanks__top a {
   display: inline-block;
   color: #024892;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
-  border-bottom: 1px solid #024892;
-  margin-top: 24px;
-  margin-top: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .thanks__top {
+  .thanks__top a {
     font-size: 1rem;
-    margin-top: 2rem;
   }
 }
 

@@ -1,42 +1,46 @@
 @use "global" as *;
-.thanks{
-	margin-top: rem(35);
-	text-align: center;
-	margin-bottom: rem(90);
+.thanks {
+  margin-top: rem(50);
+  margin-bottom: rem(90);
   @include mq("md") {
-    margin-top: rem(45);
-	margin-bottom: rem(110);
+    margin-top: rem(60);
+    margin-bottom: rem(110);
   }
 }
 .thanks__title {
-	color: $text-color;
-	font-size: rem(16);
-	font-weight: $bold;
-	line-height: 1.75;
-	@include mq('md') {
-	 font-size: rem(16);
-	}
+  text-align: center;
+  color: $text-color;
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1.75;
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 .thanks__text {
-	color: $text-color;
-	font-size: rem(16);
-	font-weight: $regular;
-	line-height: 1.75;
-	@include mq('md') {
-		font-size: rem(16);
-	 }
+  text-align: center;
+  color: $text-color;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.75;
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 .thanks__top {
-	display: inline-block;
-	color: $blue;
-	font-size: rem(16);
-	font-weight: $regular;
-	line-height: 1.75;
-	border-bottom: 1px solid $blue;
-	margin-top: rem(24);
-	@include mq('md') {
-		font-size: rem(16);
-	margin-top: rem(32);
-
-	 }
+  text-align: center;
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+.thanks__top a {
+  display: inline-block;
+  color: $blue;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.75;
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
