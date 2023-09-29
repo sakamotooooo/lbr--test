@@ -28,4 +28,7 @@
     </div>
     </section>
 </main>
+
+<?php get_template_part('template/contact-footer');?>
+
 <?php get_footer(); ?>

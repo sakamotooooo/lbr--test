@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.service-contents {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/border-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: rem(80);
+  padding-bottom: rem(110);  
+  color: $text-color;
+}
+
+.service-contents__summary {
+  font-size: rem(16);
+  line-height: 1.75;
+  text-align: center;
+
+  @include mq(md) {
+    margin-top: rem(45);
+  }
+}
+
+.service-contents__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mq(md) {
+    display: flex;
+    flex-direction: row;
+    gap: rem(25);
+    margin-top: rem(30);
+
+  }
+}
+
+.service-contents__lists {
+  @include mq(md) {
+    margin-top: rem(45);
+
+  }
+}
+
+.service-contents__list {
+  background-color: $white;
+  text-align: center;
+
+  @include mq(md) {
+    padding: rem(50);
+
+  }
+
+}
+
+.service-contents__detail01 {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.75;
+  margin-top: rem(30);
+  padding-bottom: rem(20);
+  border-bottom: 1px solid #000; ;
+}
+
+
+.service-contents__detailtop {
+  font-size: rem(20);
+  font-weight: $medium;
+  line-height: 1.4;
+  color: $blue;
+  margin-top: rem(20);
+
+}
+
+.service-contents__detail02 {
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.75;
+  margin-top: rem(10);
+}
