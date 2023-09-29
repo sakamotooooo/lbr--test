@@ -11,10 +11,12 @@
 </head>
 <?php
   $home = esc_url( home_url( '/' ) );
-  $service = esc_url( home_url( '/company/' ) );
-  $company = esc_url( home_url( '/business/' ) );
-  $recruit = esc_url( home_url( '/training/' ) );
+  $service = esc_url( home_url( '/service/' ) );
+  $company = esc_url( home_url( '/company/' ) );
+  $recruit = esc_url( home_url( '/recruit/' ) );
   $lp = esc_url( home_url( '/lp/' ) );
+  $contact = esc_url( home_url( '/contact/' ) );
+
 ?>
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>

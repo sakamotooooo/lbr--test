@@ -1,0 +1,67 @@
+@use "global" as *;
+
+
+.top-fv {
+    position: relative;
+    width: 100%;
+    height: rem(684);
+}
+
+.top-fv__inner {
+}
+
+.top-fv__body {
+    position: relative;
+}
+
+.top-fv__contents {
+
+}
+
+.top-fv__img {
+    width: 79.16%;
+height: auto;
+    position: absolute;
+    right: 0;
+}
+
+.top-fv__img img {
+}
+
+.top-fv__titles  {
+    position: absolute;
+    top: rem(160);
+    left: 30%;
+    transform: translateX(-30%);
+    z-index: 1;
+}
+
+.top-fv__title  {
+    max-width: rem(490);
+    aspect-ratio: 490 / 200;
+    padding: 0;
+
+}
+
+.top-fv__title img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: rem(15);
+
+}
+
+.top-fv__banner a {
+    display: block;
+
+  @include mq(md) {
+    max-width: rem(750);
+    aspect-ratio: 750 / 350;
+  }
+}
+
+.top-fv__banner a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

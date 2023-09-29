@@ -35,6 +35,7 @@
 .mainview__title span {
     font-size: rem(30);
     text-transform: uppercase;
+    font-family: $english-font-family;
 
     @include mq(md) {
         font-size: rem(40);

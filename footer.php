@@ -1,10 +1,12 @@
 <?php
   $home = esc_url( home_url( '/' ) );
-  $service = esc_url( home_url( '/company/' ) );
-  $company = esc_url( home_url( '/business/' ) );
-  $recruit = esc_url( home_url( '/training/' ) );
+  $service = esc_url( home_url( '/service/' ) );
+  $company = esc_url( home_url( '/company/' ) );
+  $recruit = esc_url( home_url( '/recruit/' ) );
   $lp = esc_url( home_url( '/lp/' ) );
   $policy = esc_url( home_url( '/policy/' ) );
+  $contact = esc_url( home_url( '/contact/' ) );
+
 
 ?>
 <footer class="footer">
