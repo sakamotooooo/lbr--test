@@ -24,6 +24,42 @@
   border-right: 1px solid $white;
 }
 // お問い合わせ
+.trouble-btn{
+	padding: rem(35);
+	text-align: center;
+	background-color: $blue;
+}
+.trouble-btn__text{
+	color: $white;
+	font-size: rem(20);
+	font-weight: $bold;
+	@include mq('md') {
+	 font-size: rem(22);
+	 position: relative;
+	 display: inline-block;
+	 padding: 0 rem(15);
+	}
+}
+.trouble-btn__text::before,
+.trouble-btn__text::after{
+	@include mq('md') {
+	 content: '';
+	 position: absolute;
+	 display: block;
+	 width: rem(2);
+	 height: rem(65);
+	 background-color: $white;
+	 top: 50%;
+	}
+}
+.trouble-btn__text::before{
+	left: 0;
+	transform: translateY(-50%) rotate(-23deg);
+}
+.trouble-btn__text::after{
+	right: 0;
+	transform: translateY(-50%) rotate(23deg);
+}
 .trouble-btn__items {
   margin-top: rem(22);
   @include mq("md") {
