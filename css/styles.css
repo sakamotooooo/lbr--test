@@ -175,6 +175,7 @@ select::-ms-expand {
 }
 
 .breadcrumbs {
+  text-align: right;
   margin-top: 8px;
   margin-top: 0.5rem;
 }
@@ -190,14 +191,26 @@ select::-ms-expand {
   vertical-align: middle;
 }
 
-.home span {
+.breadcrumbs span {
   color: #111111;
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
-  .home span {
+  .breadcrumbs span {
+    font-size: 0.75rem;
+  }
+}
+
+.breadcrumbs span.home {
+  color: #024892;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .breadcrumbs span.home {
     font-size: 0.75rem;
   }
 }
@@ -211,6 +224,47 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .post-page {
     font-size: 0.75rem;
+  }
+}
+
+/* ボタン共通パーツ */
+.button a {
+  display: block;
+  max-width: 250px;
+  max-width: 15.625rem;
+  width: 100%;
+  padding: 16px 80px;
+  padding: 1rem 5rem;
+  background-color: #024892;
+  color: #fff;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.button a::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  width: 0.5rem;
+  height: 8px;
+  height: 0.5rem;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translate(-70%, -50%) rotate(45deg);
+          transform: translate(-70%, -50%) rotate(45deg);
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+@media screen and (min-width: 768px) {
+  .button a::before {
+    right: 5%;
+    -webkit-transform: translate(-60%, -50%) rotate(45deg);
+            transform: translate(-60%, -50%) rotate(45deg);
   }
 }
 
@@ -1618,12 +1672,24 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   }
 }
 
+.news-details {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
+}
 @media screen and (min-width: 768px) {
   .news-details {
     margin-top: 7.75rem;
+    margin-bottom: 6.5625rem;
   }
 }
 
+.news-details__content {
+  margin-top: 15px;
+  margin-top: 0.9375rem;
+  line-height: 1.75;
+}
 .news-details__date {
   display: block;
   color: #111111;
@@ -1631,13 +1697,9 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   font-size: 16px;
   font-size: 1rem;
   text-align: right;
+  margin-top: 5px;
+  margin-top: 0.3125rem;
 }
-@media screen and (min-width: 768px) {
-  .news-details__date {
-    margin-top: 0.3125rem;
-  }
-}
-
 .news-details__title {
   color: #024892;
   font-weight: 700;
@@ -1646,6 +1708,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   border-bottom: 1px solid #DDD;
   padding-bottom: 10px;
   padding-bottom: 0.625rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .news-details__title {
@@ -1664,13 +1728,14 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   border-bottom: 1px solid #024892;
 }
 
-.blog-content {
-  color: #111111;
-  font-weight: 700;
+.news-details__button {
+  margin-top: 70px;
+  margin-top: 4.375rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .blog-content {
-    margin-top: 0.9375rem;
+  .news-details__button {
+    margin-top: 5rem;
   }
 }
 

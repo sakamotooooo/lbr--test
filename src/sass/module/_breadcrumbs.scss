@@ -1,5 +1,6 @@
 @use "global" as *;
 .breadcrumbs{
+	text-align: right;
 	margin-top: rem(8);
 	@include mq('md') {
 	 margin-top: rem(15);
@@ -9,13 +10,23 @@
 	margin: 0 rem(6);
 	vertical-align: middle;
 }
-.home span{
+.breadcrumbs span{
 	color: $text-color;
 	font-size: rem(12);
 	font-weight: $regular;
 	@include mq('md') {
 	font-size: rem(12);
 	}
+}
+
+.breadcrumbs span.home{
+	color: $blue;
+	font-size: rem(12);
+	font-weight: $regular;
+	@include mq('md') {
+		font-size: rem(12);
+		}
+
 }
 .post-page {
 	color: $blue;

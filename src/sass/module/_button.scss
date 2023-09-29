@@ -1,0 +1,37 @@
+@use "global" as *;
+
+/* ボタン共通パーツ */
+.button {
+
+}
+
+.button a {
+    display: block;
+    max-width: rem(250);
+    width: 100%;
+    padding: rem(16) rem(80);
+    background-color: $blue;
+    color: $white;
+    font-size: rem(18);
+    font-weight: $bold;
+    transition: opacity 0.3s;
+    position: relative;
+}
+
+.button a::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: rem(8);
+    height: rem(8);
+    right: 5%;
+    top: 50%;
+    transform: translate(-70%, -50%) rotate(45deg);
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+      @include mq('md') {
+          right: 5%;
+          transform: translate(-60%, -50%) rotate(45deg);
+      }
+
+}
