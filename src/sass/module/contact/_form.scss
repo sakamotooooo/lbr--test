@@ -9,15 +9,15 @@
 .form__item {
   @include mq("md") {
     display: grid;
-    grid-template-columns: rem(152) 1fr;
+    grid-template-columns: rem(154) 1fr;
     align-items: center;
     gap: rem(28);
   }
 }
-.form__item--textarea{
-	@include mq('md') {
-	 align-items: start;
-	}
+.form__item--textarea {
+  @include mq("md") {
+    align-items: start;
+  }
 }
 .form__item + .form__item {
   margin-top: rem(20);
@@ -73,50 +73,58 @@
     margin: rem(6) 0;
   }
 }
-.form-radio__item{
-	display: inline-block;
+.form-radio__item {
+  display: inline-block;
 }
 .wpcf7-list-item + .wpcf7-list-item {
   margin-left: rem(25);
 }
 .wpcf7-radio .wpcf7-list-item-label {
-	cursor: pointer;
-	display: inline-block;
+  cursor: pointer;
+  display: inline-block;
   position: relative;
   color: $text-color;
   font-size: rem(16);
   font-weight: $regular;
-	padding-left: rem(13);
+  padding-left: rem(7);
   @include mq("md") {
     font-size: rem(16);
+    padding-left: rem(13);
   }
 }
 .wpcf7-radio .wpcf7-list-item-label:before {
   content: "";
   display: block;
-	position: absolute;
+  position: absolute;
   border-radius: 50%;
   border: 2px solid $blue;
   width: rem(16);
   height: rem(16);
-	left: rem(-8);
-	top: 50%;
-	transform: translateY(-50%);
+  left: rem(-15);
+  top: 50%;
+  transform: translateY(-50%);
+	@include mq('md') {
+		left: rem(-8);
+
+	}
 }
 .wpcf7-radio .wpcf7-list-item-label:after {
   content: "";
   display: block;
   position: absolute;
-  left: rem(-5);
+  left: rem(-12);
   border-radius: 50%;
   width: rem(10);
   height: rem(10);
   background-color: $blue;
   top: rem(7);
-	opacity: 0;
+  opacity: 0;
+	@include mq('md') {
+		left: rem(-5);
+	}
 }
-input[type=radio]:checked + .wpcf7-list-item-label:after {
-	opacity: 1;
+input[type="radio"]:checked + .wpcf7-list-item-label:after {
+  opacity: 1;
 }
 .form__textarea {
   font-size: rem(16);
@@ -153,6 +161,9 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   text-align: center;
   margin-top: rem(24);
   position: relative;
+  @include mq("md") {
+    margin-top: rem(30);
+  }
 }
 .form__submit-wrap::after {
   content: "";
@@ -160,15 +171,16 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   display: block;
   width: rem(8);
   height: rem(8);
-  left: 70%;
+  right: rem(62);
   top: 50%;
-  transform: translate(-70%, -50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
   border-top: 1px solid $white;
   border-right: 1px solid $white;
-	@include mq('md') {
-		left: 60%;
-		transform: translate(-60%, -50%) rotate(45deg);
-	}
+  @include mq("md") {
+    right: initial;
+    left: 63%;
+    transform: translate(-63%, -50%) rotate(45deg);
+  }
 }
 .form__submit {
   max-width: rem(250);
@@ -178,11 +190,11 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   color: $white;
   font-size: rem(18);
   font-weight: $bold;
-	transition: opacity 0.3s;
+  transition: opacity 0.3s;
   @include mq("md") {
     font-size: rem(18);
   }
 }
-.form__submit:hover{
-	opacity: 0.75;
+.form__submit:hover {
+  opacity: 0.75;
 }

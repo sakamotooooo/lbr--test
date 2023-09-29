@@ -1,0 +1,36 @@
+@use "global" as *;
+.errorpage{
+	margin-top: rem(50);
+	margin-bottom: rem(90);
+	@include mq('md') {
+		margin-top: rem(60);
+	margin-bottom: rem(110);
+	}
+}
+.errorpage__message{
+	text-align: center;
+	color: $text-color;
+	font-size: rem(16);
+	font-weight: $regular;
+	line-height: 1.75;
+	@include mq('md') {
+	font-size: rem(16);
+	}
+}
+.btn--subpage{
+	text-align: center;
+	margin-top: rem(32);
+	@include mq('md') {
+	 margin-top: rem(48);
+	}
+}
+.btn--subpage a{
+	color: $blue;
+	font-size: rem(16);
+	font-weight: $regular;
+	line-height: 1.75;
+	display: inline-block;
+	@include mq('md') {
+	font-size: rem(16);
+	}
+}

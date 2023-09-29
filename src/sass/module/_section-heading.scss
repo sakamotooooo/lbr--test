@@ -51,7 +51,7 @@
   color: $white;
   font-size: rem(28);
   @include mq("md") {
-    font-size: rem(28);
+    font-size: rem(34);
   }
 }
 .section-heading__title--white::after {

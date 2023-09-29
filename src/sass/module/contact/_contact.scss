@@ -2,8 +2,9 @@
 
 .contact {
 	margin-top: rem(50);
+	margin-bottom: rem(90);
 	@include mq('md') {
-	 margin-top: rem(60);
+	 margin-top: rem(110);
 	}
 }
 .contact__wrap {

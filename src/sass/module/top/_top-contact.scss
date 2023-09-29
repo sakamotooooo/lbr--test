@@ -51,17 +51,13 @@
 }
 .top-contact__items {
   margin-top: rem(31);
-  @include mq("md") {
-    display: flex;
-    align-items: center;
-  }
 }
 .top-contact__item {
   background-color: $white;
-  max-width: rem(230);
-  width: 100%;
-  height: rem(55);
-  margin-inline: auto;
+	max-width: rem(230);
+}
+.top-contact__item:first-child{
+  padding: rem(9) rem(36);
 }
 .top-contact__item + .top-contact__item {
   margin-top: rem(20);
@@ -70,61 +66,7 @@
     margin-left: rem(50);
   }
 }
-.top-contact__item:first-child {
-  padding: rem(9) rem(36);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.top-contact__item:nth-child(2) {
-}
-.top-contact__telImg {
-  width: rem(17);
-  height: auto;
-}
-.top-contact__telImg img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-.top-contact__telDetails {
-  display: flex;
-  flex-direction: column;
-  margin-left: rem(7);
-}
-.top-contact__telNumber {
-  display: inline-block;
-  font-size: rem(20);
-  font-weight: $bold;
-  color: $text-color;
-  line-height: 1;
-}
-.top-contact__telTime {
-  display: inline-block;
-  font-size: rem(10);
-  font-weight: $medium;
-}
 .top-contact__item a {
-  display: block;
-  color: $blue;
-  font-weight: $bold;
   background-color: $white;
-  text-align: center;
   padding: rem(19) rem(55);
-  line-height: 1;
-  position: relative;
-  height: 100%;
-}
-.top-contact__item a::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: rem(10);
-  height: rem(10);
-  right: rem(20);
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  border-top: 1px solid $blue;
-  border-right: 1px solid $blue;
 }
