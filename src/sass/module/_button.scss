@@ -38,8 +38,14 @@
 }
 
 /* 矢印が下向き */
+
+.button--bottomarrow a {
+    text-align: center;
+    width: rem(250);
+}
 .button--bottomarrow a::before {
     transform: translate(-70%, -50%) rotate(135deg);
     border-top: 1px solid $white;
     border-right: 1px solid $white;
+    
 }

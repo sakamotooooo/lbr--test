@@ -1,24 +1,31 @@
 @use "global" as *;
 
 .service-contents {
+  margin-top: rem(60);
   width: 100%;
   height: auto;
   background-image: url(../images/border-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: rem(80);
-  padding-bottom: rem(110);  
   color: $text-color;
+  padding-top: rem(50);
+  padding-bottom: rem(90);  
+
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(110);  
+  }
+
 }
 
 .service-contents__summary {
   font-size: rem(16);
   line-height: 1.75;
   text-align: center;
+  margin-top: rem(45);
 
   @include mq(md) {
-    margin-top: rem(45);
   }
 }
 
@@ -26,6 +33,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: rem(25);
+  gap: rem(10);
 
   @include mq(md) {
     display: flex;
@@ -37,6 +47,8 @@
 }
 
 .service-contents__lists {
+  margin-top: rem(50);
+
   @include mq(md) {
     margin-top: rem(45);
 
@@ -46,12 +58,21 @@
 .service-contents__list {
   background-color: $white;
   text-align: center;
+  padding: rem(30) rem(15);
+  border: 3px solid $blue;
 
   @include mq(md) {
     padding: rem(50);
-
   }
 
+}
+
+.service-contents__list:not(:first-child) {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(50);
+  }
 }
 
 .service-contents__detail01 {
@@ -78,4 +99,44 @@
   font-weight: $regular;
   line-height: 1.75;
   margin-top: rem(10);
+}
+
+.service-contents__images {
+  margin-top: rem(26);
+  display: grid;
+  gap: rem(20);
+
+
+  @include mq(md) {
+    grid-template-columns: 1fr 1fr;
+    gap: rem(10);
+  }
+}
+
+.service-contents__image--01 {
+  @include mq(md) {
+    grid-column: 1 / span 2; 
+  }
+}
+
+.service-contents__image {
+  aspect-ratio: 330 / 200;
+
+  @include mq(md) {
+    aspect-ratio: initial;
+  }
+}
+
+.service-contents__image img {
+    border-radius: rem(10);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+.service-contents__title {
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }

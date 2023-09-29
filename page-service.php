@@ -5,8 +5,8 @@
 <main>
 	<section class="mainview">
       <div class="mainview__title">
-        <span>news</span>
-        <h1>お知らせ</h1>
+        <span>service</span>
+        <h1>サービス</h1>
       </div>
       <div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
       <div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
@@ -63,27 +63,91 @@
 			</p>
 			<div class="service-contents__buttons">
 				<div class="button button--bottomarrow">
-					<a href="<?php echo esc_url(home_url('/news/')); ?>">マンション</a>
+					<a href="#apartment">マンション</a>
 				</div>
 				<div class="button button--bottomarrow">
-					<a href="<?php echo esc_url(home_url('/news/')); ?>">ビル</a>
+					<a href="#buiding">ビル</a>
 				</div>
 				<div class="button button--bottomarrow">
-					<a href="<?php echo esc_url(home_url('/news/')); ?>">住宅</a>
+					<a href="#housing">住宅</a>
 				</div>
 			</div>
 			<div class="service-contents__lists">
-				<div class="service-contents__list">
-				<div class="section-heading">
-					<span class="section-heading__subtitle section-heading__subtitle--blue">APARTMENT</span>
-					<h3 class="section-heading__title section-heading__title--blue">マンション</h2>
+				<div class="service-contents__list" id="apartment">
+					<div class="section-heading">
+						<span class="section-heading__subtitle section-heading__subtitle--blue">apartment</span>
+						<h3 class="section-heading__title section-heading__title--blue service-contents__title">マンション</h2>
+					</div>
+					<p class="service-contents__detail01">大切な人々と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
+					<p class="service-contents__detailtop">清掃サービス一覧</p>
+					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
+						シャンデリアメンテナンス / ガラス清掃
+					</p>
+					<div class="service-contents__images">
+						<div class="service-contents__image service-contents__image--01">
+							<img src="<?php echo get_template_directory_uri() ?>/images/apartment01.jpg" alt="">
+						</div>
+						<div class="service-contents__image">
+							<img src="<?php echo get_template_directory_uri() ?>/images/apartment02.jpg" alt="">
+						</div>
+						<div class="service-contents__image">
+							<img src="<?php echo get_template_directory_uri() ?>/images/apartment03.jpg" alt="">
+						</div>
+					</div>
 				</div>
-				<p class="service-contents__detail01">大切な人々と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
-				<p class="service-contents__detailtop">清掃サービス一覧</p>
-				<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
-					シャンデリアメンテナンス / ガラス清掃
-				</p>
-
+				<div class="service-contents__list" id="buiding">
+					<div class="section-heading">
+						<span class="section-heading__subtitle section-heading__subtitle--blue">building</span>
+						<h3 class="section-heading__title section-heading__title--blue service-contents__title">ビル</h2>
+					</div>
+					<p class="service-contents__detail01">毎日出社していただく皆様が気持ちよくオフィスにお越しいただけるよう、
+						プロの視点で徹底的な清掃を実施しております。
+						清潔な環境は労働環境の向上に繋がり、生産性や快適さを高めます。
+						私たちはオフィスの清潔さを維持し、快適な作業環境を提供することで、
+						皆様の業務に集中できるようお手伝いさせていただきます。
+					</p>
+					<p class="service-contents__detailtop">清掃サービス一覧</p>
+					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
+						シャンデリアメンテナンス / 大理石などの落書き / いす清掃 / ガラス清掃
+					</p>
+					<div class="service-contents__images">
+						<div class="service-contents__image service-contents__image--01">
+							<img src="<?php echo get_template_directory_uri() ?>/images/buiding.jpg" alt="">
+						</div>
+						<div class="service-contents__image">
+							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+						</div>
+						<div class="service-contents__image">
+							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature04.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="service-contents__list" id="housing">
+					<div class="section-heading">
+						<span class="section-heading__subtitle section-heading__subtitle--blue">housing</span>
+						<h3 class="section-heading__title section-heading__title--blue service-contents__title">住宅</h2>
+					</div>
+					<p class="service-contents__detail01">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。
+						普段は見過ごされるか、手が届きにくい場所でも、
+						私たちのプロの清掃スキルと経験を活かし、
+						最高のクオリティでお手伝いさせていただきます。
+						清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。
+						</p>
+					<p class="service-contents__detailtop">清掃サービス一覧</p>
+					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
+						外壁高圧洗浄 / 外階段高圧洗浄 / ガラス清掃
+					</p>
+					<div class="service-contents__images">
+						<div class="service-contents__image service-contents__image--01">
+							<img src="<?php echo get_template_directory_uri() ?>/images/house.jpg" alt="">
+						</div>
+						<div class="service-contents__image">
+							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature05.jpg" alt="">
+						</div>
+						<div class="service-contents__image">
+							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature06.jpg" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
