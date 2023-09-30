@@ -23,7 +23,7 @@ $('.js-drawer-menu a').on('click',function() {
 });
 
 //topページスライダー
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".top-swiper", {
   loop: true,
   autoplay: {
     delay: 0,
@@ -37,6 +37,24 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     768: {
       slidesPerView: 4,
+    }
+  },
+});
+//LPページスライダー
+const swiperLp = new Swiper(".lp-swiper", {
+  loop: true,
+  autoplay: {
+    delay: 0,
+		disableOnInteraction: false,
+  },
+  slidesPerView:3,
+	spaceBetween: 0,
+  loopedSlides: 8,
+  speed: 8000,
+  allowTouchMove: false, // スワイプ無効,
+  breakpoints: {
+    768: {
+      slidesPerView: 8,
     }
   },
 });

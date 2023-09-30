@@ -1,5 +1,5 @@
 @use "global" as *;
-.trouble__title {
+.lp-title {
   color: $blue;
   font-size: rem(26);
   font-weight: $bold;
@@ -8,11 +8,11 @@
     font-size: rem(40);
   }
 }
-.trouble__subTitle {
+.lp-subTitle {
   font-weight: $bold;
   text-align: center;
 }
-.trouble__subTitle--black {
+.lp-subTitle--black {
   color: $text-color;
   font-size: rem(22);
   line-height: 1.85;
@@ -21,7 +21,7 @@
     line-height: 1.56;
   }
 }
-.trouble__subTitle--blue {
+.lp-subTitle--blue {
   color: $blue;
   font-size: rem(20);
   line-height: 1.8;
@@ -30,7 +30,7 @@
     line-height: 1.5;
   }
 }
-.trouble__text {
+.lp-text {
   color: $text-color;
   font-size: rem(16);
   font-weight: $regular;

@@ -55,7 +55,7 @@ function wpcf7_autop_return_false() {
 // Contact Form7の送信ボタンをクリックした後の遷移先設定
 add_action( 'wp_footer', 'add_origin_thanks_page' );
  function add_origin_thanks_page() {
- $thanks = home_url('/contact-thanks/');
+ $thanks = home_url('/thanks/');
    echo <<< EOC
      <script>
        var thanksPage = {
