@@ -171,7 +171,7 @@
 							シャンデリアメンテナンス / ガラス清掃
 						</p>
 						<div class="lp-btn__wrap">
-							<a href="" class="lp-btn">詳しく見る</a>
+							<a href="<?php echo home_url('service#apartment'); ?>" class="lp-btn">詳しく見る</a>
 						</div>
 					</div>
 				</div>
@@ -189,7 +189,7 @@
 							シャンデリアメンテナンス / 大理石などの落書き / いす清掃 / ガラス清掃
 						</p>
 						<div class="lp-btn__wrap">
-							<a href="" class="lp-btn">詳しく見る</a>
+							<a href="<?php echo home_url('service#buiding'); ?>" class="lp-btn">詳しく見る</a>
 						</div>
 					</div>
 				</div>
@@ -207,13 +207,83 @@
 							外壁高圧洗浄 / 外階段高圧洗浄 / ガラス清掃
 						</p>
 						<div class="lp-btn__wrap">
-							<a href="" class="lp-btn">詳しく見る</a>
+							<a href="<?php echo home_url('service#housing'); ?>" class="lp-btn">詳しく見る</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- こだわり -->
+	<section class="commitment">
+		<div class="commitment__inner inner">
+			<h2 class="lp-title">エルビーアールのこだわり</h2>
+			<div class="commitment__items">
+				<div class="commitment__item">
+					<div class="commitment__img">
+						<img width="360" height="244" loading="lazy"
+							src="<?php echo get_template_directory_uri() ?>/images/commitment-img01.jpg" alt="技術力の高い特殊清掃">
+					</div>
+					<div class="commitment__content">
+						<h3 class="lp-subTitle lp-subTitle--blue">技術力の高い特殊清掃</h3>
+						<p class="lp-text commitment__text">
+							例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
+						</p>
+					</div>
+				</div>
+				<div class="commitment__item">
+					<div class="commitment__img">
+						<img width="360" height="244" loading="lazy"
+							src="<?php echo get_template_directory_uri() ?>/images/commitment-img02.jpg" alt="エコクリーニング">
+					</div>
+					<div class="commitment__content">
+						<h3 class="lp-subTitle lp-subTitle--blue">エコクリーニングへのこだわり</h3>
+						<p class="lp-text commitment__text">
+							人と地球にやさしい強アルカリ電解水をメインに使用しています。清掃業界の中でもいち早く導入をし、エコクリーニングをこころがけています。
+						</p>
+					</div>
+				</div>
+				<div class="commitment__item">
+					<div class="commitment__img">
+						<img width="360" height="244" loading="lazy"
+							src="<?php echo get_template_directory_uri() ?>/images/commitment-img03.jpg" alt="清掃のスペシャリスト">
+					</div>
+					<div class="commitment__content">
+						<h3 class="lp-subTitle lp-subTitle--blue">清掃のスペシャリスト</h3>
+						<p class="lp-text commitment__text">
+							独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 相談 -->
+	<div class="trouble-btn">
+		<p class="trouble-btn__text">
+			ご相談・ご質問等ございましたら、<br>
+			お気軽にお問い合わせください。
+		</p>
+		<div class="trouble-btn__items consultation">
+			<div class="trouble-btn__item consultation__item">
+				<div class="consultation__telImg">
+					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+						alt="電話アイコン">
+				</div>
+				<div class="consultation__telDetails">
+					<p class="consultation__telNumber">03-6276-5828</p>
+					<p class="consultation__telTime">平日受付:9:00～18:00</p>
+				</div>
+			</div>
+			<div class="trouble-btn__item consultation__item">
+				<a href="<?php echo $contact; ?>">
+					<span>お問い合わせ</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- 実績 -->
+
 </main>
 <?php get_template_part('template/contact-footer');?>
 
