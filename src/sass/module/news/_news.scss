@@ -9,10 +9,16 @@
 
 
 .news__content {
+    width: 100%;
 
     @include mq(md) {
         display: flex;
     }
+}
+
+.news__content::before {
+    left: 0;
+
 }
 
 
