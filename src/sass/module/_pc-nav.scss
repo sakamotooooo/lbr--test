@@ -1,82 +1,97 @@
 @use "global" as *;
 
 .pc-nav__items {
-    display: flex;
-    align-items: center;
-    height: inherit;
-    justify-content: right;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: right;
 }
 
 .pc-nav__item {
-    height: inherit;
+  height: inherit;
 }
 
 .pc-nav__item a {
-    position: relative;
-    color: $text-color;
-    font-size: rem(14);
-    height: inherit;
-    display: grid;
-    place-items: center;
-    // padding: 0 rem(12.5);
-    padding: 0 min(1vw, rem(12.5));
-    // padding: clamp(8px, 7vw, 12.5px);
-    letter-spacing: 0.125em;
+  position: relative;
+  color: $text-color;
+  font-size: rem(14);
+  height: inherit;
+  display: grid;
+  place-items: center;
+  padding: 0 min(rem(14), 0.5vw);
+  letter-spacing: 0.125em;
 }
 
 .pc-nav__item a::after {
-    position: absolute;
-    // left: 0;
-    // content: "";
-    // width: 100%;
-    // height: rem(1);
-    // background: #FFEA2E;
-    // bottom: rem(8);
-    // visibility: hidden;
+  position: absolute;
+  // left: 0;
+  // content: "";
+  // width: 100%;
+  // height: rem(1);
+  // background: #FFEA2E;
+  // bottom: rem(8);
+  // visibility: hidden;
 }
 
 .pc-nav__item a:hover::after {
-    // visibility: visible;
+  // visibility: visible;
 }
 
 .pc-nav__item.pc-nav__item--white {
-    margin-left: rem(15);
+  margin-left: rem(15);
 
-    :hover {
-        background-color: #333;
-        color: $white;
-    }
+  :hover {
+    background-color: #333;
+    color: $white;
+  }
 }
 
 .pc-nav__item.pc-nav__item--white a::after {
-    display: none;
+  display: none;
 }
 
-.pc-nav__item.pc-nav__item--white a { 
-    background-color: $white;
-    color: #333;
-    padding-left: rem(32);
-    padding-right: rem(35);
+.pc-nav__item.pc-nav__item--white a {
+  background-color: $white;
+  color: #333;
+  padding-left: rem(32);
+  padding-right: rem(35);
 
-    :hover {
-        color: $white;
-    }
+  :hover {
+    color: $white;
+  }
 }
 
 .pc-nav__tel {
-    padding-left: rem(12.5);
+  padding-left: rem(12.5);
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 
-
 .pc-nav__contact {
-    display: none;
+  display: none;
 
-    @include mq(md) {
-        display: block;
-        color: $white;
-        background-color: $blue;
-        padding-top: rem(22);
-        padding-bottom: rem(19);
-        padding-inline: min(5vw, rem(65));
-    }
+  @include mq(md) {
+    color: $white;
+    background-color: $blue;
+    width: min(rem(250), 18vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: inherit;
+  }
+}
+.pc-nav__contact a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  height: inherit;
+  width: inherit;
+}
+.pc-nav__contact span {
+  font-size: min(rem(20), 2vw);
+  display: inline-block;
+	color: $white;
+	font-weight: $bold;
 }
