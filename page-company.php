@@ -8,7 +8,7 @@
 		<div class="company-message inner">
 			<div class="section-heading">
 				<span class="section-heading__subtitle section-heading__subtitle--blue">message</span>
-				<h2 class="section-heading__title section-heading__title--blue">代表挨拶</h2>
+				<h2 class="section-heading__title section-heading__title--black">代表挨拶</h2>
 			</div>
 			<div class="company-message__img">
 				<img width="360" height="403" loading="lazy"
@@ -36,7 +36,7 @@
 		<div class="company-about__inner inner">
 			<div class="section-heading">
 				<span class="section-heading__subtitle section-heading__subtitle--blue">about</span>
-				<h2 class="section-heading__title section-heading__title--blue">会社情報</h2>
+				<h2 class="section-heading__title section-heading__title--black">会社情報</h2>
 			</div>
 			<div class="company-about__content">
 				<dl class="company-about__list">

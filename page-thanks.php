@@ -19,7 +19,7 @@ get_header() ;
 	<!-- sectionのタイトル(blue)英語は小文字で入力してください（CSSで大文字にしてます） -->
 	<!-- <div class="section-heading">
 		<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-		<h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
+		<h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
 	</div> -->
 
 	<!-- sectionのタイトル(white) -->

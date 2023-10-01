@@ -993,6 +993,7 @@ select::-ms-expand {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .section-heading__subtitle {
@@ -1035,18 +1036,18 @@ select::-ms-expand {
   bottom: 0;
 }
 
-.section-heading__title--blue {
-  color: #231815;
+.section-heading__title--black {
+  color: #111111;
   font-size: 26px;
   font-size: 1.625rem;
 }
 @media screen and (min-width: 768px) {
-  .section-heading__title--blue {
+  .section-heading__title--black {
     font-size: 2.125rem;
   }
 }
 
-.section-heading__title--blue::after {
+.section-heading__title--black::after {
   background-color: #024892;
   width: 35px;
   width: 2.1875rem;
