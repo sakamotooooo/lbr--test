@@ -3,6 +3,16 @@
 ?>
 <?php get_header(); ?>
 <main>
+	<section class="mainview">
+		<div class="mainview__title">
+			<span>company</span>
+			<h1>会社概要</h1>
+		</div>
+		<div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-company-sp.jpg"
+				alt="contacttop"></div>
+		<div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-company-pc.jpg"
+				alt="contacttop"></div>
+	</section>
 	<?php get_template_part('template/breadcrumb');?>
 	<section class="company-message">
 		<div class="company-message inner">
