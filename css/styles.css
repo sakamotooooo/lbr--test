@@ -541,8 +541,8 @@ select::-ms-expand {
   padding-inline: 15px;
   font-size: 14px;
   font-size: 0.875rem;
-  padding-bottom: 27px;
-  padding-bottom: 1.6875rem;
+  padding-bottom: 110px;
+  padding-bottom: 6.875rem;
 }
 @media screen and (min-width: 768px) {
   .footer__top {
@@ -562,6 +562,13 @@ select::-ms-expand {
 .footer__logo {
   width: 260px;
   width: 16.25rem;
+  height: auto;
+  aspect-ratio: 260/80;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    width: min(16.25rem, 20vw);
+  }
 }
 
 .footer__access {
