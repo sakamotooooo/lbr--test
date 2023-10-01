@@ -7,6 +7,7 @@
   text-transform: uppercase;
   font-size: rem(14);
   font-weight: $medium;
+	font-family: $english-font-family;
   @include mq("md") {
     font-size: rem(14);
   }
@@ -36,14 +37,14 @@
   transform: translateX(-50%);
   bottom: 0;
 }
-.section-heading__title--blue {
-  color: $title-color;
+.section-heading__title--black {
+  color: $text-color;
   font-size: rem(26);
   @include mq("md") {
     font-size: rem(34);
   }
 }
-.section-heading__title--blue::after {
+.section-heading__title--black::after {
   background-color: $blue;
   width: rem(35);
 }

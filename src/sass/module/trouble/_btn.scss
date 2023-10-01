@@ -1,6 +1,14 @@
 @use "global" as *;
 // 詳しく見る
-.trouble__btn a {
+.lp-btn__wrap {
+  margin-top: rem(25);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+.lp-btn {
+	display: inline-block;
   color: $white;
   font-size: rem(18);
   font-weight: $bold;
@@ -11,7 +19,7 @@
   background-color: $blue;
   position: relative;
 }
-.trouble__btn a::after {
+.lp-btn::after {
   content: "";
   position: absolute;
   display: block;
@@ -24,6 +32,42 @@
   border-right: 1px solid $white;
 }
 // お問い合わせ
+.trouble-btn {
+  padding: rem(35);
+  text-align: center;
+  background-color: $blue;
+}
+.trouble-btn__text {
+  color: $white;
+  font-size: rem(20);
+  font-weight: $bold;
+  @include mq("md") {
+    font-size: rem(22);
+    position: relative;
+    display: inline-block;
+    padding: 0 rem(15);
+  }
+}
+.trouble-btn__text::before,
+.trouble-btn__text::after {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    display: block;
+    width: rem(2);
+    height: rem(65);
+    background-color: $white;
+    top: 50%;
+  }
+}
+.trouble-btn__text::before {
+  left: 0;
+  transform: translateY(-50%) rotate(-23deg);
+}
+.trouble-btn__text::after {
+  right: 0;
+  transform: translateY(-50%) rotate(23deg);
+}
 .trouble-btn__items {
   margin-top: rem(22);
   @include mq("md") {
@@ -37,8 +81,8 @@
   background-color: $white;
   padding: rem(9) rem(61);
 }
-.trouble-btn__item + .trouble-btn__item{
-	margin-top: rem(15);
+.trouble-btn__item + .trouble-btn__item {
+  margin-top: rem(15);
   @include mq("md") {
     margin-top: 0;
     margin-left: rem(50);

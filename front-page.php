@@ -23,7 +23,7 @@
       <span class="top-feature__englishtitle">feature</span>
         <div class="section-heading">
           <span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-          <h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
+          <h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
         </div>
         <p class="service-feature__summary top-service__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
           また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br>
@@ -52,7 +52,7 @@
     <span class="top-service__englishtitle">service</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
-			<h2 class="section-heading__title section-heading__title--blue">サービス内容</h2>
+			<h2 class="section-heading__title section-heading__title--black">サービス内容</h2>
 		</div>
     <p class="service-feature__summary top-service__summary">当社は、多岐にわたる建物タイプに対応し、オフィス、マンション、病院、住宅、商業施設など、<br>
       建物の種類やお客様の要望に合わせた高品質なクリーニングサービスを提供しています。<br>
@@ -122,7 +122,7 @@
    <span class="top-news__englishtitle">news</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">news</span>
-			<h2 class="section-heading__title section-heading__title--blue">お知らせ</h2>
+			<h2 class="section-heading__title section-heading__title--black">お知らせ</h2>
 		</div>
     <div class="top-news__wrap">
       <div class="top-news__contents">

@@ -1,0 +1,256 @@
+@use "global" as *;
+.solution {
+  margin-top: rem(26);
+  @include mq("md") {
+    margin-top: rem(76);
+  }
+}
+.solution__heading {
+  text-align: center;
+}
+.solution__title {
+  @include mq("md") {
+    display: inline-block;
+    padding: rem(12) rem(67);
+    background-color: #ffd33a;
+    color: $blue;
+    font-weight: $bold;
+    font-size: rem(40);
+    line-height: 1;
+    position: relative;
+  }
+}
+.solution__title::before,
+.solution__title::after {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    display: block;
+    width: rem(4);
+    height: rem(53);
+    background-color: $blue;
+    top: 50%;
+  }
+}
+.solution__title::before {
+  left: rem(40);
+  transform: translateY(-50%) rotate(-23deg);
+}
+.solution__title::after {
+  right: rem(40);
+  transform: translateY(-50%) rotate(23deg);
+}
+//=====================
+//吹き出し
+//=====================
+.solution__contents {
+  overflow: hidden;
+  background-image: url(../images/speech.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  width: 100%;
+  height: rem(326);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  @include mq("md") {
+		background-image: none;
+    margin-top: rem(10);
+		justify-content: center;
+    flex-direction: initial;
+    height: rem(268);
+    padding-right: rem(15);
+    padding-left: rem(15);
+  }
+}
+.solution__content {
+  color: #000;
+  font-size: rem(18);
+  font-weight: $medium;
+  line-height: 1.3;
+  position: relative;
+	width: rem(293);
+  @include mq("md") {
+    position: relative;
+		width: initial;
+  }
+}
+.indent {
+	display: block;
+	margin-left: rem(23); /* インデントの量を調整 */
+	@include mq('md') {
+	 margin-left: 0;
+	}
+}
+.solution__content::before {
+  content: "・";
+  @include mq("md") {
+    content: "";
+  }
+}
+
+.solution__content + .solution__content {
+  margin-top: rem(14);
+  @include mq("md") {
+    margin-top: 0;
+    margin-left: min(7vw, rem(110));
+  }
+}
+.solution__content:first-child {
+  margin-top: rem(48);
+  @include mq("md") {
+    margin-top: 0;
+  }
+}
+.solution__content::before {
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+.solution__content:first-child::before {
+  width: rem(244);
+  height: rem(258);
+  top: rem(-107);
+  left: rem(-39);
+  background-image: url(../images/speech-left.png);
+}
+.solution__content:nth-child(2)::before {
+  width: rem(281);
+  height: rem(225);
+  top: rem(-79);
+  left: rem(-39);
+  background-image: url(../images/speech-center.png);
+}
+.solution__content:nth-child(3)::before {
+  width: rem(350);
+  height: rem(234);
+  top: rem(-97);
+  left: rem(-23);
+  background-image: url(../images/speech-right.png);
+}
+//=====================
+//イラスト3名
+//=====================
+.solution__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.solution__item {
+  max-width: rem(117);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 117 / 160;
+  @include mq("md") {
+    max-width: rem(169);
+    aspect-ratio: 169 / 236;
+  }
+}
+.solution__item + .solution__item {
+  margin-left: rem(20);
+  @include mq("md") {
+    margin-left: rem(91);
+  }
+}
+//=====================
+//お悩み解決
+//=====================
+.solution__wrap {
+  text-align: center;
+  margin-top: rem(25);
+  padding-top: rem(77);
+  padding-bottom: rem(119);
+  background-color: #f4f9fd;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  @include mq("md") {
+    margin-top: rem(42);
+    padding-top: rem(80);
+    padding-bottom: rem(51);
+  }
+	@include mq('lg') {
+		overflow: visible;
+	}
+}
+.solution__wrap::before,
+.solution__wrap::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: rem(130);
+  height: rem(158);
+  bottom: rem(-1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  @include mq("md") {
+    width: min(20vw, rem(200));
+    height: min(20vw, rem(245));
+  }
+}
+.solution__wrap::before {
+  left: rem(-25);
+  background-image: url(../images/work-man.png);
+  @include mq("md") {
+    left: calc(50% - 56vw);
+  }
+  @include mq("lg") {
+    left: calc(50% - 48vw);
+  }
+  @include mq("xl") {
+    left: calc(50% - 35vw);
+  }
+}
+.solution__wrap::after {
+  right: rem(-25);
+  background-image: url(../images/work-woman.png);
+  @include mq("md") {
+    right: calc(50% - 56vw);
+  }
+  @include mq("lg") {
+    right: calc(50% - 48vw);
+  }
+  @include mq("xl") {
+    right: calc(50% - 35vw);
+  }
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 55.5px solid transparent;
+  border-right: 55.5px solid transparent;
+  border-top: 63px solid $white;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+	@include mq('md') {
+		border-left: 160px solid transparent;
+		border-right: 160px solid transparent;
+	}
+}
+.solution__text {
+  color: $blue;
+  font-size: max(rem(22), 4vw);
+  font-weight: $bold;
+  line-height: 1.3;
+  @include mq("md") {
+    font-size: min(rem(35), 4vw);
+  }
+}
+.solution__text span {
+  background: linear-gradient(to top, #ffd33a 40%, transparent 40%);
+
+  @include mq("md") {
+    font-size: rem(45);
+  }
+}

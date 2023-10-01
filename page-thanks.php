@@ -4,6 +4,16 @@ get_header() ;
 
 ?>
 <main>
+	<section class="mainview">
+		<div class="mainview__title">
+			<span>contact</span>
+			<h1>お問い合わせ完了</h1>
+		</div>
+		<div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-contact-sp.jpg"
+				alt="contacttop"></div>
+		<div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-contact-pc.jpg"
+				alt="contacttop"></div>
+	</section>
 	<?php get_template_part('template/breadcrumb');?>
 
 	<section class="thanks">
@@ -19,7 +29,7 @@ get_header() ;
 	<!-- sectionのタイトル(blue)英語は小文字で入力してください（CSSで大文字にしてます） -->
 	<!-- <div class="section-heading">
 		<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-		<h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
+		<h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
 	</div> -->
 
 	<!-- sectionのタイトル(white) -->

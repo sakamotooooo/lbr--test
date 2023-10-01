@@ -3,6 +3,16 @@
 ?>
 <?php get_header(); ?>
 <main>
+	<section class="mainview">
+		<div class="mainview__title">
+			<span>contact</span>
+			<h1>お問い合わせ</h1>
+		</div>
+		<div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-contact-sp.jpg"
+				alt="contacttop"></div>
+		<div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-contact-pc.jpg"
+				alt="contacttop"></div>
+	</section>
 	<?php get_template_part('template/breadcrumb');?>
 
 	<section class="contact">
@@ -14,7 +24,7 @@
 				<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 			</div>
 			<form action="" method="post" class="contact__form form">
-				<?php the_content();?>
+				<?php echo do_shortcode( '[contact-form-7 id="ffef91a" title="お問い合わせ"]' ); ?>
 
 				<!-- <div class="form__item">
 				<label for="yourCompany" class="form__title">会社名<span class="form__required">※</span></label>
@@ -69,5 +79,7 @@
 
 		</div>
 	</section>
+
+
 </main>
 <?php get_footer() ;?>

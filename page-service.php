@@ -15,7 +15,7 @@
 	<section class="service-feature">
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-			<h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
+			<h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
 		</div>
 		<div class="service-feature__wraps">
 			<div class="service-feature__wrap service-feature__01">
@@ -54,7 +54,7 @@
 		<div class="inner">
 			<div class="section-heading">
 				<span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
-				<h2 class="section-heading__title section-heading__title--blue">サービス内容</h2>
+				<h2 class="section-heading__title section-heading__title--black">サービス内容</h2>
 			</div>
 			<p class="service-contents__summary">当社は、多岐にわたる建物タイプに対応し、オフィス、マンション、病院、住宅、商業施設など、
 				建物の種類やお客様の要望に合わせた高品質なクリーニングサービスを提供しています。
@@ -76,11 +76,11 @@
 				<div class="service-contents__list" id="apartment">
 					<div class="section-heading">
 						<span class="section-heading__subtitle section-heading__subtitle--blue">apartment</span>
-						<h3 class="section-heading__title section-heading__title--blue service-contents__title">マンション</h2>
+						<h3 class="section-heading__title section-heading__title--black service-contents__title">マンション</h2>
 					</div>
 					<p class="service-contents__detail01">大切な人々と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
 					<p class="service-contents__detailtop">清掃サービス一覧</p>
-					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
+					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /
 						シャンデリアメンテナンス / ガラス清掃
 					</p>
 					<div class="service-contents__images">
@@ -98,7 +98,7 @@
 				<div class="service-contents__list" id="buiding">
 					<div class="section-heading">
 						<span class="section-heading__subtitle section-heading__subtitle--blue">building</span>
-						<h3 class="section-heading__title section-heading__title--blue service-contents__title">ビル</h2>
+						<h3 class="section-heading__title section-heading__title--black service-contents__title">ビル</h2>
 					</div>
 					<p class="service-contents__detail01">毎日出社していただく皆様が気持ちよくオフィスにお越しいただけるよう、
 						プロの視点で徹底的な清掃を実施しております。
@@ -107,7 +107,7 @@
 						皆様の業務に集中できるようお手伝いさせていただきます。
 					</p>
 					<p class="service-contents__detailtop">清掃サービス一覧</p>
-					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
+					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /
 						シャンデリアメンテナンス / 大理石などの落書き / いす清掃 / ガラス清掃
 					</p>
 					<div class="service-contents__images">
@@ -125,7 +125,7 @@
 				<div class="service-contents__list" id="housing">
 					<div class="section-heading">
 						<span class="section-heading__subtitle section-heading__subtitle--blue">housing</span>
-						<h3 class="section-heading__title section-heading__title--blue service-contents__title">住宅</h2>
+						<h3 class="section-heading__title section-heading__title--black service-contents__title">住宅</h2>
 					</div>
 					<p class="service-contents__detail01">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。
 						普段は見過ごされるか、手が届きにくい場所でも、
@@ -134,7 +134,7 @@
 						清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。
 						</p>
 					<p class="service-contents__detailtop">清掃サービス一覧</p>
-					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 / 
+					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /
 						外壁高圧洗浄 / 外階段高圧洗浄 / ガラス清掃
 					</p>
 					<div class="service-contents__images">
