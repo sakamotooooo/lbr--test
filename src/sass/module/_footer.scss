@@ -30,8 +30,7 @@
     margin: auto;
     padding-inline: $padding-sp;
     font-size: rem(14);
-    padding-bottom: rem(27);
-
+    padding-bottom: rem(110);
 
     @include mq(md) {
         max-width: rem(1000);
@@ -47,6 +46,11 @@
 
 .footer__logo{
     width: rem(260);
+    height: auto;
+    aspect-ratio: 260 / 80;
+    @include mq("md") {
+      width: min(rem(260), 20vw);
+    }
 }
 
 .footer__logo-link{
