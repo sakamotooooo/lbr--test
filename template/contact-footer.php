@@ -25,7 +25,7 @@
 				</div>
 			</div>
 			<div class="top-contact__item consultation__item">
-				<a href="<?php echo $contact; ?>">
+				<a href="<?php echo home_url('contact'); ?>">
 					<span>お問い合わせ</span>
 				</a>
 			</div>
