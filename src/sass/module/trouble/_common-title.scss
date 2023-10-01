@@ -1,12 +1,17 @@
 @use "global" as *;
 .lp-title {
-  color: $blue;
-  font-size: rem(26);
+	font-size: rem(26);
   font-weight: $bold;
   text-align: center;
   @include mq("md") {
-    font-size: rem(40);
+		font-size: rem(40);
   }
+}
+.lp-title--blue{
+	color: $blue;
+}
+.lp-title--white{
+	color: $white;
 }
 .lp-subTitle {
   font-weight: $bold;

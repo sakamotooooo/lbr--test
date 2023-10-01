@@ -6,7 +6,8 @@
 <main>
 	<!-- 共通パーツ（LP） -->
 	<!-- title -->
-	<!-- <h2 class="lp-title">エルビーアールのサービス</h2> -->
+	<!-- <h2 class="lp-title lp-title--blue">エルビーアールのサービス</h2> -->
+	<!-- <h2 class="lp-title lp-title--white">エルビーアールのサービス</h2> -->
 	<!-- subTitle(black) -->
 	<!-- <h3 class="lp-subTitle lp-subTitle--black">マンション</h3> -->
 	<!-- subTitle(blue) -->
@@ -155,7 +156,7 @@
 	<!-- サービス -->
 	<section class="lp-service">
 		<div class="lp-service__inner">
-			<h2 class="lp-title">エルビーアールのサービス</h2>
+			<h2 class="lp-title lp-title--blue">エルビーアールのサービス</h2>
 			<div class="lp-service__items">
 				<div class="lp-service__item">
 					<picture class="lp-service__img">
@@ -217,7 +218,7 @@
 	<!-- こだわり -->
 	<section class="commitment">
 		<div class="commitment__inner inner">
-			<h2 class="lp-title">エルビーアールのこだわり</h2>
+			<h2 class="lp-title lp-title--blue">エルビーアールのこだわり</h2>
 			<div class="commitment__items">
 				<div class="commitment__item">
 					<div class="commitment__img">
@@ -285,7 +286,7 @@
 	<!-- 実績 -->
 	<section class="achievements">
 		<div class="achievements__inner inner">
-			<h2 class="lp-title">エルビーアールの実績</h2>
+			<h2 class="lp-title lp-title--blue">エルビーアールの実績</h2>
 			<div class="achievements__items">
 				<div class="achievements__item">
 					<div class="achievements__img">
@@ -334,7 +335,7 @@
 	<!-- 流れ -->
 	<section class="flow">
 		<div class="flow__inner inner">
-			<h2 class="lp-title">清掃までの流れ</h2>
+			<h2 class="lp-title lp-title--blue">清掃までの流れ</h2>
 			<div class="flow__items">
 				<div class="flow__item">
 					<div class="flow__circle">
@@ -427,6 +428,97 @@
 						</p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+	<!-- よくある質問 -->
+	<section class="faq">
+		<div class="faq__inner inner">
+			<h2 class="lp-title lp-title--white">よくある質問</h2>
+			<div class="faq__items">
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">対応エリアはどこまでですか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								対応エリア→東京・神奈川・千葉・埼玉<br>
+								上記以外のエリアをご希望の場合は応相談となります。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">どのような作業内容が対応可能ですか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								一例ですが、床清掃・ガラス清掃・空調清掃などございます。<br>
+								その他にも特殊な清掃として、カーペット・ソファーのシミと落とし、大理石の落書き落としなどご要望に応じて、対応をしておりますのでまずはお気軽にご連絡ください。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">見積に料金はかかりますか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								完全無料で対応しております。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">料金はどれくらいとなりますか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								作業内容や広さによって異なりますので、お気軽にご連絡ください。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">定期的な清掃をお願いしたいのですが…？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								当社では長年の実績と多数の定期清掃を手掛けておりますのでご安心ください。<br>
+								まずはご相談いただければと思います。
+							</span>
+						</div>
+					</dd>
+				</dl>
 			</div>
 		</div>
 	</section>

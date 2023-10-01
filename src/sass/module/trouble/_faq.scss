@@ -1,0 +1,87 @@
+@use "global" as *;
+.faq {
+  padding: rem(60) 0;
+  background-color: $blue;
+  @include mq("md") {
+    padding: rem(80) 0;
+  }
+}
+.faq__items {
+  margin-top: rem(40);
+  align-self: 100%;
+}
+.faq__item {
+  width: 100%;
+  background-color: $white;
+}
+.faq__item + .faq__item {
+  margin-top: rem(25);
+}
+.faq__title {
+  cursor: pointer;
+  padding: rem(20) rem(16) rem(20) rem(15);
+  @include mq("md") {
+    padding-right: rem(45);
+    padding-left: rem(30);
+  }
+}
+.faq__question {
+  font-size: rem(16);
+  color: #000;
+  font-weight: $bold;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(22);
+  }
+}
+.faq__content {
+  padding: 0 rem(55) rem(17) rem(15);
+  display: none;
+  @include mq("md") {
+    padding-right: rem(45);
+    padding-left: rem(30);
+  }
+}
+.faq__answer {
+  font-size: rem(14);
+  color: $text-color;
+  font-weight: $regular;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+.faq__wrap {
+  display: grid;
+	grid-template-columns: rem(45) 1fr;
+  align-items: center;
+  gap: rem(15);
+  @include mq("md") {
+    gap: rem(20);
+  }
+}
+.faq__title,
+.faq__content {
+  width: 100%;
+  position: relative;
+}
+.faq__q,
+.faq__a {
+  font-size: rem(25);
+  font-weight: $bold;
+  width: rem(45);
+  height: rem(45);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq__q {
+  color: $white;
+  background-color: $blue;
+}
+.faq__a {
+  color: $blue;
+  background-color: $white;
+  border: 2px solid $blue;
+}
