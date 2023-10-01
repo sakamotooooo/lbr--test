@@ -1935,6 +1935,97 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
      object-fit: cover;
 }
 
+.top-news {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  margin-bottom: 90px;
+  margin-bottom: 5.625rem;
+  padding: 0 15px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .top-news {
+    margin-bottom: 5.4375rem;
+    padding: 0 25px;
+  }
+}
+
+.top-news__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+  gap: 3.75rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .top-news__wrap {
+    gap: 3.125rem;
+    margin-top: 1.6875rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.top-news__content {
+  margin-inline: auto;
+  padding: 0 15px;
+  padding: 0 0.9375rem;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .top-news__content {
+    width: 100%;
+    max-width: 43.75rem;
+  }
+}
+
+.top-news__conten::before {
+  left: 3.8%;
+}
+@media screen and (min-width: 768px) {
+  .top-news__conten::before {
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-news__button {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+.top-news__englishtitle {
+  position: absolute;
+  font-size: 70px;
+  font-size: 4.375rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #024892;
+  opacity: 0.1;
+  text-transform: uppercase;
+  bottom: -20%;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .top-news__englishtitle {
+    font-size: 8.4375rem;
+    bottom: -40%;
+  }
+}
+
 .top-service {
   max-width: 1170px;
   max-width: 73.125rem;
@@ -2131,7 +2222,6 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   gap: 5px;
   gap: 0.3125rem;
   position: relative;
-  width: 100%;
   border-bottom: 1px solid #DDD;
   padding: 15px 20px;
   padding: 0.9375rem 1.25rem;
@@ -2149,12 +2239,16 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 .news-item::before {
   content: "";
   position: absolute;
-  left: 0;
   bottom: 0;
   width: 116px;
   width: 7.25rem;
   height: inherit;
   border-bottom: 1px solid #024892;
+}
+@media screen and (min-width: 768px) {
+  .news-item::before {
+    left: 0;
+  }
 }
 
 .news-item__date {
@@ -2202,12 +2296,19 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   }
 }
 
+.news__content {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .news__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.news__content::before {
+  left: 0;
 }
 
 .news__pagenavi {

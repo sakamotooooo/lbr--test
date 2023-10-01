@@ -9,6 +9,13 @@
       <div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-sp.jpg" alt="newstop"></div>
       <div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-pc.jpg" alt="newstop"></div>
     </section>
+    <?php
+        $args = [
+          'post_type' => 'post',
+          'posts_per_page' => 16, // 表示件数
+        ];
+        $the_query = new WP_Query( $args );
+      ?>
     <section class="news inner">
       <div class="news__contents">
       <?php if (have_posts()) : ?>

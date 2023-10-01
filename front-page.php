@@ -72,7 +72,7 @@
 			</div>
 			<div class="service-feature__wrap service-feature__02">
 				<div class="service-feature__texts service-feature__texts--02">
-					<span class="top-service__subenglish top-service__subenglish--right">buiding</span>
+					<span class="top-service__subenglish top-service__subenglish--right">building</span>
 					<h3 class="service-feature__heading service-feature__heading--white top-service__heading top-service__heading--02">ビル</h3>
 					<p class="service-feature__text">毎日出社していただく皆様が気持ちよくオフィスにお越しいただけるよう、プロの視点で徹底的な清掃を実施しております。清潔な環境は労働環境の向上に繋がり、生産性や快適さを高めます。私たちはオフィスの清潔さを維持し、快適な作業環境を提供することで、皆様の業務に集中できるようお手伝いさせていただきます。</p>
 				</div>
@@ -92,7 +92,7 @@
 			</div>
 		</div>
     <div class="top-feature__button button">
-          <a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
+        <a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
     </div>
   </section>
   <div class="swiper top-swiper">
@@ -111,12 +111,35 @@
       </div>
     </div>
   </div>
+  <?php
+        $args = [
+          'post_type' => 'post',
+          'posts_per_page' => 4, // 表示件数
+        ];
+        $the_query = new WP_Query( $args );
+      ?>
   <section class="top-news">
-   <span class="top-service__englishtitle">news</span>
+   <span class="top-news__englishtitle">news</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">news</span>
 			<h2 class="section-heading__title section-heading__title--blue">お知らせ</h2>
 		</div>
+    <div class="top-news__wrap">
+      <div class="top-news__contents">
+        <?php if ($the_query->have_posts()) : ?>
+        <?php while ($the_query->have_posts()) : $the_query->the_post();?>
+          <div class="top-news__content news-item">
+            <time class="news-item__date" datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d'); ?></time>
+            <p class="news-item__title">
+              <a href="<?php the_permalink()?>"><?php the_title()?></a>
+            </p>
+          </div>
+          <?php endwhile; endif; ?>
+      </div>
+      <div class="top-news__button button">
+          <a href="<?php echo esc_url(home_url('/news/')); ?>">詳しく見る</a>
+      </div>
+    </div>
   </section>
 
 </main>
