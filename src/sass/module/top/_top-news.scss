@@ -19,7 +19,6 @@
     gap: rem(60);
     align-items: center;
 
-
     @include mq("md") {
         gap: rem(50);
         margin-top: rem(27);
@@ -47,7 +46,8 @@
     }
 }
 
-.top-news__button {
+.top-news__button a {
+    margin-inline: auto;
     @include mq(md) {
         flex-shrink: 0;
     }

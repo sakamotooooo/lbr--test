@@ -14,7 +14,7 @@
     </div>
   </section>
   <div class="top-fv__banner inner">
-    <a href="">
+    <a href="<?php echo esc_url(home_url('/lp/')); ?>">
       <img src="<?php echo get_template_directory_uri() ?>/images/banner.jpg" alt="">
     </a>
   </div>
@@ -23,9 +23,9 @@
       <span class="top-feature__englishtitle">feature</span>
         <div class="section-heading">
           <span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-          <h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
+          <h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
         </div>
-        <p class="service-feature__summary top-service__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
+        <p class="service-feature__summary top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
           また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br>
           清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。
         </p>
@@ -36,11 +36,11 @@
           </div>
           <div class="top-feature__wrap">
             <img src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
-            <p>技術力の高い特殊清掃</p>
+            <p>エコクリーニングへのこだわり</p>
           </div>
           <div class="top-feature__wrap">
             <img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
-            <p>技術力の高い特殊清掃</p>
+            <p>清掃のスペシャリスト</p>
           </div>
         </div>
         <div class="top-feature__button button">
@@ -52,14 +52,14 @@
     <span class="top-service__englishtitle">service</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
-			<h2 class="section-heading__title section-heading__title--black">サービス内容</h2>
+			<h2 class="section-heading__title section-heading__title--blue">サービス内容</h2>
 		</div>
-    <p class="service-feature__summary top-service__summary">当社は、多岐にわたる建物タイプに対応し、オフィス、マンション、病院、住宅、商業施設など、<br>
-      建物の種類やお客様の要望に合わせた高品質なクリーニングサービスを提供しています。<br>
-      これまで蓄積した幅広い知識と経験に基づき、お客様のニーズに細かく対応し、<br>
+    <p class="service-feature__summary top-service__summary">当社は、多岐にわたる建物タイプに対応し、オフィス、マンション、病院、住宅、商業施設など、<br class="u-desktop">
+      建物の種類やお客様の要望に合わせた高品質なクリーニングサービスを提供しています。<br class="u-desktop">
+      これまで蓄積した幅広い知識と経験に基づき、お客様のニーズに細かく対応し、<br class="u-desktop">
       建物の清潔さと快適さを確保しています。
     </p>
-		<div class="service-feature__wraps">
+		<div class="top-service__wraps">
 			<div class="service-feature__wrap service-feature__01">
 				<div class="service-feature__texts">
 					<span class="top-service__subenglish top-service__subenglish--left">apartment</span>
@@ -122,7 +122,7 @@
    <span class="top-news__englishtitle">news</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">news</span>
-			<h2 class="section-heading__title section-heading__title--black">お知らせ</h2>
+			<h2 class="section-heading__title section-heading__title--blue">お知らせ</h2>
 		</div>
     <div class="top-news__wrap">
       <div class="top-news__contents">

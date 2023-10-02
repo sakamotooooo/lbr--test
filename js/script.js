@@ -29,14 +29,14 @@ const swiper = new Swiper(".top-swiper", {
     delay: 0,
 		disableOnInteraction: false,
   },
-	spaceBetween: 15,
-  slidesPerView:4,
+  slidesPerView:"auto",
+  spaceBetween: 10,
   loopedSlides: 8,
   speed: 8000,
   allowTouchMove: false, // スワイプ無効,
   breakpoints: {
     768: {
-      slidesPerView: 4,
+      spaceBetween: 15,
     }
   },
 });
@@ -47,7 +47,7 @@ const swiperLp = new Swiper(".lp-swiper", {
     delay: 0,
 		disableOnInteraction: false,
   },
-  slidesPerView:3,
+  slidesPerView:4,
 	spaceBetween: 0,
   loopedSlides: 8,
   speed: 8000,
