@@ -1,7 +1,9 @@
 @charset "UTF-8";
+/* リキッドレイアウト対応 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
 body {
   font-family: "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
 }
 
 .u-desktop {
@@ -19,7 +21,6 @@ body {
   }
 }
 
-/* リキッドレイアウト対応 */
 html {
   font-size: 16px;
 }
