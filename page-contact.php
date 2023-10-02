@@ -24,7 +24,7 @@
 				<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 			</div>
 			<form action="" method="post" class="contact__form form">
-				<?php echo do_shortcode( '[contact-form-7 id="ffef91a" title="お問い合わせ"]' ); ?>
+				<?php echo do_shortcode( '[contact-form-7 id="524cf46" title="お問い合わせ"]' ); ?>
 
 				<!-- <div class="form__item">
 				<label for="yourCompany" class="form__title">会社名<span class="form__required">※</span></label>
