@@ -6,7 +6,8 @@
 <main>
 	<!-- 共通パーツ（LP） -->
 	<!-- title -->
-	<!-- <h2 class="lp-title">エルビーアールのサービス</h2> -->
+	<!-- <h2 class="lp-title lp-title--blue">エルビーアールのサービス</h2> -->
+	<!-- <h2 class="lp-title lp-title--white">エルビーアールのサービス</h2> -->
 	<!-- subTitle(black) -->
 	<!-- <h3 class="lp-subTitle lp-subTitle--black">マンション</h3> -->
 	<!-- subTitle(blue) -->
@@ -155,7 +156,7 @@
 	<!-- サービス -->
 	<section class="lp-service">
 		<div class="lp-service__inner">
-			<h2 class="lp-title">エルビーアールのサービス</h2>
+			<h2 class="lp-title lp-title--blue">エルビーアールのサービス</h2>
 			<div class="lp-service__items">
 				<div class="lp-service__item">
 					<picture class="lp-service__img">
@@ -217,7 +218,7 @@
 	<!-- こだわり -->
 	<section class="commitment">
 		<div class="commitment__inner inner">
-			<h2 class="lp-title">エルビーアールのこだわり</h2>
+			<h2 class="lp-title lp-title--blue">エルビーアールのこだわり</h2>
 			<div class="commitment__items">
 				<div class="commitment__item">
 					<div class="commitment__img">
@@ -283,7 +284,244 @@
 		</div>
 	</div>
 	<!-- 実績 -->
+	<section class="achievements">
+		<div class="achievements__inner inner">
+			<h2 class="lp-title lp-title--blue">エルビーアールの実績</h2>
+			<div class="achievements__items">
+				<div class="achievements__item">
+					<div class="achievements__img">
+						<img width="360" height="244" loading="lazy"
+							src="<?php echo get_template_directory_uri() ?>/images/achievements-img01.jpg" alt="オフィスビル">
+						<span class="achievements__tag">通常清掃</span>
+					</div>
+					<div class="achievements__content">
+						<h3 class="lp-subTitle lp-subTitle--blue">東京都中央区 オフィスビル A</h3>
+						<p class="lp-text achievements__text">
+							各フロアのゴミ回収・机上ふき・掃除機がけ、フロアごとの給湯室や廊下階段などの日常の清掃作業を行いました。
+						</p>
+					</div>
+				</div>
+				<div class="achievements__item">
+					<div class="achievements__img">
+						<img width="360" height="244" loading="lazy"
+							src="<?php echo get_template_directory_uri() ?>/images/achievements-img02.jpg" alt="高級マンション">
+						<span class="achievements__tag">通常清掃</span>
+					</div>
+					<div class="achievements__content">
+						<h3 class="lp-subTitle lp-subTitle--blue">東京都渋谷区 高級マンションA</h3>
+						<p class="lp-text achievements__text">
+							床など機械や道具を使用しての清掃作業がメインのご依頼。併せて高所でのガラス清掃作業も行いました。
+						</p>
+					</div>
+				</div>
+				<div class="achievements__item">
+					<div class="achievements__img">
+						<img width="360" height="244" loading="lazy"
+							src="<?php echo get_template_directory_uri() ?>/images/achievements-img03.jpg" alt="水族館">
+						<span class="achievements__tag">特殊清掃</span>
+					</div>
+					<div class="achievements__content">
+						<h3 class="lp-subTitle lp-subTitle--blue">関東 某水族館</h3>
+						<p class="lp-text achievements__text">
+							高圧洗浄機でイオン水を使用したエコな清掃作業を実施しました。<br>
+							その他カーペット・ソファーなどのシミ落とし。大理石にラクガキ消し。シャンデリアなどの清掃なども承っております。
+						</p>
+					</div>
+				</div>
+			</div>
 
+		</div>
+	</section>
+	<!-- 流れ -->
+	<section class="flow">
+		<div class="flow__inner inner">
+			<h2 class="lp-title lp-title--blue">清掃までの流れ</h2>
+			<div class="flow__items">
+				<div class="flow__item">
+					<div class="flow__circle">
+						<p class="flow__number">STEP1</p>
+						<div class="flow__img">
+							<img width="100" height="100" loading="lazy"
+								src="<?php echo get_template_directory_uri() ?>/images/flow01.png" alt="問い合わせ">
+						</div>
+					</div>
+					<div class="flow__content">
+						<h3 class="flow__title">問い合わせ</h3>
+						<p class="flow__text">
+							問い合わせフォームまたはお電話からご連絡をお願い致します。
+						</p>
+					</div>
+				</div>
+				<div class="flow__item">
+					<div class="flow__circle">
+						<p class="flow__number">STEP2</p>
+						<div class="flow__img">
+							<img width="100" height="100" loading="lazy"
+								src="<?php echo get_template_directory_uri() ?>/images/flow02.png" alt="担当者からご連絡">
+						</div>
+					</div>
+					<div class="flow__content">
+						<h3 class="flow__title">担当者からご連絡</h3>
+						<p class="flow__text">
+							1～3営業日以内に弊社担当よりご連絡させていただきます。<br>
+							※タイミングによってはご連絡が遅れてしまう場合がございますので予めご了承ください。
+						</p>
+					</div>
+				</div>
+				<div class="flow__item">
+					<div class="flow__circle">
+						<p class="flow__number">STEP3</p>
+						<div class="flow__img">
+							<img width="100" height="100" loading="lazy"
+								src="<?php echo get_template_directory_uri() ?>/images/flow03.png" alt="打ち合わせ">
+						</div>
+					</div>
+					<div class="flow__content">
+						<h3 class="flow__title">打ち合わせ</h3>
+						<p class="flow__text">
+							今回の相談内容の詳細をお伺いさせていただきます。
+						</p>
+					</div>
+				</div>
+				<div class="flow__item">
+					<div class="flow__circle">
+						<p class="flow__number">STEP4</p>
+						<div class="flow__img">
+							<img width="100" height="100" loading="lazy"
+								src="<?php echo get_template_directory_uri() ?>/images/flow04.png" alt="見積書">
+						</div>
+					</div>
+					<div class="flow__content">
+						<h3 class="flow__title">見積書</h3>
+						<p class="flow__text">
+							お打ち合わせにてお伺いした内容にて、見積書をお出しします。
+						</p>
+					</div>
+				</div>
+				<div class="flow__item">
+					<div class="flow__circle">
+						<p class="flow__number">STEP5</p>
+						<div class="flow__img">
+							<img width="100" height="100" loading="lazy"
+								src="<?php echo get_template_directory_uri() ?>/images/flow05.png" alt="ご契約">
+						</div>
+					</div>
+					<div class="flow__content">
+						<h3 class="flow__title">ご契約</h3>
+						<p class="flow__text">
+							書類等を締結後、ご契約となります。
+						</p>
+					</div>
+				</div>
+				<div class="flow__item">
+					<div class="flow__circle">
+						<p class="flow__number">STEP6</p>
+						<div class="flow__img">
+							<img width="100" height="100" loading="lazy"
+								src="<?php echo get_template_directory_uri() ?>/images/flow06.png" alt="作業">
+						</div>
+					</div>
+					<div class="flow__content">
+						<h3 class="flow__title">作業</h3>
+						<p class="flow__text">
+							当社スタッフが丁寧に作業を行います。
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- よくある質問 -->
+	<section class="faq">
+		<div class="faq__inner inner">
+			<h2 class="lp-title lp-title--white">よくある質問</h2>
+			<div class="faq__items">
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">対応エリアはどこまでですか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								対応エリア→東京・神奈川・千葉・埼玉<br>
+								上記以外のエリアをご希望の場合は応相談となります。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">どのような作業内容が対応可能ですか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								一例ですが、床清掃・ガラス清掃・空調清掃などございます。<br>
+								その他にも特殊な清掃として、カーペット・ソファーのシミと落とし、大理石の落書き落としなどご要望に応じて、対応をしておりますのでまずはお気軽にご連絡ください。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">見積に料金はかかりますか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								完全無料で対応しております。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">料金はどれくらいとなりますか？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								作業内容や広さによって異なりますので、お気軽にご連絡ください。
+							</span>
+						</div>
+					</dd>
+				</dl>
+				<dl class="faq__item">
+					<dt class="faq__title js-accordion-title">
+						<div class="faq__wrap">
+							<span class="faq__q">Q</span>
+							<span class="faq__question">定期的な清掃をお願いしたいのですが…？</span>
+						</div>
+					</dt>
+					<dd class="faq__content">
+						<div class="faq__wrap">
+							<span class="faq__a">A</span>
+							<span class="faq__answer">
+								当社では長年の実績と多数の定期清掃を手掛けておりますのでご安心ください。<br>
+								まずはご相談いただければと思います。
+							</span>
+						</div>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</section>
 </main>
 <?php get_template_part('template/contact-footer');?>
 
