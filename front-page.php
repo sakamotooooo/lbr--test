@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <main>
-<<<<<<< HEAD
   <section class="top-fv">
     <h2 class="color-blue">
       <span>
@@ -87,58 +86,6 @@
   </section>
   <section class="top-service">
     <span class="top-service__englishtitle">service</span>
-=======
-	<section class="top-fv">
-		<div class="top-fv__titles">
-			<h2 class="top-fv__title">
-				<img src="<?php echo get_template_directory_uri() ?>/images/fv-title.png" alt="">
-			</h2>
-			<span class="top-fv__subtitle">
-				<img src="<?php echo get_template_directory_uri() ?>/images/fv-subtitle.png" alt="">
-			</span>
-		</div>
-		<div class="top-fv__img">
-			<img src="<?php echo get_template_directory_uri() ?>/images/fv01.jpg" alt="">
-		</div>
-	</section>
-	<div class="top-fv__banner inner">
-		<a href="<?php echo esc_url(home_url('/lp/')); ?>">
-			<img src="<?php echo get_template_directory_uri() ?>/images/banner.jpg" alt="">
-		</a>
-	</div>
-	<section class="top-feature">
-		<div class="inner">
-			<span class="top-feature__englishtitle">feature</span>
-			<div class="section-heading">
-				<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-				<h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
-			</div>
-			<p class="service-feature__summary top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
-				また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br class="u-desktop">
-				清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。
-			</p>
-			<div class="top-feature__lists">
-				<div class="top-feature__wrap">
-					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
-					<p>技術力の高い特殊清掃</p>
-				</div>
-				<div class="top-feature__wrap">
-					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
-					<p>エコクリーニングへのこだわり</p>
-				</div>
-				<div class="top-feature__wrap">
-					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
-					<p>清掃のスペシャリスト</p>
-				</div>
-			</div>
-			<div class="top-feature__button button">
-				<a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
-			</div>
-		</div>
-	</section>
-	<section class="top-service">
-		<span class="top-service__englishtitle">service</span>
->>>>>>> 8881471b907decb3f1d18687816fb5f673234f56
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
 			<h2 class="section-heading__title section-heading__title--black">サービス内容</h2>
