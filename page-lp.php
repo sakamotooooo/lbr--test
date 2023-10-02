@@ -4,21 +4,6 @@
 <?php get_header(); ?>
 
 <main>
-	<!-- 共通パーツ（LP） -->
-	<!-- title -->
-	<!-- <h2 class="lp-title lp-title--blue">エルビーアールのサービス</h2> -->
-	<!-- <h2 class="lp-title lp-title--white">エルビーアールのサービス</h2> -->
-	<!-- subTitle(black) -->
-	<!-- <h3 class="lp-subTitle lp-subTitle--black">マンション</h3> -->
-	<!-- subTitle(blue) -->
-	<!-- <h3 class="lp-subTitle lp-subTitle--blue">技術力の高い特殊清掃</h3> -->
-	<!-- text -->
-	<!-- <p class="lp-text">人と地球にやさしい強アルカリ電解水をメインに使用しています。清掃業界の中でもいち早く導入をし、エコクリーニングをこころがけています。</p> -->
-	<!-- 詳しく見るボタン -->
-	<!-- <div class="lp-btn__wrap">
-				<a href="" class="lp-btn">詳しく見る</a>
-			</div> -->
-
 	<!-- MV -->
 	<section class="trouble-mv">
 		<div class="trouble-mv__inner">
@@ -53,7 +38,7 @@
 				</div>
 			</div>
 			<div class="trouble-btn__item consultation__item">
-				<a href="<?php echo $contact; ?>">
+				<a href="<?php echo home_url('contact'); ?>">
 					<span>お問い合わせ</span>
 				</a>
 			</div>
@@ -147,7 +132,7 @@
 				</div>
 			</div>
 			<div class="trouble-btn__item consultation__item">
-				<a href="<?php echo $contact; ?>">
+				<a href="<?php echo home_url('contact'); ?>">
 					<span>お問い合わせ</span>
 				</a>
 			</div>
@@ -277,7 +262,7 @@
 				</div>
 			</div>
 			<div class="trouble-btn__item consultation__item">
-				<a href="<?php echo $contact; ?>">
+				<a href="<?php echo home_url('contact'); ?>">
 					<span>お問い合わせ</span>
 				</a>
 			</div>
