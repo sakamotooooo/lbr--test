@@ -26,7 +26,7 @@
           <h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
         </div>
         <p class="service-feature__summary top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
-          また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br>
+          また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br class="u-desktop">
           清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。
         </p>
         <div class="top-feature__lists">
@@ -61,7 +61,7 @@
     </p>
 		<div class="top-service__wraps">
 			<div class="service-feature__wrap service-feature__01">
-				<div class="service-feature__texts">
+				<div class="top-service-feature__texts">
 					<span class="top-service__subenglish top-service__subenglish--left">apartment</span>
 					<h3 class="service-feature__heading top-service__heading top-service__heading--01">マンション</h3>
 					<p class="service-feature__text">大切な人と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="service-feature__wrap service-feature__02">
-				<div class="service-feature__texts service-feature__texts--02">
+				<div class="top-service-feature__texts service-feature__texts--02">
 					<span class="top-service__subenglish top-service__subenglish--right">building</span>
 					<h3 class="service-feature__heading service-feature__heading--white top-service__heading top-service__heading--02">ビル</h3>
 					<p class="service-feature__text">毎日出社していただく皆様が気持ちよくオフィスにお越しいただけるよう、プロの視点で徹底的な清掃を実施しております。清潔な環境は労働環境の向上に繋がり、生産性や快適さを高めます。私たちはオフィスの清潔さを維持し、快適な作業環境を提供することで、皆様の業務に集中できるようお手伝いさせていただきます。</p>
@@ -81,7 +81,7 @@
 				</div>
 			</div>
 			<div class="service-feature__wrap service-feature__01">
-				<div class="service-feature__texts">
+				<div class="top-service-feature__texts">
 					<span class="top-service__subenglish top-service__subenglish--left">housing</span>
 					<h3 class="service-feature__heading top-service__heading top-service__heading--03">住宅</h3>
 					<p class="service-feature__text">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。普段は見過ごされるか、手が届きにくい場所でも、私たちのプロの清掃スキルと経験を活かし、最高のクオリティでお手伝いさせていただきます。清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。</p>
@@ -91,7 +91,7 @@
 				</div>
 			</div>
 		</div>
-    <div class="top-feature__button button">
+    <div class="top-service__button button">
         <a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
     </div>
   </section>

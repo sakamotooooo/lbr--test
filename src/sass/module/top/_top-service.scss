@@ -38,7 +38,6 @@
   right: 0;
   top: 0;
 
-
   @include mq(md) {
     font-size: rem(135);
     top: rem(-95);
@@ -58,7 +57,6 @@
         font-weight: $bold;
         position: absolute;
         right: 0;
-        top: rem(-34);
         text-transform: uppercase;
     }
   }
@@ -68,7 +66,8 @@
   opacity: 0.05;
 
   @include mq(md) {
-    left: 0%;
+    left: 8%;
+    bottom: 0;
   }
 }
 
@@ -78,7 +77,7 @@
 
   @include mq(md) {
     right: 0;
-    top: 60%;
+    top: 80%;
   }
 }
 
@@ -88,14 +87,33 @@
   }
 }
 
+.top-service__wrap {
+  justify-content: center;
+}
+
+.top-service-feature__texts {
+  @include mq(md) {
+    max-width: rem(450);
+  }
+}
+
+.top-service__heading {
+  line-height: 1.56;
+}
+
 .top-service__heading::after {
     position: absolute;
     text-transform: uppercase;
     color: $blue;
     font-size: rem(14);
     font-weight: $bold;
-    left: 1%;
-    top: rem(-10);
+    left: 0;
+    top: rem(-15);
+
+    @include mq(md) {
+      left: 1%;
+      top: rem(-10);
+    }
 
 }
 
@@ -110,4 +128,16 @@
 
 .top-service__heading--03::after {
     content: "housing";
+}
+
+.top-service__button {
+  margin-top: 0;
+
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.top-service__button a {
+  margin-inline: auto;
 }

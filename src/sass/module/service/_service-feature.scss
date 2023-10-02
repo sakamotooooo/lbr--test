@@ -20,9 +20,9 @@
 .service-feature__wrap {
   display: flex;
   align-items:  center;
+  justify-content: center;
   gap: rem(25);
   margin-top: rem(30);
-
 
   @include mq(md) {
     margin-top: rem(45);
@@ -186,8 +186,6 @@
   overflow: hidden;
   padding-inline:  $padding-sp;
   max-width: rem(360);
-  margin-inline: auto;
-
 
   @include mq(md) {
     max-width: rem(620);

@@ -32,7 +32,6 @@
   @include mq(md) {
     font-size: rem(135);
     top: rem(-95);
-
   }
 }
 
@@ -54,11 +53,12 @@
 }
 
 .top-feature__summary {
-  text-align: center;
   margin-top: rem(25);
+  line-height: 1.75;
 
   @include mq(md) {
     margin-top: rem(33);
+    text-align: center;
   }
 }
 
@@ -73,16 +73,19 @@
     font-size: rem(18);
     margin-top: rem(10);
 
+    @include mq(md) {   
+      }
+}
+
+.top-feature__button {
+  margin-top: rem(60);
 
     @include mq(md) {   
+        margin-top: rem(44);
       }
 }
 
 .top-feature__button a{
   margin-inline: auto;
-  margin-top: rem(44);
 
-    @include mq(md) {   
-        margin-top: rem(44);
-      }
 }
