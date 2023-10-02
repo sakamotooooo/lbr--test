@@ -1,6 +1,10 @@
 @use "global" as *;
 
 .top-swiper {
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  margin-left: calc(50% - 50vw) !important;
   margin-top: rem(50);
   padding-bottom: rem(24) !important;
   background: linear-gradient(180deg, transparent 0%, transparent 45%, $blue 45%, $blue 100%);
@@ -8,4 +12,39 @@
         margin-top: rem(80);
         background: linear-gradient(180deg, transparent 0%, transparent 20%, $blue 20%, $blue 100%);
       }
+}
+
+/* スライドの動き等速 */
+.top-swiper
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+.top-swiper
+.swiper-slide {
+  max-width: rem(200);
+  @include mq(md) {
+      max-width: rem(360);
+  }
+}
+
+.top-swiper
+.swiper-slide img {
+  max-width: rem(200);
+  aspect-ratio: 200 / 125;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @include mq(md) {
+      max-width: rem(360);
+      aspect-ratio: 360 / 225;
+
+  }
+}
+
+
+.top-swiper
+.swiper-slide img {
+  border-radius: rem(10);
 }

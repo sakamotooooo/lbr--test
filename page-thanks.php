@@ -47,7 +47,5 @@ get_header() ;
 		</span>
 	</div> -->
 
-
-
 </main>
 <?php get_footer() ;?>

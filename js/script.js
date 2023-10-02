@@ -37,10 +37,39 @@ jQuery(function ($) {
     // クリックしたタイトルのcontentを開閉
     $(this).next().slideToggle(300);
   });
+
+  var topBtn = $('.pagetop');
+  topBtn.hide();
+
+  // ボタンの表示設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      // 指定px以上のスクロールでボタンを表示
+      topBtn.fadeIn();
+    } else {
+      // 画面が指定pxより上ならボタンを非表示
+      topBtn.fadeOut();
+    }
+  });
+});
+
+const swiperFv = new Swiper(".fv-swiper", {
+  loop: true,
+  effect: "fade", // フェード切り替え
+  // 自動再生
+  autoplay: {
+    delay: 4000, // 4秒後に次のスライドへ
+    disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
+  },
+  speed: 2000, // 2秒かけてフェード
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
 
 //topページスライダー
-const swiper = new Swiper(".top-swiper", {
+const swiperTop = new Swiper(".top-swiper", {
   loop: true,
   autoplay: {
     delay: 0,

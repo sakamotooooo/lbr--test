@@ -76,10 +76,10 @@
 				<input id="formButton" type="submit" class="form__submit" value="送信する">
 			</div> -->
 			</form>
-
 		</div>
+		<a class="pagetop" href="#">
+    		<div class="pagetop__arrow"></div>
+  		</a>
 	</section>
-
-
 </main>
 <?php get_footer() ;?>

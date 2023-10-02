@@ -1,0 +1,66 @@
+@use "global" as *;
+
+.mv-scroll {
+    position:  absolute;
+    margin-left: -8%;
+    bottom: 11%;
+}
+
+.mv-scroll__title {
+    font-size: rem(12);
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+}
+
+.mv-bar {
+    padding-left: rem(10);
+}
+
+
+.mv-bar::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: rem(100);
+    background-color: #D9D9D9;
+    display: block;
+    margin-top: rem(5);
+}
+
+.mv-bar::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: rem(100);
+    background-color: #DBC890;
+    display: block;
+    animation: scroll 2.5s infinite;
+    margin-top: rem(5);
+}
+
+@keyframes scroll {
+    0% {
+        transform: scale(1, 0);
+        transform-origin: center top;
+    }
+
+    50% {
+        transform: scale(1, 1);
+        transform-origin: center top;
+    }
+
+    51% {
+        transform: scale(1, 1);
+        transform-origin: center bottom;
+    }
+
+    100% {
+        transform: scale(1, 0);
+        transform-origin: center bottom;
+    }
+}

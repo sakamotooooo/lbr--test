@@ -27,6 +27,9 @@
         <a href="<?php echo esc_url(home_url('/news/')); ?>">一覧に戻る</a>
     </div>
     </section>
+    <a class="pagetop" href="#">
+		  <div class="pagetop__arrow"></div>
+	  </a>
 </main>
 
 <?php get_template_part('template/contact-footer');?>

@@ -6,6 +6,9 @@ html {
   @media (max-width: 375px) {
     font-size: vw(375, 16);
   }
+body {
+  overflow-x:hidden
+}
 
   //375px~787px
   font-size: 16px;

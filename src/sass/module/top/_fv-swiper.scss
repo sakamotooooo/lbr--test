@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.fv-swiper {
+    z-index: -1 !important;
+
+  }
+
+//   .fv-swiper
+//   .swiper-slide-active .swiper-img,
+//   .swiper-slide-duplicate-active .swiper-img,
+//   .swiper-slide-prev .swiper-img {
+//     animation: zoomUp 7s linear 0s normal both;
+//   }
+
+  .fv-swiper
+  .swiper-slide img {
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  @keyframes zoomUp {
+    0% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

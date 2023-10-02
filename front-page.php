@@ -1,18 +1,54 @@
 <?php get_header(); ?>
 <main>
   <section class="top-fv">
-    <div class="top-fv__titles">
-      <h2 class="top-fv__title">
-        <img src="<?php echo get_template_directory_uri() ?>/images/fv-title.png" alt="">
-      </h2>
-      <span class="top-fv__subtitle">
-        <img src="<?php echo get_template_directory_uri() ?>/images/fv-subtitle.png" alt="">
+    <h2 class="color-blue">
+      <span>
+        人と地球に<br />
+        優しい環境作り
       </span>
+    </h2>
+    <p class="color-white">
+      <span>
+        人と地球に<br />
+        優しい環境作り
+      </span>
+    </p>
+    <p class="color-blue__sub">
+      <span>
+      社会問題になっている温暖化・エコへの取り組みを<br>
+      清掃業界を通じて、社会貢献活動を続けていきます。
+      </span>
+    </p>
+    <p class="color-white__sub">
+      <span>
+      社会問題になっている温暖化・エコへの取り組みを<br>
+      清掃業界を通じて、社会貢献活動を続けていきます。
+      </span>
+    </p>
+    <div class="swiper fv-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-img top-fv__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/fv01.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-img top-fv__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/fv02.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-img top-fv__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/fv03.jpg" alt="">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="top-fv__img">
-      <img src="<?php echo get_template_directory_uri() ?>/images/fv01.jpg" alt="">
+    <div class="mv-scroll">
+      <div class="mv-scroll__title">scroll</div>
+      <div class="mv-bar"></div>
     </div>
-  </section>
+</section>
   <div class="top-fv__banner inner">
     <a href="<?php echo esc_url(home_url('/lp/')); ?>">
       <img src="<?php echo get_template_directory_uri() ?>/images/banner.jpg" alt="">
@@ -141,7 +177,9 @@
       </div>
     </div>
   </section>
-
+  <a class="pagetop" href="#">
+    <div class="pagetop__arrow"></div>
+  </a>
 </main>
 <?php get_template_part('template/contact-footer');?>
 
