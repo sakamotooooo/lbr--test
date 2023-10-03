@@ -83,15 +83,19 @@
 .footer-nav__item a {
     display: inline-block;
     padding: rem(7.5) rem(3);
-    @include mq(md) {
 
-    }
 }
 
 .footer__bottom{
-    border-top: 1px solid #F4F9FD;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+    border-top: 1px solid rgb(244,249,253,0.3);
+    width: 92%;
+    margin-inline: auto;
+
+    @include mq(md) {
+        border-top: 1px solid rgb(244,249,253,0.3);
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+    }
 }
 
 .footer__bottominner {
@@ -125,6 +129,7 @@
 
 .header__logo-link{
 }
-.footer__copyright{
+
+.footer__copyright small{
     font-size: rem(12);
 }

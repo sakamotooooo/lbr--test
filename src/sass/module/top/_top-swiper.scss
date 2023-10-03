@@ -5,7 +5,7 @@
   height: auto;
   overflow: hidden;
   margin-left: calc(50% - 50vw) !important;
-  margin-top: rem(50);
+  margin-top: rem(40);
   padding-bottom: rem(24) !important;
   background: linear-gradient(180deg, transparent 0%, transparent 45%, $blue 45%, $blue 100%);
     @include mq(md) {
@@ -39,10 +39,8 @@
   @include mq(md) {
       max-width: rem(360);
       aspect-ratio: 360 / 225;
-
   }
 }
-
 
 .top-swiper
 .swiper-slide img {

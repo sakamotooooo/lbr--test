@@ -109,7 +109,7 @@
 
   @include mq(md) {
     grid-template-columns: 1fr 1fr;
-    gap: rem(10);
+    gap: rem(20);
   }
 }
 

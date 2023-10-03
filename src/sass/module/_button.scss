@@ -9,7 +9,7 @@
     display: block;
     max-width: rem(250);
     width: 100%;
-    padding: rem(16) rem(80);
+    padding: rem(14) rem(80);
     background-color: $blue;
     color: $white;
     font-size: rem(18);
@@ -38,7 +38,6 @@
 }
 
 /* 矢印が下向き */
-
 .button--bottomarrow a {
     text-align: center;
     width: rem(250);

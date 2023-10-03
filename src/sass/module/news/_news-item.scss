@@ -18,16 +18,12 @@
 .news-item::before {
     content: "";
     position: absolute;
+    display: block;
+    width: 100%;
+    height: rem(1);
+    left: 0;
     bottom: 0;
-    width: rem(116);
-    height: inherit;
-    border-bottom: 1px solid $blue;
-
-        @include mq(md) {
-            left: 0;
-    }
-
-    
+    background: linear-gradient(to right, $blue 120px, #ddd 120px, #ddd 100%);
 }
 
 .news-item__date {

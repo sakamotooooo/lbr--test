@@ -62,11 +62,8 @@ const swiperFv = new Swiper(".fv-swiper", {
     disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
   },
   speed: 2000, // 2秒かけてフェード
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 });
+
 
 //topページスライダー
 const swiperTop = new Swiper(".top-swiper", {

@@ -29,17 +29,17 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="swiper-img top-fv__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/fv01.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/images/fv01.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-img top-fv__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/fv02.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/images/fv02.jpg" alt="">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="swiper-img top-fv__img">
-          <img src="<?php echo get_template_directory_uri() ?>/images/fv03.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/images/fv03.jpg" alt="">
           </div>
         </div>
       </div>
@@ -55,36 +55,34 @@
     </a>
   </div>
   <section class="top-feature">
-    <div class="inner">
-      <span class="top-feature__englishtitle">feature</span>
-        <div class="section-heading">
-          <span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
-          <h2 class="section-heading__title section-heading__title--blue">エルビーアールのこだわり</h2>
+    <span class="top-feature__englishtitle">feature</span>
+      <div class="section-heading">
+        <span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
+        <h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
+      </div>
+      <p class="service-feature__summary top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
+        また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br class="u-desktop">
+        清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。
+      </p>
+      <div class="top-feature__lists">
+        <div class="top-feature__wrap">
+          <img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+          <p>技術力の高い特殊清掃</p>
         </div>
-        <p class="service-feature__summary top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
-          また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br class="u-desktop">
-          清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。
-        </p>
-        <div class="top-feature__lists">
-          <div class="top-feature__wrap">
-            <img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
-            <p>技術力の高い特殊清掃</p>
-          </div>
-          <div class="top-feature__wrap">
-            <img src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
-            <p>エコクリーニングへのこだわり</p>
-          </div>
-          <div class="top-feature__wrap">
-            <img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
-            <p>清掃のスペシャリスト</p>
-          </div>
+        <div class="top-feature__wrap">
+          <img src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
+          <p>エコクリーニングへのこだわり</p>
         </div>
-        <div class="top-feature__button button">
-          <a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
+        <div class="top-feature__wrap">
+          <img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
+          <p>清掃のスペシャリスト</p>
         </div>
       </div>
+      <div class="top-feature__button button">
+        <a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
+      </div>
   </section>
-  <section class="top-service">
+  <!-- <section class="top-service">
     <span class="top-service__englishtitle">service</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
@@ -104,7 +102,7 @@
 					<p class="service-feature__text">大切な人と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
 				</div>
 				<div class="service-feature__img">
-					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri() ?>/images/lp-service-pc01.jpg" alt="">
 				</div>
 			</div>
 			<div class="service-feature__wrap service-feature__02">
@@ -137,7 +135,7 @@
 		<div class="top-service__button button">
 			<a href="<?php echo esc_url(home_url('/service/')); ?>">詳しく見る</a>
 		</div>
-	</section>
+	</section> -->
 	<div class="swiper top-swiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
@@ -162,7 +160,6 @@
         $the_query = new WP_Query( $args );
       ?>
 	<section class="top-news">
-		<span class="top-news__englishtitle">news</span>
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">news</span>
 			<h2 class="section-heading__title section-heading__title--black">お知らせ</h2>
@@ -183,11 +180,12 @@
           <a href="<?php echo esc_url(home_url('/news/')); ?>">詳しく見る</a>
       </div>
     </div>
+		<span class="top-news__englishtitle">news</span>
   </section>
   <a class="pagetop" href="#">
-    <div class="pagetop__arrow"></div>
+      <div class="pagetop__arrow"></div>
   </a>
 </main>
 <?php get_template_part('template/contact-footer');?>
 
-<?php get_footer() ;?>11
+<?php get_footer() ;?>
