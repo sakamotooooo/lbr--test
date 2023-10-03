@@ -2,8 +2,9 @@
 .breadcrumbs{
 	text-align: right;
 	margin-top: rem(8);
+	padding-right: min(rem(165,12vw));
 	@include mq('md') {
-	 margin-top: rem(15);
+	 margin-top: rem(9);
 	}
 }
 .breadcrumbs__symbol{
@@ -11,7 +12,6 @@
 	vertical-align: middle;
 }
 .breadcrumbs span{
-	color: $text-color;
 	font-size: rem(12);
 	font-weight: $regular;
 	@include mq('md') {
