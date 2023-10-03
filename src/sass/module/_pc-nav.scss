@@ -18,8 +18,7 @@
   height: inherit;
   display: grid;
   place-items: center;
-  padding: 0 min(rem(14), 0.5vw);
-  letter-spacing: 0.125em;
+  padding: 0 min(rem(12), 1vw);
 }
 
 .pc-nav__item a::after {
@@ -62,7 +61,7 @@
 }
 
 .pc-nav__tel {
-  padding-left: rem(12.5);
+  padding-left: min(rem(24),1.6vw);
   height: inherit;
   display: flex;
   align-items: center;
