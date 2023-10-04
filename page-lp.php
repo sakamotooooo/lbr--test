@@ -171,7 +171,7 @@
 					<div class="lp-service__content">
 						<h3 class="lp-subTitle lp-subTitle--black">ビル</h3>
 						<p class="lp-text lp-service__text">
-							日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /
+							日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /<br>
 							シャンデリアメンテナンス / 大理石などの落書き / いす清掃 / ガラス清掃
 						</p>
 						<div class="lp-btn__wrap">
@@ -190,7 +190,7 @@
 						<h3 class="lp-subTitle lp-subTitle--black">住宅</h3>
 						<p class="lp-text lp-service__text">
 							日常清掃 / カーペット洗浄 / エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /
-							外壁高圧洗浄 / 外階段高圧洗浄 / ガラス清掃
+							<br class="u-mobile">外壁高圧洗浄 / <br class="u-desktop">外階段高圧洗浄 / ガラス清掃
 						</p>
 						<div class="lp-btn__wrap">
 							<a href="<?php echo home_url('service#housing'); ?>" class="lp-btn">詳しく見る</a>

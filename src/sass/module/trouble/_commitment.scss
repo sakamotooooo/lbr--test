@@ -1,7 +1,7 @@
 @use "global" as *;
 .commitment {
   margin-top: rem(60);
-  margin-bottom: rem(60);
+  margin-bottom: rem(54);
   @include mq("md") {
     margin-top: rem(80);
     margin-bottom: rem(70);
@@ -23,14 +23,14 @@
   }
 }
 .commitment__item + .commitment__item {
-  margin-top: rem(40);
+  margin-top: rem(38);
   @include mq("md") {
     margin-top: 0;
   }
 }
 .commitment__img {
   width: 100%;
-  aspect-ratio: 360 / 232;
+  aspect-ratio: 360 / 244;
   height: auto;
   @include mq("md") {
     max-width: rem(378);
@@ -49,6 +49,11 @@
     padding: min(rem(20),2vw) min(rem(16),1.2vw) 0;
   }
 }
-.commitment__text {
+.commitment__text.lp-text {
   margin-top: rem(5);
+	line-height: 1.78;
+	@include mq('md') {
+		letter-spacing: -0.1em;
+		line-height: 1.6;
+	}
 }

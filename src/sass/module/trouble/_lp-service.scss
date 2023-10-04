@@ -11,7 +11,7 @@
 .lp-service__items {
   margin-top: rem(35);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(36);
   }
 }
 .lp-service__item + .lp-service__item {
@@ -50,7 +50,7 @@
 .lp-service__content {
   padding: rem(25) rem(15) rem(30);
   background-color: $white;
-  margin: rem(-20) auto 0;
+  margin: rem(-34) auto 0;
   position: relative;
   width: max(rem(360), 64vw);
   @include mq("md") {
