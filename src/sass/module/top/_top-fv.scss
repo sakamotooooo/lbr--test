@@ -4,16 +4,36 @@
     position: relative;
     width: 100%;
     padding-left: 3%;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 410px;
 
     @include mq(md) {
       padding-left: 9%;
+      height: min(49vw,685px);
+
+    }
+  }
+
+  .top-fv__bg {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background-color: #fff;
+    left: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 50%, #fff 50%, #fff 100%);
+    z-index: 1;
+
+    @include mq(md) {
+      background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 80.8%, #fff 80.8%, #fff 100%);
+      height: min(50vw,687px);
     }
   }
 
   .top-fv__img {
     height: 410px !important;
     margin-left: 17%; 
+    z-index: -1;
+
 
     @include mq(md) {
       height: auto !important;
@@ -87,9 +107,10 @@
     top: 24%;
     line-height: 2;
     padding-top: rem(120);
+    z-index: 2;
     
     @include mq(md) {
-        padding-top: min(14vw,rem(220));
+        padding-top: min(16vw,rem(240));
         font-size: min(1.5vw, rem(18));
 
     }

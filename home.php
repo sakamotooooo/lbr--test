@@ -9,6 +9,7 @@
       <div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-sp.jpg" alt="newstop"></div>
       <div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-pc.jpg" alt="newstop"></div>
     </section>
+	  <?php get_template_part('template/breadcrumb');?>
     <?php
         $args = [
           'post_type' => 'post',

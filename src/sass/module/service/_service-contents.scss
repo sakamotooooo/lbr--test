@@ -16,7 +16,12 @@
     padding-top: rem(80);
     padding-bottom: rem(110);  
   }
+}
 
+.service-content {
+  @include mq(md) {
+    margin-top: rem(30);
+  }
 }
 
 .service-contents__summary {

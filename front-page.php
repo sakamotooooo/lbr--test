@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <main>
   <section class="top-fv">
+    <div class="top-fv__bg"></div>
     <h2 class="color-blue">
       <span>
         人と地球に<br />
@@ -60,7 +61,7 @@
         <span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
         <h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
       </div>
-      <p class="service-feature__summary top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
+      <p class="top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
         また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br class="u-desktop">
         清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。
       </p>
@@ -96,7 +97,7 @@
 				建物の清潔さと快適さを確保しています。
 			</p>
 			<div class="top-service__contents">
-				<div class="service__content service__content--right">
+				<div class="service__content service__content--right top-service__content--right">
 					<div class="service__text">
 						<h3 class="top-service__heading top-service__heading--01">マンション</h3>
 						<p class="service-feature__text">大切な人と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
@@ -105,7 +106,7 @@
 						<img src="<?php echo get_template_directory_uri() ?>/images/lp-service-pc01.jpg"
 							alt="">
 					</div>
-					<div class="service__bg service__bg--right u-desktop">
+					<div class="service__bg service__bg--right service__bg--right--01 u-desktop">
 						<span class="service__subenglish service__subenglish--right">apartment</span>
 					</div>
 				</div>
@@ -123,11 +124,11 @@
 					<div class="service__bg service__bg--left u-desktop">
 						<span class="service__subenglish service__subenglish--left">building</span>
 					</div>
-				</div>
+				  </div>
       </div>
 			<div class="top-service__contents">
-        <div class="service__content service__content--right">
-					<div class="service__text">
+        <div class="service__content service__content--right top-service__content--right">
+					<div class="service__text service__text--03">
 						<h3 class="top-service__heading top-service__heading--03">住宅</h3>
 						<p class="service-feature__text">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。普段は見過ごされるか、手が届きにくい場所でも、私たちのプロの清掃スキルと経験を活かし、最高のクオリティでお手伝いさせていただきます。清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。</p>
 					</div>
@@ -140,25 +141,30 @@
 					</div>
 				</div>
       </div>
-			</div>
-		</div>
+    </div>
+    <div class="top-service__button button">
+        <a href="<?php echo esc_url(home_url('/service/')); ?>#service-contents">詳しく見る</a>
+      </div>
+  </div>
 	</section>
-	<div class="swiper top-swiper">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
-			</div>
-		</div>
-	</div>
+  <div class="splide top-splide" aria-label="">
+    <div class="splide__track">
+      <div class="splide__list">
+        <div class="splide__slide">
+          <img src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+        </div>
+        <div class="splide__slide">
+          <img src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+        </div>
+        <div class="splide__slide">
+          <img src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+        </div>
+        <div class="splide__slide">
+          <img src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 	<?php
         $args = [
           'post_type' => 'post',

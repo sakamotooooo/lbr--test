@@ -14,23 +14,29 @@
 
 .mainview__title {
     position: absolute;
-    top:76%;
-    left:3.8%;
-    transform: translateX(-3.8%);
+    top:82%;
+    left:6%;
+    transform: translateX(-6%);
     font-weight: $medium;
     background-color: $blue;
     color: $white;
-    padding: rem(15) rem(25) rem(10) rem(20);
+    padding: rem(12) rem(25) rem(10) rem(20);
     line-height: 1.2;
 
     @include mq(md) {
       font-size: rem(35);
-      top:83%;
-      left:11.1%;
+      top:87%;
+      left:13%;
       transform:translateX(-11.1%);
       padding: rem(20) rem(30) rem(15) rem(25);
      line-height: 1.1;
     }
+}
+
+.mainview__title--news-details {
+    @include mq(md) {
+        top:78%;
+      }
 }
 
 .mainview__title span {

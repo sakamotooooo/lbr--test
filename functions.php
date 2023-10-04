@@ -38,9 +38,15 @@ function my_script_init()
 	wp_enqueue_style( 'styles-css', get_template_directory_uri() . '/css/styles.css', array(), '1.0.1', 'all' );
 
 	wp_enqueue_style( 'swiper-css', '//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', array(), '1.0.1', 'all' );
+	wp_enqueue_style( 'splide-css', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css', array(), '1.0.1', 'all' );
+
 	wp_enqueue_style( 'google-font', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&family=Roboto:wght@400;500;700&display=swap', array(), '1.0.1', 'all' );
 
 	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.js', array( 'jquery' ), '1.0.1', true );
+	wp_enqueue_script( 'splide-js','//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', array( 'jquery' ), '1.0.1', true );
+
+	wp_enqueue_script( 'splide-loop-js','//cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js', '1.0.1', true );
+
 	wp_enqueue_script( 'swiper-js','//cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', array( 'jquery' ), '1.0.1', true );
 	wp_enqueue_script( 'script-js', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );
 

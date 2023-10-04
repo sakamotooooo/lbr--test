@@ -36,8 +36,13 @@
     margin-inline: auto;
     padding: 0 rem(15);
     @include mq("md") {
-        // min-width: rem(500);
         width:  min(60vw,rem(700));
+    }
+}
+
+.top-news__content:first-child {
+    @include mq("md") {
+        padding-top: 0;
     }
 }
 
@@ -59,7 +64,7 @@
     margin-inline: auto;
     @include mq(md) {
         flex-shrink: 0;
-        padding: rem(15) min(5vw, rem(80));
+        padding: rem(15) min(6vw, rem(80));
     }
 }
 
