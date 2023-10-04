@@ -26,7 +26,7 @@
   margin-top: rem(30);
 
   @include mq(md) {
-    gap: min(3vw, rem(50));
+    gap: min(2vw, rem(50));
     position: relative;
     margin-top: rem(105);
   } 
@@ -234,14 +234,15 @@
   line-height: 1.75;
   margin-top: rem(15);
   flex-shrink: 1;
+  letter-spacing: 0.1em;
 
   @include mq(md) {
     font-weight: $regular;
     margin-top: rem(25);
     font-size: min(1.5vw, rem(16));
-
   }
 }
+
 .service-feature__img{
   aspect-ratio: 360 / 232;
   overflow: hidden;
@@ -262,58 +263,184 @@
 }
 
 
-
-
-
-
-// 修正後
-.service-feature__bg {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  background: yellow;
-  margin-left: calc(50% - 50vw);
+//=====================
+//サービス
+//=====================
+.service__inner.inner {
+  @include mq("md") {
+    max-width: rem(1220);
+  }
 }
+.top-service__contents {
+  margin-top: rem(60);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+.service__content {
+  position: relative;
+  padding-top: rem(45);
+  padding-bottom: rem(45);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: rem(25);
 
-.service-feature__number-a {
-  position: absolute;
-  display: inline-block;
-  font-family: $english-font-family;
-  font-size: rem(100);
-  font-weight: $bold;
-  right: 0;
-  // top: rem(-34);
-  text-transform: uppercase;
-  z-index: 1;
+  @include mq("md") {
+    gap: min(3vw,rem(50));
+    flex-direction: row;
+    padding-top: 0;
 
-
-  @include mq(md) {
-    font-size: min(1vw, rem(135));
-    bottom: 0;
   }
 }
 
-.service-feature__wrap-a {
-  display: flex;
-  align-items:  center;
-  justify-content: center;
-  gap: rem(25);
-  margin-top: rem(30);
+.service__content--left {
+  flex-direction: column;
 
-  @include mq(md) {
-    gap: min(3vw, rem(50));
-    position: relative;
-    margin-top: rem(105);
-  } 
+  @include mq("md") {
+    flex-direction: row-reverse;
+  }
 }
 
-// .service-feature__bg::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 80%;
-//   width: 20%;
-//   height: 100%;
-//   background: #00CC99;
+.service__content--left:last-child {
+  @include mq("md") {
+    justify-content: start;
+  }
+}
 
-// }
+
+.service__content:first-child {
+  @include mq("md") {
+    justify-content: end;
+  }
+}
+
+// sp用背景
+.service__content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+.service__content--right::before {
+  background: linear-gradient(to bottom, #f4f9fd 0%, #f4f9fd 65%, #fff 65%, #fff 100%);
+  margin-left: calc(50% - 50vw);
+}
+
+.service__content--left::before {
+  background: linear-gradient(to bottom, $blue 0%, $blue 65%, #fff 65%, #fff 100%);
+  margin-left: calc(50% - 50vw);
+}
+
+.service__img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 360 / 232;
+
+  @include mq("md") {
+    aspect-ratio: 620 / 400;
+    max-width: min(rem(620), 47vw);
+  }
+}
+.service__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: rem(15);
+}
+.service__bg {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.service__bg--left {
+  background: linear-gradient(to bottom, $blue 0%, $blue 92%, #fff 92%, #fff 100%);
+
+  @include mq("md") {
+    left: 0;
+    margin-left: calc(50% - 50vw);
+    height: min(36vw,rem(385));
+    background: linear-gradient(to right, $blue 0%, $blue 92%, #fff 92%, #fff 100%);
+  }
+}
+
+.service__bg--right {
+  background: linear-gradient(to bottom, #fff 0%, #fff 8%, #f4f9fd 8%, #f4f9fd 100%);
+
+
+  @include mq("md") {
+    right: 0;
+    margin-right: calc(50% - 50vw);
+    height: min(35vw,rem(385));
+    background: linear-gradient(to right, #fff 0%, #fff 8%, #f4f9fd 8%, #f4f9fd 100%);
+  }
+  
+}
+
+.service__subenglish {
+  font-size: rem(90);
+  display: inline-block;
+  font-family: $english-font-family;
+  font-weight: 700;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 0;
+  opacity: 0.07;
+  line-height: 0.7;
+  
+
+  @include mq("md") {
+    font-size: min(7vw,rem(90));
+  }
+}
+
+.service__subenglish--right {
+  color: $blue;
+  left: 8%;
+}
+
+.service__subenglish--left {
+  color: $white;
+  right: 8%;
+
+}
+
+.top-service__contents {
+  position: relative;
+}
+.service__text {
+  width: 100%;
+
+  @include mq("md") {
+    padding-left: rem(10);
+    max-width: min(rem(450), 32vw);
+  }
+}
+.service__text,
+.service__img {
+  flex: 1;
+}
+
+.service__text--white {
+  color: $white;
+  padding-left: 0;
+}
+
+.service__content--left:first-child {
+  @include mq("md") {
+    justify-content: start;
+  }
+}
+
+
