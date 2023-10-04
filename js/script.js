@@ -52,7 +52,6 @@ jQuery(function ($) {
     }
   });
 });
-<<<<<<< HEAD
 
 const swiperFv = new Swiper(".fv-swiper", {
   loop: false,
@@ -168,7 +167,6 @@ new Splide(".lp-splide", lpoptions).mount(window.splide.Extensions);
 
 
 
-=======
 window.addEventListener("DOMContentLoaded", function () {
   const swiperFv = new Swiper(".fv-swiper", {
     loop: true,
@@ -218,4 +216,3 @@ window.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
->>>>>>> d1e993984c131fce6519551b402fd817a984c537

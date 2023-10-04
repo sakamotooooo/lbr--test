@@ -143,7 +143,7 @@
 				</div>
 			</div>
 		</div>
-  </div>
+	</div>
 	<!-- 相談 -->
 	<div class="trouble-btn">
 		<p class="trouble-btn__text">
