@@ -383,10 +383,17 @@ select::-ms-expand {
   display: block;
   color: #024892;
   font-weight: 700;
+  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   line-height: 1;
   position: relative;
   height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .consultation__item a {
+    font-size: 1.25rem;
+  }
 }
 
 .consultation__item a::after {
@@ -1735,6 +1742,133 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   .thanks__top a {
     font-size: 1rem;
   }
+}
+
+.service {
+  margin-bottom: 200px;
+  margin-bottom: 12.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .service__inner.inner {
+    max-width: 76.25rem;
+  }
+}
+
+.top-service__contents {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .top-service__contents {
+    margin-top: 2.5rem;
+  }
+}
+
+.service__content {
+  position: relative;
+  padding-bottom: 45px;
+  padding-bottom: 2.8125rem;
+}
+@media screen and (min-width: 768px) {
+  .service__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service__content:first-child {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+.service__content::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f9fd), color-stop(75%, #f4f9fd), color-stop(75%, #fff), to(#fff));
+  background: linear-gradient(to bottom, #f4f9fd 0%, #f4f9fd 75%, #fff 75%, #fff 100%);
+  width: 100vw;
+  height: 100%;
+  margin-left: calc(50% - 50vw);
+  z-index: -1;
+}
+@media screen and (min-width: 768px) {
+  .service__content::before {
+    display: none;
+  }
+}
+
+.service__img {
+  max-width: min(620px, 47vw);
+  max-width: min(38.75rem, 47vw);
+  width: 100%;
+  height: auto;
+  aspect-ratio: 620/400;
+}
+
+.service__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service__bg {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 385px;
+  height: 24.0625rem;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(8%, #fff), color-stop(8%, #f4f9fd), to(#f4f9fd));
+  background: linear-gradient(to right, #fff 0%, #fff 8%, #f4f9fd 8%, #f4f9fd 100%);
+  z-index: -1;
+  right: 0;
+  margin-right: calc(50% - 50vw);
+}
+
+.service__subenglish {
+  font-size: 90px;
+  font-size: 5.625rem;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 90px;
+  font-size: 5.625rem;
+  font-weight: 700;
+  position: absolute;
+  text-transform: uppercase;
+  left: 8%;
+  bottom: -35px;
+  bottom: -2.1875rem;
+  opacity: 0.07;
+}
+
+.top-service__contents {
+  position: relative;
+}
+
+.service-text {
+  max-width: min(450px, 32vw);
+  max-width: min(28.125rem, 32vw);
+  width: 100%;
+}
+
+.service-text,
+.service__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .privacy {
@@ -3376,8 +3510,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .trouble-btn__item a {
-  padding: 19px 80px;
-  padding: 1.1875rem 5rem;
+  padding: 17px 65px;
+  padding: 1.0625rem 4.0625rem;
   background-color: #ffd33a;
 }
 
@@ -3959,6 +4093,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   width: 100%;
   height: 279px;
   height: 17.4375rem;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .trouble-mv__img {
@@ -4030,7 +4165,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 @media screen and (min-width: 768px) {
   .solution__title {
     display: inline-block;
-    padding: 0.75rem 4.1875rem;
+    padding: 1.3125rem 4.3125rem;
     background-color: #ffd33a;
     color: #024892;
     font-weight: 700;
@@ -4054,15 +4189,15 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .solution__title::before {
-  left: 40px;
-  left: 2.5rem;
+  left: 45px;
+  left: 2.8125rem;
   -webkit-transform: translateY(-50%) rotate(-23deg);
           transform: translateY(-50%) rotate(-23deg);
 }
 
 .solution__title::after {
-  right: 40px;
-  right: 2.5rem;
+  right: 50px;
+  right: 3.125rem;
   -webkit-transform: translateY(-50%) rotate(23deg);
           transform: translateY(-50%) rotate(23deg);
 }
@@ -4098,7 +4233,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
-    height: 16.75rem;
+    height: 14.6875rem;
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
   }
@@ -4149,7 +4284,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 @media screen and (min-width: 768px) {
   .solution__content + .solution__content {
     margin-top: 0;
-    margin-left: min(7vw, 6.875rem);
+    margin-left: min(7vw, 5.6875rem);
   }
 }
 
@@ -4180,8 +4315,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   width: 15.25rem;
   height: 258px;
   height: 16.125rem;
-  top: -107px;
-  top: -6.6875rem;
+  top: -98px;
+  top: -6.125rem;
   left: -39px;
   left: -2.4375rem;
   background-image: url(../images/speech-left.png);
@@ -4192,10 +4327,10 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   width: 17.5625rem;
   height: 225px;
   height: 14.0625rem;
-  top: -79px;
-  top: -4.9375rem;
-  left: -39px;
-  left: -2.4375rem;
+  top: -71px;
+  top: -4.4375rem;
+  left: -43px;
+  left: -2.6875rem;
   background-image: url(../images/speech-center.png);
 }
 
@@ -4204,10 +4339,10 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   width: 21.875rem;
   height: 234px;
   height: 14.625rem;
-  top: -97px;
-  top: -6.0625rem;
-  left: -23px;
-  left: -1.4375rem;
+  top: -77px;
+  top: -4.8125rem;
+  left: -41px;
+  left: -2.5625rem;
   background-image: url(../images/speech-right.png);
 }
 
@@ -4221,6 +4356,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 21px;
+  margin-top: 1.3125rem;
 }
 
 .solution__item {
