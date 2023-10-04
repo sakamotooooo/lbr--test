@@ -14,6 +14,66 @@
 				alt="servicetop"></div>
 	</section>
 	<?php get_template_part('template/breadcrumb');?>
+
+
+	<!-- 修正後 -->
+	<section class="service-feature">
+		<div class="section-heading">
+			<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
+			<h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
+		</div>
+		<div class="service-feature__bg">
+			<span class="service-feature__number-a">01</span>
+			<div class="service-feature__wrap-a service-feature__01-a inner">
+				<div class="service-feature__texts">
+					<!-- <span class="service-feature__number service-feature__number--left">01</span> -->
+					<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>
+					<p class="service-feature__text">例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。</p>
+				</div>
+				<div class="service-feature__img">
+					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+				</div>
+			</div>
+
+		</div>
+		<div class="service-feature__wraps">
+			<div class="service-feature__wrap service-feature__01">
+				<div class="service-feature__texts">
+					<!-- <span class="service-feature__number service-feature__number--left">01</span> -->
+					<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>
+					<p class="service-feature__text">例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。</p>
+				</div>
+				<div class="service-feature__img">
+					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+				</div>
+			</div>
+			<div class="service-feature__wrap service-feature__02">
+				<div class="service-feature__texts service-feature__texts--02">
+					<h3 class="service-feature__heading service-feature__heading--white">エコクリーニングへの<br>こだわり</h3>
+					<p class="service-feature__text">人と地球にやさしい強アルカリ電解水をメインに使用しています。清掃業界の中でもいち早く導入をし、エコクリーニングをこころがけています。</p>
+				</div>
+				<div class="service-feature__img">
+					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
+				</div>
+			</div>
+			<div class="service-feature__wrap service-feature__03">
+				<div class="service-feature__texts">
+					<h3 class="service-feature__heading">清掃のスペシャリスト</h3>
+					<p class="service-feature__text">独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。</p>
+				</div>
+				<div class="service-feature__img">
+					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
 	<section class="service-feature">
 		<div class="section-heading">
 			<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
