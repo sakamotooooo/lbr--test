@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-	margin-top: rem(50);
+	margin-top: rem(22);
   @include mq("md") {
-    margin-top: rem(60);
+    margin-top: rem(44);
   }
 }
 .company-message__img {
@@ -43,17 +43,21 @@
   }
 }
 .company-message__text + .company-message__text {
-  margin-top: rem(30);
+  margin-top: rem(27);
+	@include mq('md') {
+		margin-top: rem(30);
+	}
 }
 .company-message__name {
   color: #000;
   font-size: rem(25);
   font-weight: $medium;
   line-height: 1;
-  margin-top: rem(20);
+  margin-top: rem(27);
   text-align: right;
   display: block;
   @include mq("md") {
     font-size: rem(35);
+		margin-top: rem(24);
   }
 }

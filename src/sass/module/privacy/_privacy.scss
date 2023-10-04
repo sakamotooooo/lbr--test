@@ -3,8 +3,8 @@
 margin-top: rem(50);
 margin-bottom: rem(90);
 @include mq('md') {
- margin-top: rem(60);
-margin-bottom: rem(110);
+ margin-top: rem(90);
+margin-bottom: rem(114);
 }
 }
 .privacy__read {
@@ -17,22 +17,27 @@ line-height: 1.75;
 }
 }
 .privacy__items {
+	margin-top: rem(30);
+	@include mq('md') {
+	 margin-top: rem(35);
+	}
+}
+.privacy__item + .privacy__item {
+	margin-top: rem(30);
+	@include mq('md') {
+	margin-top: rem(36);
 
-}
-.privacy__item {
-margin-top: rem(30);
-@include mq('md') {
- margin-top: rem(35);
-}
+	}
 }
 .privacy__title {
 position: relative;
 font-size: rem(20);
 font-weight: $bold;
 color: $blue;
-padding-bottom: rem(5);
+padding-bottom: rem(4);
 @include mq('md') {
  font-size: rem(24);
+padding-bottom: rem(5);
 }
 }
 .privacy__title::after{
@@ -46,12 +51,14 @@ padding-bottom: rem(5);
 	background: linear-gradient(to right, $blue 120px, #DDD 120px, #DDD 100%);
 }
 .privacy__text {
-margin-top: rem(5);
-color: $text-color;
-font-size: rem(16);
-font-weight: $regular;
-line-height: 1.75;
-@include mq('md') {
- font-size: rem(16);
+	color: $text-color;
+	font-size: rem(16);
+	font-weight: $regular;
+	line-height: 1.75;
+	@include mq('md') {
+		font-size: rem(16);
+	}
 }
+.privacy__item .privacy__text:first-of-type{
+	margin-top: rem(5);
 }

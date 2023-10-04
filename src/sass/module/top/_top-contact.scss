@@ -3,6 +3,9 @@
   padding-top: rem(78);
   padding-bottom: rem(82);
   position: relative;
+	@include mq('md') {
+	 padding-bottom: rem(67);
+	}
 }
 .top-contact::before {
   content: "";
@@ -50,7 +53,10 @@
   }
 }
 .top-contact__items {
-  margin-top: rem(31);
+  margin-top: rem(28);
+	@include mq('md') {
+		margin-top: rem(31);
+	}
 }
 .top-contact__item {
   background-color: $white;
@@ -69,4 +75,5 @@
 .top-contact__item a {
   background-color: $white;
   padding: rem(19) rem(55);
+	font-size: rem(20);
 }
