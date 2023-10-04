@@ -50,3 +50,7 @@ $drawer-height: 2px; //ドロワー線の高さ
  transform: rotate(-45deg);
 }
 
+body.is-open{
+	height: 100%;
+	overflow: hidden;
+}

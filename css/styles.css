@@ -471,6 +471,11 @@ select::-ms-expand {
           transform: rotate(-45deg);
 }
 
+body.is-open {
+  height: 100%;
+  overflow: hidden;
+}
+
 .errorpage {
   margin-top: 50px;
   margin-top: 3.125rem;

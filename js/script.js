@@ -4,11 +4,11 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-open")) {
       // $('.js-drawer-menu').fadeOut(200);
       $(this).removeClass("is-open");
-      $(".js-drawer-menu").removeClass("panelactive");
+      $(".js-drawer-menu,body").removeClass("panelactive");
     } else {
       // $('.js-drawer-menu').fadeIn(200);
       $(this).addClass("is-open");
-      $(".js-drawer-menu").toggleClass("panelactive");
+      $(".js-drawer-menu,body").toggleClass("panelactive");
     }
   });
 
@@ -38,6 +38,15 @@ jQuery(function ($) {
     $(this).next().slideToggle(300);
   });
 
+  // スムーススクール
+  $('a[href^="#"]').click(function () {
+    const speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
   var topBtn = $(".pagetop");
   topBtn.hide();
 
@@ -57,7 +66,7 @@ const swiperFv = new Swiper(".fv-swiper", {
   loop: false,
   effect: "fade", // フェード切り替え
   fadeEffect: {
-    crossFade: true
+    crossFade: true,
   },
   loop: false,
   // 自動再生
@@ -82,7 +91,6 @@ const swiperFv = new Swiper(".fv-swiper", {
 //     clickable: true,
 //   },
 // });
-
 
 // //topページスライダー
 // const swiperTop = new Swiper(".top-swiper", {
@@ -142,7 +150,6 @@ const swiperFv = new Swiper(".fv-swiper", {
 // };
 // new Splide(".top-splide", options).mount(window.splide.Extensions);
 
-
 const lpoptions = {
   type: "loop", // ループさせる
   arrows: false, // 矢印ボタンを非表示
@@ -162,10 +169,6 @@ const lpoptions = {
   },
 };
 new Splide(".lp-splide", lpoptions).mount(window.splide.Extensions);
-
-
-
-
 
 window.addEventListener("DOMContentLoaded", function () {
   const swiperFv = new Swiper(".fv-swiper", {

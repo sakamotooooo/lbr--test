@@ -58,40 +58,11 @@ function wpcf7_autop_return_false() {
    return false;
 }
 
-
-
-
-
-/**
- * CSSとJavaScriptの読み込み
- *
- * @return void
- */
-// function my_theme_script_init() {
-//   // WordPress提供のjquery.jsを読み込まない
-//   wp_deregister_script( 'jquery' );
-//   // jQueryの読み込み
-//   wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0' );
-//   // Google Fonts
-//   // 2つ以上読み込む際は分けて読み込みます
-//   wp_enqueue_style( 'NotoSans', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap' );
-//   wp_enqueue_style( 'KiwiMaru', '//fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&display=swap' );
-//   // micromodal
-//   wp_enqueue_script( 'micromodal', '//unpkg.com/micromodal/dist/micromodal.min.js', array(), '1.0.0' );
-//   // Google Maps
-//   wp_enqueue_script( 'map', '//maps.googleapis.com/maps/api/js?key=APIキーを入れます', array(), '1.0.0', false );
-//   // Slick
-//   wp_enqueue_script( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array(), '1.8.1', false );
-//   wp_enqueue_style( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.8.1', false );
-//   wp_enqueue_style( 'slick-theme', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css', array(), '1.8.1', false );
-//   // Swiper
-//   wp_enqueue_script( 'swiper', '//unpkg.com/swiper@8/swiper-bundle.min.js', array(), '8.0.0', false );
-//   wp_enqueue_style( 'swiper', '//unpkg.com/swiper@8/swiper-bundle.min.css', array(), '8.0.0', false );
-// 	//GSAP
-// 	wp_enqueue_script( 'swiper', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js', array(), '3.11.5', false );
-//   // 自作jsファイルの読み込み
-//   wp_enqueue_script( 'main', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.0', true );
-//   // 自作cssファイルの読み込み
-//   wp_enqueue_style( 'style-name', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', false );
-// }
-// add_action( 'wp_enqueue_scripts', 'my_theme_script_init' );
+// /?author=1用
+function disable_author_archive_query() {
+  if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
+    wp_safe_redirect( home_url() );
+    exit;
+  }
+}
+add_action('init', 'disable_author_archive_query');
