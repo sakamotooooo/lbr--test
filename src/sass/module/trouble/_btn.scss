@@ -14,7 +14,7 @@
   font-weight: $bold;
   max-width: rem(250);
   width: 100%;
-  padding: rem(16) rem(80);
+  padding: rem(14) rem(80);
   text-align: center;
   background-color: $blue;
   position: relative;
@@ -30,10 +30,13 @@
   transform: translateY(-50%) rotate(45deg);
   border-top: 1px solid $white;
   border-right: 1px solid $white;
+	@include mq('md') {
+	 right: rem(17);
+	}
 }
 // お問い合わせ
 .trouble-btn {
-  padding: rem(35);
+  padding: rem(35) rem(23);
   text-align: center;
   background-color: $blue;
 }
@@ -69,7 +72,7 @@
   transform: translateY(-50%) rotate(23deg);
 }
 .trouble-btn__items {
-  margin-top: rem(22);
+  margin-top: rem(19);
   @include mq("md") {
     margin-top: rem(20);
   }

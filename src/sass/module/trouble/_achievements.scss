@@ -19,7 +19,7 @@ background-size: cover;
 .achievements__items {
 	margin-top: rem(35);
   @include mq("md") {
-		margin-top: rem(40);
+		margin-top: rem(36);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 		gap: min(rem(40),4vw);
@@ -68,13 +68,18 @@ display: inline-block;
 }
 }
 .achievements__content {
-padding: rem(15) rem(18) rem(44);
+padding: rem(15) rem(18) rem(60);
 background-color: #F4F9FD;
 height: inherit;
+@include mq('md') {
+ padding-bottom: rem(20);
 }
-.achievements__text {
-	margin-top: rem(26);
+}
+.achievements__text.lp-text {
+	margin-top: rem(19);
+	line-height: 1.5;
 @include mq('md') {
  margin-top: rem(13);
+ line-height: 1.75;
 }
 }
