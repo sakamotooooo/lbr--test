@@ -4,13 +4,15 @@
 <?php get_header(); ?>
 <main>
 	<section class="mainview">
-      <div class="mainview__title">
-        <span>service</span>
-        <h1>サービス</h1>
-      </div>
-      <div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
-      <div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
-    </section>
+		<div class="mainview__title">
+			<span>service</span>
+			<h1>サービス</h1>
+		</div>
+		<div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg"
+				alt="servicetop"></div>
+		<div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg"
+				alt="servicetop"></div>
+	</section>
 	<?php get_template_part('template/breadcrumb');?>
 
 
@@ -82,7 +84,9 @@
 				<div class="service-feature__texts">
 					<!-- <span class="service-feature__number service-feature__number--left">01</span> -->
 					<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>
-					<p class="service-feature__text">例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。</p>
+					<p class="service-feature__text">
+						例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
+					</p>
 				</div>
 				<div class="service-feature__img">
 					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
@@ -100,7 +104,9 @@
 			<div class="service-feature__wrap service-feature__03">
 				<div class="service-feature__texts">
 					<h3 class="service-feature__heading">清掃のスペシャリスト</h3>
-					<p class="service-feature__text">独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。</p>
+					<p class="service-feature__text">
+						独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。
+					</p>
 				</div>
 				<div class="service-feature__img">
 					<img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
@@ -190,7 +196,7 @@
 						私たちのプロの清掃スキルと経験を活かし、<br class="u-desktop">
 						最高のクオリティでお手伝いさせていただきます。<br class="u-desktop">
 						清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。
-						</p>
+					</p>
 					<p class="service-contents__detailtop">清掃サービス一覧</p>
 					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /<br class="u-desktop">
 						外壁高圧洗浄 / 外階段高圧洗浄 / ガラス清掃

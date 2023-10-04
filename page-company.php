@@ -96,7 +96,7 @@
 					<div class="company-about__wrap">
 						<dt class="company-about__title">事業内容</dt>
 						<dd class="company-about__data">
-							ビル全体のクリーニング、室内清掃、電気・空調・給排水設備の管理
+							ビル全体のクリーニング、室内清掃、電気・空調・給排水設備の管理、ガラス清掃
 						</dd>
 					</div>
 					<div class="company-about__wrap">
@@ -137,7 +137,7 @@
 	</section>
 	<a class="pagetop" href="#">
 		<div class="pagetop__arrow"></div>
-  	</a>
+	</a>
 </main>
 <?php get_template_part('template/contact-footer');?>
 

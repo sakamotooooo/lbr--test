@@ -47,5 +47,41 @@ get_header() ;
 		</span>
 	</div> -->
 
+
+
+	<!-- サービス -->
+	<section class="service">
+		<div class="service__inner inner">
+			<span class="top-service__englishtitle">service</span>
+			<div class="section-heading">
+				<span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
+				<h2 class="section-heading__title section-heading__title--black">サービス内容</h2>
+			</div>
+			<p class="service-feature__summary top-service__summary">当社は、多岐にわたる建物タイプに対応し、オフィス、マンション、病院、住宅、商業施設など、<br
+					class="u-desktop">
+				建物の種類やお客様の要望に合わせた高品質なクリーニングサービスを提供しています。<br class="u-desktop">
+				これまで蓄積した幅広い知識と経験に基づき、お客様のニーズに細かく対応し、<br class="u-desktop">
+				建物の清潔さと快適さを確保しています。
+			</p>
+			<div class="top-service__contents">
+				<div class="service__content">
+					<div class="service-text">
+						<h3 class="service-feature__heading top-service__heading top-service__heading--01">マンション</h3>
+						<p class="service-feature__text">大切な人と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
+					</div>
+					<div class="service__img">
+						<img width="620" height="400" src="<?php echo get_template_directory_uri() ?>/images/lp-service-pc01.jpg"
+							alt="">
+					</div>
+					<div class="service__bg u-desktop">
+						<span class="service__subenglish">apartment</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
 </main>
 <?php get_footer() ;?>

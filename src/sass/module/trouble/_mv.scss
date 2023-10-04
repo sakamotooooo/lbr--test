@@ -5,6 +5,7 @@
 .trouble-mv__img {
   width: 100%;
   height: rem(279);
+	display: block;
   @include mq("md") {
     height: rem(785);
   }
