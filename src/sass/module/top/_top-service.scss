@@ -89,11 +89,16 @@
 
 .top-service__wrap {
   justify-content: center;
+
+  @include mq(md) {
+  }
 }
 
 .top-service-feature__texts {
   @include mq(md) {
-    max-width: rem(450);
+    max-width: min(22vw,rem(450));
+    // max-width: rem(450);
+    padding-top: rem(40);
   }
 }
 

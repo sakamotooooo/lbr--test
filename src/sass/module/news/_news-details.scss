@@ -2,9 +2,8 @@
 
 .news-details{
     margin-top: rem(60);
-    margin-bottom: rem(80);
+    margin-bottom: rem(90);
 
-        
     @include mq(md) {
         margin-top: rem(124);
         margin-bottom: rem(105);
@@ -25,6 +24,7 @@
     font-size: rem(16);
     text-align: right;
     margin-top: rem(5);
+    line-height: 1.75;
 
 
     @include mq(md) {
@@ -48,18 +48,22 @@
 .news-details__title::before{
     content: "";
     position: absolute;
+    display: block;
+    width: 100%;
+    height: rem(1);
     left: 0;
     bottom: 0;
-    width: rem(116);
-    height: inherit;
-    border-bottom: 1px solid $blue;
+    background: linear-gradient(to right, $blue 120px, #ddd 120px, #ddd 100%);
 }
 
 .news-details__button  {
     margin-top: rem(70);
-    text-align: center;
 
     @include mq(md) {
         margin-top: rem(80);
     }
 }
+
+.news-details__button a{
+    margin-inline: auto;
+  }

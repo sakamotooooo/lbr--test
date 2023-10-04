@@ -1,9 +1,14 @@
 @use "global" as *;
 
 .mv-scroll {
-    position:  absolute;
-    margin-left: -8%;
-    bottom: 11%;
+    display: none;
+
+    @include mq(md) {
+        display: block;
+        position:  absolute;
+        margin-left: -8%;
+        bottom: rem(100);
+    }
 }
 
 .mv-scroll__title {
