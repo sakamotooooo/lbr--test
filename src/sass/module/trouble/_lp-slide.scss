@@ -7,6 +7,9 @@
     width: rem(180);
   }
 }
+.lp-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
 .lp-swiper .swiper-slide img {
   width: 100%;
   height: 100%;

@@ -38,7 +38,7 @@ jQuery(function ($) {
     $(this).next().slideToggle(300);
   });
 
-  var topBtn = $('.pagetop');
+  var topBtn = $(".pagetop");
   topBtn.hide();
 
   // ボタンの表示設定
@@ -52,52 +52,52 @@ jQuery(function ($) {
     }
   });
 });
-
-const swiperFv = new Swiper(".fv-swiper", {
-  loop: true,
-  effect: "fade", // フェード切り替え
-  // 自動再生
-  autoplay: {
-    delay: 4000, // 4秒後に次のスライドへ
-    disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
-  },
-  speed: 2000, // 2秒かけてフェード
-});
-
-
-//topページスライダー
-const swiperTop = new Swiper(".top-swiper", {
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  slidesPerView:"auto",
-  spaceBetween: 10,
-  loopedSlides: 8,
-  speed: 8000,
-  allowTouchMove: false, // スワイプ無効,
-  breakpoints: {
-    768: {
-      spaceBetween: 15,
-    }
-  },
-});
-//LPページスライダー
-const swiperLp = new Swiper(".lp-swiper", {
-  loop: true,
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 3,
-  spaceBetween: 0,
-  loopedSlides: 8,
-  speed: 8000,
-  allowTouchMove: false, // スワイプ無効,
-  breakpoints: {
-    768: {
-      slidesPerView: 8,
+window.addEventListener("DOMContentLoaded", function () {
+  const swiperFv = new Swiper(".fv-swiper", {
+    loop: true,
+    effect: "fade", // フェード切り替え
+    // 自動再生
+    autoplay: {
+      delay: 4000, // 4秒後に次のスライドへ
+      disableOnInteraction: false, // ユーザーが操作しても自動再生を継続
     },
-  },
+    speed: 2000, // 2秒かけてフェード
+  });
+
+  //topページスライダー
+  const swiperTop = new Swiper(".top-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    loopedSlides: 8,
+    speed: 8000,
+    allowTouchMove: false, // スワイプ無効,
+    breakpoints: {
+      768: {
+        spaceBetween: 15,
+      },
+    },
+  });
+  //LPページスライダー
+  const swiperLp = new Swiper(".lp-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 3,
+    spaceBetween: 0,
+    loopedSlides: 8,
+    speed: 8000,
+    allowTouchMove: false, // スワイプ無効,
+    breakpoints: {
+      768: {
+        slidesPerView: 8,
+      },
+    },
+  });
 });
