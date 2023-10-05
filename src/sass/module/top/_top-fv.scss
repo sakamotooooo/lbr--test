@@ -5,18 +5,17 @@
     width: 100%;
     padding-left: 3%;
     overflow: hidden;
-    height: 410px;
-
+    height: rem(410);
+    -webkit-text-size-adjust: 100%;
     @include mq(md) {
       padding-left: 9%;
-      height: min(49vw,685px);
-
+      height: min(49vw,rem(685));
     }
   }
 
   .top-fv__bg {
     position: absolute;
-    width: 100%;
+    height: rem(411);
     height: inherit;
     background-color: #fff;
     left: 0;
@@ -25,7 +24,7 @@
 
     @include mq(md) {
       background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 80.8%, #fff 80.8%, #fff 100%);
-      height: min(50vw,687px);
+      height: min(49vw,rem(687));
     }
   }
 

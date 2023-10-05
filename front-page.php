@@ -143,24 +143,53 @@
     </div>
     </div>
   </section>
-  <div class="splide top-splide" aria-label="">
-    <div class="splide__track">
-      <div class="splide__list">
-        <div class="splide__slide">
-          <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
-        </div>
-        <div class="splide__slide">
-          <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
-        </div>
-        <div class="splide__slide">
-          <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
-        </div>
-        <div class="splide__slide">
-          <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
+  	<!--CSSで無限ループ  -->
+	<div class="slide top-slide">
+		<div class="slide__wrap">
+			<ul class="slide__list slide__list--left">
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+				</li>
+			</ul>
+			<ul class="slide__list slide__list--left">
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+				</li>
+			</ul>
+      <ul class="slide__list slide__list--left">
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+				</li>
+				<li class="slide__item top-slide__item"><img
+						src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
   <?php
   $args = [
     'post_type' => 'post',

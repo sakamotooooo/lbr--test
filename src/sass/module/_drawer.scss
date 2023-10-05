@@ -6,7 +6,7 @@ $drawer-height: 2px; //ドロワー線の高さ
 .header__drawer{
  z-index:9999;
  background: $blue;
- padding: 0 rem(21);
+ padding: 0 21px;
 
  @include mq(md) {
     display: none;
