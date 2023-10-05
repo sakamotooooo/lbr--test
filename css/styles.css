@@ -528,6 +528,26 @@ body.is-open {
   }
 }
 
+/* フェードイン(初期値) */
+.fadeup {
+  opacity: 0; /* 最初は非表示 */
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px); /* 下に30pxの位置から */
+  -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+  transition: opacity 0.5s, -webkit-transform 1s;
+  transition: opacity 0.5s, transform 1s;
+  transition: opacity 0.5s, transform 1s, -webkit-transform 1s; /* 透過率と縦方向の移動を0.8秒 */
+}
+
+/* フェードイン(スクロールした後) */
+.fadeup.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  -webkit-transform: translateY(0);
+          transform: translateY(0); /* 30px上に移動する */
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s; /* フェード開始を0.5秒遅らせる */
+}
+
 .footer {
   padding-top: 61px;
   padding-top: 3.8125rem;

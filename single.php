@@ -2,8 +2,8 @@
 
 <main>
   <section class="mainview">
-    <div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-sp.jpg" alt="newstop"></div>
-    <div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-news-pc.jpg" alt="newstop"></div>
+    <div class="mainview__sp"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/mv-news-sp.jpg" alt="newstop"></div>
+    <div class="mainview__pc"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/mv-news-pc.jpg" alt="newstop"></div>
     <div class="mainview__inner">
       <div class="mainview__title  mainview__title--news-details">
         <span>news</span>

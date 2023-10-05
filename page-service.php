@@ -8,8 +8,8 @@
 			<span>service</span>
 			<h1>サービス</h1>
 		</div>
-		<div class="mainview__sp"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
-		<div class="mainview__pc"><img src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
+		<div class="mainview__sp"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
+		<div class="mainview__pc"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
 	</section>
 	<?php get_template_part('template/breadcrumb'); ?>
 	<section class="top-service">
@@ -26,7 +26,7 @@
 						<p class="service-feature__text">例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。</p>
 					</div>
 					<div class="service__img">
-						<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
 					</div>
 					<div class="service__bg service__bg--right u-desktop">
 						<span class="service__subenglish service__subenglish--max service__subenglish--right">01</span>
@@ -41,7 +41,7 @@
 						<p class="service-feature__text">人と地球にやさしい強アルカリ電解水をメインに使用しています。清掃業界の中でもいち早く導入をし、エコクリーニングをこころがけています。</p>
 					</div>
 					<div class="service__img">
-						<img src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
+						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
 					</div>
 					<div class="service__bg service__bg--left u-desktop">
 						<span class="service__subenglish service__subenglish--max service__subenglish--left">02</span>
@@ -56,7 +56,7 @@
 						<p class="service-feature__text">独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。</p>
 					</div>
 					<div class="service__img">
-						<img src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
+						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
 					</div>
 					<div class="service__bg service__bg--right u-desktop">
 						<span class="service__subenglish service__subenglish--max service__subenglish--right">03</span>
@@ -100,13 +100,13 @@
 					</p>
 					<div class="service-contents__images">
 						<div class="service-contents__image service-contents__image--01">
-							<img src="<?php echo get_template_directory_uri() ?>/images/apartment01.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/apartment01.jpg" alt="">
 						</div>
 						<div class="service-contents__image">
-							<img src="<?php echo get_template_directory_uri() ?>/images/apartment02.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/apartment02.jpg" alt="">
 						</div>
 						<div class="service-contents__image">
-							<img src="<?php echo get_template_directory_uri() ?>/images/apartment03.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/apartment03.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -127,13 +127,13 @@
 					</p>
 					<div class="service-contents__images">
 						<div class="service-contents__image service-contents__image--01">
-							<img src="<?php echo get_template_directory_uri() ?>/images/buiding.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/buiding.jpg" alt="">
 						</div>
 						<div class="service-contents__image">
-							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
 						</div>
 						<div class="service-contents__image">
-							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature04.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature04.jpg" alt="">
 						</div>
 					</div>
 				</div>
@@ -154,13 +154,13 @@
 					</p>
 					<div class="service-contents__images">
 						<div class="service-contents__image service-contents__image--01">
-							<img src="<?php echo get_template_directory_uri() ?>/images/house.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/house.jpg" alt="">
 						</div>
 						<div class="service-contents__image">
-							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature05.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature05.jpg" alt="">
 						</div>
 						<div class="service-contents__image">
-							<img src="<?php echo get_template_directory_uri() ?>/images/service-feature06.jpg" alt="">
+							<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature06.jpg" alt="">
 						</div>
 					</div>
 				</div>

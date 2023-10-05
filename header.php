@@ -42,7 +42,7 @@ $contact = esc_url(home_url('/contact/'));
         <?php else : ?>
           <div class="header__logo">
           <?php endif; ?>
-          <a href="<?php echo $home; ?>" class="header__logo-link"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt=""></a>
+          <a href="<?php echo $home; ?>" class="header__logo-link"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/logo.png" alt=""></a>
           <?php if (is_front_page()) : ?>
         </h1>
       <?php else : ?>
@@ -62,7 +62,7 @@ $contact = esc_url(home_url('/contact/'));
       <li class="sp-nav__item">
         <div class="tel-box">
           <div class="tel-box__img">
-            <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" class="pc-nav__telimg" alt="電話アイコン">
+            <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png" class="pc-nav__telimg" alt="電話アイコン">
           </div>
           <div class="tel-box__details">
             <div class="tel-box__number"><a href="tel:03-6276-5828">03-6276-5828</a></div>
@@ -87,7 +87,7 @@ $contact = esc_url(home_url('/contact/'));
         <li class="pc-nav__item pc-nav__tel">
           <div class="tel-box">
             <div class="tel-box__img">
-              <img src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
+              <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
             </div>
             <div class="tel-box__details">
               <p class="tel-box__number tel-box__number--pc">03-6276-5828</p>

@@ -14,7 +14,7 @@ $contact = esc_url(home_url('/contact/'));
 		<div class="footer__top">
 			<div class="footer__left">
 				<div class="footer__logo">
-					<a href="<?php echo $home; ?>" class="footer__logo-link"><img src="<?php echo get_template_directory_uri() ?>/images/logo-white.png" alt=""></a>
+					<a href="<?php echo $home; ?>" class="footer__logo-link"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/logo-white.png" alt=""></a>
 				</div>
 				<div class="footer__access">
 					<p>〒151-0053</p>
@@ -36,9 +36,9 @@ $contact = esc_url(home_url('/contact/'));
 		<div class="footer__bottom">
 			<div class="footer__bottominner">
 				<div class="footer__sns">
-					<a href="https://www.instagram.com/lbr0018/" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri() ?>/images/insta.svg" alt="instagram"></a>
-					<a href="https://www.tiktok.com/@lbr0018?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri() ?>/images/tiktok.svg" alt="tiktok"></a>
-					<a href="https://x.com/lbr0018" target="_blank" rel="noopener noreferrer"><img src="<?php echo get_template_directory_uri() ?>/images/x.svg" alt="x"></a>
+					<a href="https://www.instagram.com/lbr0018/" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/insta.svg" alt="instagram"></a>
+					<a href="https://www.tiktok.com/@lbr0018?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/tiktok.svg" alt="tiktok"></a>
+					<a href="https://x.com/lbr0018" target="_blank" rel="noopener noreferrer"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/x.svg" alt="x"></a>
 				</div>
 				<p class="footer__copyright"><small lang="en">&copy;Copyright LBR Co.,Ltd All right reserved</small></p>
 			</div>
