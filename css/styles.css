@@ -1251,7 +1251,6 @@ select::-ms-expand {
   margin-left: 2px;
   margin-left: 0.125rem;
   padding-top: 70px;
-  padding-top: 4.375rem;
   height: 100vh;
 }
 
@@ -1311,6 +1310,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .tel-box {
     margin-top: 0;
+    gap: min(0.3vw, 0.375rem);
   }
 }
 
@@ -1331,6 +1331,11 @@ select::-ms-expand {
   width: 17px;
   width: 1.0625rem;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  .tel-box__img img {
+    width: min(1.0625rem, 2vw);
+  }
 }
 
 .tel-box__details {
@@ -1363,6 +1368,11 @@ select::-ms-expand {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .tel-box__number--pc {
+    font-size: min(1.25rem, 2vw);
+  }
 }
 
 .tel-box__time {

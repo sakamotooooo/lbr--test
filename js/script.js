@@ -2,18 +2,15 @@
 jQuery(function ($) {
   $(".js-hamburger").on("click", function () {
     if ($(".js-hamburger").hasClass("is-open")) {
-      // $('.js-drawer-menu').fadeOut(200);
       $(this).removeClass("is-open");
       $(".js-drawer-menu,body").removeClass("panelactive");
     } else {
-      // $('.js-drawer-menu').fadeIn(200);
       $(this).addClass("is-open");
       $(".js-drawer-menu,body").toggleClass("panelactive");
     }
   });
 
-  $(".js-drawer-menu a").on("click", function () {
-    // $('.js-drawer-menu').fadeOut();
+  $(".js-sp-nav__item").on("click", function () {
     $(".js-hamburger").removeClass("is-open");
   });
 

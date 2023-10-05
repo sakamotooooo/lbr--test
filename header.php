@@ -56,10 +56,10 @@ $contact = esc_url(home_url('/contact/'));
   </button>
   <nav class="header__sp-nav sp-nav js-drawer-menu">
     <ul class="sp-nav__items">
-      <li class="sp-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
-      <li class="sp-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
-      <li class="sp-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
-      <li class="sp-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
+      <li class="sp-nav__item js-sp-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
+      <li class="sp-nav__item js-sp-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
+      <li class="sp-nav__item js-sp-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
+      <li class="sp-nav__item js-sp-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
       <li class="sp-nav__item">
         <div class="tel-box">
           <div class="tel-box__img">
@@ -71,7 +71,7 @@ $contact = esc_url(home_url('/contact/'));
           </div>
         </div>
       </li>
-      <li class="sp-nav__contact">
+      <li class="sp-nav__contact js-sp-nav__item">
         <a href="<?php echo $contact; ?>">
           <span>お問い合わせ</span>
         </a>
