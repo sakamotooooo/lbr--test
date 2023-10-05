@@ -45,7 +45,7 @@ _:-ms-lang(x)::-ms-backdrop,
   width: rem(130);
   aspect-ratio: 130 / 130;
   height: auto;
-  @include mq("md") {
+	 @include mq("md") {
     width: rem(180);
   }
 }
