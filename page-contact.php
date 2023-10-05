@@ -15,6 +15,7 @@
 	</section>
 	<?php get_template_part('template/breadcrumb');?>
 
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<section class="contact">
 		<div class="contact__inner inner">
 			<div class="contact__wrap">
@@ -24,12 +25,13 @@
 				<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 			</div>
 			<form action="" method="post" class="contact__form form">
-				<?php echo do_shortcode( '[contact-form-7 id="ffef91a" title="お問い合わせ"]' ); ?>
+				<?php the_content();?>
 			</form>
 		</div>
 		<a class="pagetop" href="#">
 			<div class="pagetop__arrow"></div>
 		</a>
 	</section>
+	<?php endwhile; endif;?>
 </main>
 <?php get_footer() ;?>
