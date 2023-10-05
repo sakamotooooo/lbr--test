@@ -1,17 +1,16 @@
 @use "global" as *;
 
-.service-feature{
-
+.service-feature {
   @include mq(md) {
     margin-top: rem(93);
     max-width: rem(1170);
     margin-inline: auto;
     padding-bottom: rem(100);
     padding-inline: $padding-pc;
-  } 
+  }
 }
 
-.service-feature__number{
+.service-feature__number {
   position: absolute;
   display: block;
   font-family: $english-font-family;
@@ -32,13 +31,11 @@
 
 .service-feature__number--blue {
   color: $white;
-
 }
 
 .service-feature__number--left {
   color: $blue;
   opacity: 0.05;
-
 
   @include mq(md) {
     left: 0%;
@@ -49,13 +46,12 @@
   color: $white;
   opacity: 0.07;
 
-
   @include mq(md) {
     right: -10%;
   }
 }
 
-.service-feature__heading{
+.service-feature__heading {
   position: relative;
   font-size: rem(22);
 
@@ -66,7 +62,7 @@
   }
 }
 
-.service-feature__heading::before{
+.service-feature__heading::before {
   content: "";
   position: absolute;
   display: block;
@@ -79,10 +75,9 @@
 
 .service-feature__heading--white::before {
   background-color: $white;
-
 }
 
-.service-feature__text{
+.service-feature__text {
   font-size: rem(16);
   line-height: 1.75;
   margin-top: rem(15);
@@ -96,25 +91,24 @@
   }
 }
 
-.service-feature__img{
+.service-feature__img {
   aspect-ratio: 360 / 232;
   overflow: hidden;
   max-width: rem(360);
 
   @include mq(md) {
-    max-width: min(50vw,rem(620));
+    max-width: min(50vw, rem(620));
     aspect-ratio: 620 / 400;
     padding: 0;
   }
 }
 
-.service-feature__img img{
+.service-feature__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: rem(15);
 }
-
 
 //=====================
 //サービス
@@ -146,11 +140,11 @@
   align-items: center;
   flex-direction: column;
   gap: rem(25);
-
+  padding-inline: 15px;
   @include mq("md") {
     padding-top: rem(45);
     padding-bottom: rem(45);
-    gap: min(3vw,rem(50));
+    gap: min(3vw, rem(50));
     flex-direction: row;
     padding-top: 0;
     justify-content: center;
@@ -163,7 +157,6 @@
   @include mq("md") {
     flex-direction: row-reverse;
     padding-left: rem(25);
-
   }
 }
 
@@ -172,7 +165,6 @@
     justify-content: start;
   }
 }
-
 
 // sp用背景
 .service__content::before {
@@ -230,7 +222,7 @@
   @include mq("md") {
     left: 0;
     margin-left: calc(50% - 50vw);
-    height: min(38vw,rem(385));
+    height: min(38vw, rem(385));
     background: linear-gradient(to right, $blue 0%, $blue 92%, #fff 92%, #fff 100%);
   }
 }
@@ -241,14 +233,14 @@
   @include mq("md") {
     right: 0;
     margin-right: calc(50% - 50vw);
-    height: min(36vw,rem(385));
+    height: min(36vw, rem(385));
     background: linear-gradient(to right, #fff 0%, #fff 8%, #f4f9fd 8%, #f4f9fd 100%);
   }
 }
 
 .service__bg--right--01 {
   @include mq("md") {
-    height: min(32vw,rem(385));
+    height: min(32vw, rem(385));
   }
 }
 
@@ -262,16 +254,15 @@
   bottom: 0;
   opacity: 0.07;
   line-height: 0.7;
-  
+
   @include mq("md") {
-    font-size: min(7vw,rem(90));
+    font-size: min(7vw, rem(90));
   }
 }
 
 .service__subenglish--max {
-  
   @include mq("md") {
-    font-size: min(9vw,rem(135));
+    font-size: min(9vw, rem(135));
   }
 }
 
@@ -283,7 +274,6 @@
 .service__subenglish--left {
   color: $white;
   right: 8%;
-
 }
 
 .service__text {
@@ -306,7 +296,7 @@
   }
 }
 
-.service__text--03  {
+.service__text--03 {
   @include mq("md") {
     padding-top: rem(90);
   }

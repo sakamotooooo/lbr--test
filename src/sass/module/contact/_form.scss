@@ -78,7 +78,7 @@
 }
 .form-radio__item {
   display: inline-block;
-	margin-left: rem(21);
+	margin-left: rem(14);
 }
 .mw_wp_form .horizontal-item + .horizontal-item {
   margin-left: rem(40);
@@ -136,7 +136,7 @@
     height: rem(10);
   }
   @include mq("md") {
-    left: rem(-5);
+    left: -5px;
   }
 }
 input[type="radio"]:checked + .mwform-radio-field-text:after {

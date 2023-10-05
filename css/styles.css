@@ -1583,8 +1583,8 @@ select::-ms-expand {
 
 .form-radio__item {
   display: inline-block;
-  margin-left: 21px;
-  margin-left: 1.3125rem;
+  margin-left: 14px;
+  margin-left: 0.875rem;
 }
 
 .mw_wp_form .horizontal-item + .horizontal-item {
@@ -1663,7 +1663,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .mwform-radio-field-text:after {
-    left: -0.3125rem;
+    left: -5px;
   }
 }
 
@@ -4987,6 +4987,7 @@ _:-ms-lang(x)::-ms-backdrop,
           flex-direction: column;
   gap: 25px;
   gap: 1.5625rem;
+  padding-inline: 15px;
 }
 @media screen and (min-width: 768px) {
   .service__content {
