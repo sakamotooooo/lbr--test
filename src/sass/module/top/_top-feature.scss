@@ -1,33 +1,33 @@
 @use "global" as *;
 
 .top-feature {
-    width: 100%;
-    height: auto;
-    background-image: url(../images/border-bg.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: rem(55);
-    position: relative;
-    padding: rem(60) $padding-sp;
-    
-    @include mq(md) {
-        margin-top: rem(55);
-        padding: rem(80) $padding-pc;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/border-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: rem(55);
+  position: relative;
+  padding: rem(60) $padding-sp;
 
-      }
+  @include mq(md) {
+    margin-top: rem(55);
+    padding: rem(80) $padding-pc;
+
+  }
 }
 
 .top-feature__englishtitle {
-    position: absolute;
-    font-size: rem(70);
-    font-weight: $medium;
-    font-family: $english-font-family;
-    color: $blue;
-    opacity: 0.1;
-    text-transform: uppercase;
-    top: rem(-50);
-    right: 0;
+  position: absolute;
+  font-size: rem(70);
+  font-weight: $medium;
+  font-family: $english-font-family;
+  color: $blue;
+  opacity: 0.1;
+  text-transform: uppercase;
+  top: rem(-50);
+  right: 0;
 
   @include mq(md) {
     font-size: rem(135);
@@ -36,25 +36,24 @@
 }
 
 .top-feature__lists {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: rem(30);
-    margin-top: rem(30);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(30);
+  margin-top: rem(30);
 
-    @include mq(md) {
-        margin-top: rem(35);
-        gap: rem(20);
-        flex-direction: row;
-    }
+  @include mq(md) {
+    margin-top: rem(35);
+    gap: rem(20);
+    flex-direction: row;
+  }
 }
 
 .top-feature__wrap {
   max-width: rem(320);
 
-  @include mq(md) {
-  }
+  @include mq(md) {}
 }
 
 .top-feature__summary {
@@ -74,27 +73,27 @@
 }
 
 .top-feature__wrap p {
-    display: block;
-    color: $blue;
-    font-weight: $bold;
-    text-align: center;
-    font-size: rem(18);
-    margin-top: rem(10);
+  display: block;
+  color: $blue;
+  font-weight: $bold;
+  text-align: center;
+  font-size: rem(18);
+  margin-top: rem(10);
 
-    @include mq(md) { 
+  @include mq(md) {
     font-size: min(2vw, rem(18));
 
-      }
+  }
 }
 
 .top-feature__button {
   margin-top: rem(60);
 
-    @include mq(md) {   
-        margin-top: rem(44);
-      }
+  @include mq(md) {
+    margin-top: rem(44);
+  }
 }
 
-.top-feature__button a{
+.top-feature__button a {
   margin-inline: auto;
 }

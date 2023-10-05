@@ -30,6 +30,7 @@
   z-index: 9999;
   display: flex;
   align-items: center;
+
   @include mq("md") {
     width: min(rem(215), 20vw);
     aspect-ratio: 215 / 60;
@@ -45,8 +46,7 @@
   top: -1500px;
   left: 0;
   width: 100%;
-  height: 100vh; /*ナビの高さ*/
-  /*動き*/
+  height: 100vh;
   transition: all 0.6s;
 }
 
@@ -56,15 +56,17 @@
 
 .header__right {
   display: none;
+
   @include mq(md) {
     height: inherit;
     display: flex;
-    gap: min(rem(20),2vw);
+    gap: min(rem(20), 2vw);
   }
 }
 
 .header__pc-nav {
   display: none;
+
   @include mq(md) {
     height: inherit;
     display: block;

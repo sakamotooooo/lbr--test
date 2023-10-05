@@ -8,9 +8,9 @@
     @include mq("md") {
         margin-top: rem(80);
         padding: 0 $padding-pc;
-
     }
 }
+
 .top-news__wrap {
     display: flex;
     justify-content: center;
@@ -19,14 +19,15 @@
     align-items: center;
 
     @include mq("md") {
-        gap: min(3vw,rem(50));
+        gap: min(3vw, rem(50));
         margin-top: rem(27);
         flex-direction: row;
-      }
+    }
 }
 
 .top-news__contents {
     width: 100%;
+
     @include mq("md") {
         width: auto;
     }
@@ -35,8 +36,9 @@
 .top-news__content {
     margin-inline: auto;
     padding: 0 rem(15);
+
     @include mq("md") {
-        width:  min(60vw,rem(700));
+        width: min(60vw, rem(700));
     }
 }
 
@@ -62,6 +64,7 @@
 
 .top-news__button a {
     margin-inline: auto;
+
     @include mq(md) {
         flex-shrink: 0;
         padding: rem(15) min(6vw, rem(80));
@@ -80,9 +83,8 @@
     text-transform: uppercase;
     padding-top: rem(25);
 
-
-  @include mq(md) {
-    font-size: min(13vw,rem(135));
-    padding-top: rem(10);
-  }
+    @include mq(md) {
+        font-size: min(13vw, rem(135));
+        padding-top: rem(10);
+    }
 }

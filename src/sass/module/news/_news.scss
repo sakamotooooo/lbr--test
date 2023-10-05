@@ -1,6 +1,6 @@
 @use "global" as *;
 .news {
-    margin-top: rem(115);
+    margin-top: rem(35);
 
     @include mq(md) {
         margin-top: rem(140);
@@ -20,7 +20,6 @@
     left: 0;
 
 }
-
 
 .news__pagenavi {
     margin-top: rem(55);

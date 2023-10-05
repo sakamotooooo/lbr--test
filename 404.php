@@ -1,10 +1,10 @@
 <?php
-	/* Template Name:404ページ */
+/* Template Name:404ページ */
 ?>
 <?php get_header(); ?>
 
 <main>
-	<?php get_template_part('template/breadcrumb');?>
+	<?php get_template_part('template/breadcrumb'); ?>
 	<main>
 		<section class="errorpage">
 			<div class="errorpage__inner inner">
@@ -14,12 +14,12 @@
 					移動もしくは削除された可能性があります。<br>
 				</h2>
 				<div class="btn btn--subpage">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">TOPページに戻る</a>
+					<a href="<?php echo esc_url(home_url('/')); ?>">TOPページに戻る</a>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<?php get_template_part('template/contact-footer');?>
+	<?php get_template_part('template/contact-footer'); ?>
 
-	<?php get_footer() ;?>
+	<?php get_footer(); ?>

@@ -5,9 +5,10 @@
 
     @include mq(md) {
         display: block;
-        position:  absolute;
+        position: absolute;
         margin-left: -8%;
         bottom: rem(100);
+        z-index: 111;
     }
 }
 

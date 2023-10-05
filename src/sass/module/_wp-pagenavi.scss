@@ -1,25 +1,26 @@
 @use "global" as *;
 
 .wp-pagenavi {
-	text-align:center;
+    text-align: center;
     justify-content: center;
 }
 
-.wp-pagenavi span, .wp-pagenavi a{
+.wp-pagenavi span,
+.wp-pagenavi a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: #F4F9FD;
-	color: $blue;
-	margin: 0 rem(12);
-	text-decoration: none;
+    color: $blue;
+    margin: 0 rem(12);
+    text-decoration: none;
     border: 1px solid $blue;
     border-radius: 50%;
     width: rem(37);
     height: rem(37);
 }
 
-.wp-pagenavi span.current{
-	color: $white;
-	background-color: $blue;
+.wp-pagenavi span.current {
+    color: $white;
+    background-color: $blue;
 }

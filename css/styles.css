@@ -225,7 +225,7 @@ select::-ms-expand {
   }
 }
 
-.post-page {
+.post-page, .post-root {
   color: #024892;
   font-size: 12px;
   font-size: 0.75rem;
@@ -233,7 +233,7 @@ select::-ms-expand {
   display: inline-block;
 }
 @media screen and (min-width: 768px) {
-  .post-page {
+  .post-page, .post-root {
     font-size: 0.75rem;
   }
 }
@@ -485,11 +485,6 @@ select::-ms-expand {
           transform: rotate(-45deg);
 }
 
-body.is-open {
-  height: 100%;
-  overflow: hidden;
-}
-
 .errorpage {
   margin-top: 50px;
   margin-top: 3.125rem;
@@ -542,6 +537,26 @@ body.is-open {
   }
 }
 
+/* フェードイン(初期値) */
+.fadeup {
+  opacity: 0; /* 最初は非表示 */
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px); /* 下に30pxの位置から */
+  -webkit-transition: opacity 0.5s, -webkit-transform 1s;
+  transition: opacity 0.5s, -webkit-transform 1s;
+  transition: opacity 0.5s, transform 1s;
+  transition: opacity 0.5s, transform 1s, -webkit-transform 1s; /* 透過率と縦方向の移動を0.8秒 */
+}
+
+/* フェードイン(スクロールした後) */
+.fadeup.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  -webkit-transform: translateY(0);
+          transform: translateY(0); /* 30px上に移動する */
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s; /* フェード開始を0.5秒遅らせる */
+}
+
 .footer {
   padding-top: 61px;
   padding-top: 3.8125rem;
@@ -579,8 +594,8 @@ body.is-open {
   padding-inline: 15px;
   font-size: 14px;
   font-size: 0.875rem;
-  padding-bottom: 110px;
-  padding-bottom: 6.875rem;
+  padding-bottom: 74px;
+  padding-bottom: 4.625rem;
 }
 @media screen and (min-width: 768px) {
   .footer__top {
@@ -610,6 +625,7 @@ body.is-open {
 }
 @media screen and (min-width: 768px) {
   .footer__logo {
+    margin-inline: initial;
     width: min(16.25rem, 20vw);
   }
 }
@@ -625,10 +641,15 @@ body.is-open {
   }
 }
 
+.footer__right {
+  padding-left: 40px;
+  padding-left: 2.5rem;
+}
 @media screen and (min-width: 768px) {
   .footer__right {
     padding-top: 0.625rem;
     padding-right: 0.625rem;
+    padding-left: 0;
   }
 }
 
@@ -651,12 +672,6 @@ body.is-open {
 @media screen and (min-width: 768px) {
   .footer-nav__item {
     width: 42%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer-nav__item:nth-child(2n) {
-    width: 58%;
   }
 }
 
@@ -790,8 +805,7 @@ body.is-open {
   top: -1500px;
   left: 0;
   width: 100%;
-  height: 100vh; /*ナビの高さ*/
-  /*動き*/
+  height: 100vh;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -851,6 +865,7 @@ body.is-open {
 .mainview {
   position: relative;
 }
+
 .mainview__title {
   position: absolute;
   top: 82%;
@@ -1234,7 +1249,7 @@ body.is-open {
 }
 
 .sp-nav__item a {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 20px 0;
   padding: 1.25rem 0;
@@ -1249,7 +1264,9 @@ body.is-open {
   border-top: none;
   max-width: 250px;
   max-width: 15.625rem;
-  margin: auto;
+  margin-inline: auto;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .sp-nav__contact a {
@@ -1277,6 +1294,13 @@ body.is-open {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: start;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .tel-box {
+    margin-top: 0;
+  }
 }
 
 .tel-box__img {
@@ -1301,16 +1325,22 @@ body.is-open {
           flex-direction: column;
 }
 
-.tel-box__number {
-  display: block;
+.tel-box__number a {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   font-size: 1.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-  .tel-box__number {
+  .tel-box__number a {
     font-size: min(1.25rem, 2vw);
   }
+}
+
+.tel-box__number--pc {
+  font-weight: 700;
 }
 
 .tel-box__time {
@@ -1327,7 +1357,8 @@ body.is-open {
           justify-content: center;
 }
 
-.wp-pagenavi span, .wp-pagenavi a {
+.wp-pagenavi span,
+.wp-pagenavi a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2172,8 +2203,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   height: inherit;
   background-color: #fff;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, .1)), color-stop(50%, #fff), to(#fff));
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 50%, #fff 50%, #fff 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, .1)), color-stop(80%, #fff), to(#fff));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 80%, #fff 80%, #fff 100%);
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -2188,7 +2219,6 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   height: 410px !important;
   margin-left: 17%;
   z-index: -1;
-  margin-left: 17%;
 }
 @media screen and (min-width: 768px) {
   .top-fv__img {
@@ -2475,6 +2505,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
     position: absolute;
     margin-left: -8%;
     bottom: 6.25rem;
+    z-index: 111;
   }
 }
 
@@ -2586,8 +2617,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   max-width: 90rem;
   margin-inline: auto;
   padding-inline: 15px;
-  padding-top: 44px;
-  padding-top: 2.75rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -2770,7 +2801,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .top-service__button {
-  margin-top: 0;
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .top-service__button {
@@ -2985,8 +3017,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 }
 
 .news {
-  margin-top: 115px;
-  margin-top: 7.1875rem;
+  margin-top: 35px;
+  margin-top: 2.1875rem;
 }
 @media screen and (min-width: 768px) {
   .news {
@@ -3760,6 +3792,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
 @media screen and (min-width: 768px) {
   .faq__answer {
     font-size: 1rem;
+    letter-spacing: -0.12em;
   }
 }
 
@@ -4097,6 +4130,7 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   }
 }
 
+<<<<<<< HEAD
 .lp-swiper .swiper-wrapper {
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
@@ -4175,6 +4209,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   width: 100%;
 }
 
+=======
+>>>>>>> 83152ad5f0e0a49a2ae94aa496243b8691dbba02
 .trouble-mv {
   position: relative;
 }
