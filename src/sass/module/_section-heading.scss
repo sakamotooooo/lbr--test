@@ -4,6 +4,7 @@
   position: relative;
 }
 .section-heading__subtitle {
+  display: block;
   text-transform: uppercase;
   font-size: rem(14);
   font-weight: $medium;

@@ -58,8 +58,8 @@
   <section class="top-feature">
     <span class="top-feature__englishtitle">feature</span>
     <div class="section-heading">
-      <span class="section-heading__subtitle section-heading__subtitle--blue js-fadeUp fadeup">feature</span>
-      <h2 class="section-heading__title section-heading__title--black js-fadeUp fadeup">エルビーアールのこだわり</h2>
+      <span class="section-heading__subtitle section-heading__subtitle--blue js-fadeUp fadeup fadeup01">feature</span>
+      <h2 class="section-heading__title section-heading__title--black js-fadeUp fadeup fadeup02">エルビーアールのこだわり</h2>
     </div>
     <p class="top-feature__summary">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
       また、環境に対する強い配慮を持ち、エコクリーニングに取り組んでいます。<br class="u-desktop">
@@ -87,8 +87,8 @@
     <div class="service__inner inner">
       <span class="top-service__englishtitle">service</span>
       <div class="section-heading">
-        <span class="section-heading__subtitle section-heading__subtitle--blue">service</span>
-        <h2 class="section-heading__title section-heading__title--black">サービス内容</h2>
+        <span class="section-heading__subtitle section-heading__subtitle--blue js-fadeUp fadeup fadeup01">service</span>
+        <h2 class="section-heading__title section-heading__title--black js-fadeUp fadeup fadeup02">サービス内容</h2>
       </div>
       <p class="service-feature__summary top-service__summary">当社は、多岐にわたる建物タイプに対応し、オフィス、マンション、病院、住宅、商業施設など、<br class="u-desktop">
         建物の種類やお客様の要望に合わせた高品質なクリーニングサービスを提供しています。<br class="u-desktop">
@@ -170,8 +170,8 @@
   ?>
   <section class="top-news">
     <div class="section-heading">
-      <span class="section-heading__subtitle section-heading__subtitle--blue">news</span>
-      <h2 class="section-heading__title section-heading__title--black">お知らせ</h2>
+      <span class="section-heading__subtitle section-heading__subtitle--blue js-fadeUp fadeup fadeup01">news</span>
+      <h2 class="section-heading__title section-heading__title--black js-fadeUp fadeup fadeup02">お知らせ</h2>
     </div>
     <div class="top-news__wrap">
       <div class="top-news__contents">

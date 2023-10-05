@@ -48,4 +48,8 @@
   display: inline-block;
   font-size: rem(10);
   font-weight: $medium;
+  padding-left: rem(2);
+
+  @include mq("md") {
+  }
 }

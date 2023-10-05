@@ -59,7 +59,7 @@ $contact = esc_url(home_url('/contact/'));
       <li class="sp-nav__item"><a href="<?php echo $service; ?>">サービス</a></li>
       <li class="sp-nav__item"><a href="<?php echo $company; ?>">会社概要</a></li>
       <li class="sp-nav__item"><a href="<?php echo $recruit; ?>">採用情報</a></li>
-      <li class="sp-nav__item"><a class="sp-nav__item" href="<?php echo $lp; ?>">お困りの方</a></li>
+      <li class="sp-nav__item"><a href="<?php echo $lp; ?>">お困りの方</a></li>
       <li class="sp-nav__item">
         <div class="tel-box">
           <div class="tel-box__img">
