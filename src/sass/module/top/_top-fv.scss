@@ -15,9 +15,9 @@
 
   .top-fv__bg {
     position: absolute;
-    height: rem(411);
     height: inherit;
     background-color: #fff;
+    width: 100%;
     left: 0;
     background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 80%, #fff 80%, #fff 100%);
     z-index: 1;
