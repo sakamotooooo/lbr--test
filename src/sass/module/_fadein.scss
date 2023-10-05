@@ -7,15 +7,15 @@
     transition: opacity .3s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
   }
 
-  .fadeup.is-inview {
-    opacity: 1; /* 表示領域に入ったら表示 */
-    transform: translateY(0); /* 30px上に移動する */
-    transition: opacity .3s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
-  }
-  .fadeup01.is-inview {
-    transition-delay: .1s; /* フェード開始を0.5秒遅らせる */
-  }
+.fadeup.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transform: translateY(0); /* 30px上に移動する */
+  transition: opacity .3s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
+}
+.fadeup01.is-inview {
+  transition-delay: .1s; /* フェード開始を0.5秒遅らせる */
+}
 
-  .fadeup02.is-inview {
-    transition-delay: .2s; /* フェード開始を0.5秒遅らせる */
-  }
+.fadeup02.is-inview {
+  transition-delay: .2s; /* フェード開始を0.5秒遅らせる */
+}
