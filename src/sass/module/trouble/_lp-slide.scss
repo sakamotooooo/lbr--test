@@ -44,8 +44,8 @@ _:-ms-lang(x)::-ms-backdrop,
 .lp-slide__item {
   width: rem(130);
   aspect-ratio: 130 / 130;
-
-  height: auto； @include mq("md") {
+  height: auto;
+	 @include mq("md") {
     width: rem(180);
   }
 }
