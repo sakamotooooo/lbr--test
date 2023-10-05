@@ -39,11 +39,13 @@ jQuery(function ($) {
   });
 
   // スムーススクール
+  const headerHeight = $(".header").height();
   $('a[href^="#"]').click(function () {
     const speed = 600;
     let href = $(this).attr("href");
     let target = $(href == "#" || href == "" ? "html" : href);
-    let position = target.offset().top;
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - headerHeight;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
