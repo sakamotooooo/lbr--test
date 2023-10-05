@@ -60,10 +60,20 @@ function wpcf7_autop_return_false()
 	return false;
 }
 
+//ユーザー名を非表示に
+function disable_author_archive_query() {
+	if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
+	  wp_safe_redirect( home_url() );
+	  exit;
+	}
+  }
 
+//投稿詳細でタイトルを非表示に
 function foo_pop($trail) {
-if ( is_single()) {
-	array_shift($trail->trail);
-}
-}
+	if ( is_single()) {
+		array_shift($trail->trail);
+}};
 add_action('bcn_after_fill', 'foo_pop');
+
+
+add_filter( 'wpcf7_validate_configuration', '__return_false' );

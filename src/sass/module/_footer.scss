@@ -23,7 +23,7 @@
     margin: auto;
     padding-inline: $padding-sp;
     font-size: rem(14);
-    padding-bottom: rem(110);
+    padding-bottom: rem(74);
 
     @include mq(md) {
         align-items: flex-start;
@@ -43,6 +43,7 @@
     margin-inline: auto;
 
     @include mq("md") {
+        margin-inline: initial;
         width: min(rem(260), 20vw);
     }
 }
@@ -57,9 +58,11 @@
 }
 
 .footer__right {
+    padding-left: rem(40);
     @include mq(md) {
         padding-top: rem(10);
         padding-right: rem(10);
+        padding-left: 0;
     }
 }
 
@@ -75,12 +78,6 @@
 
     @include mq(md) {
         width: 42%
-    }
-}
-
-.footer-nav__item:nth-child(2n) {
-    @include mq(md) {
-        width: 58%
     }
 }
 
@@ -128,8 +125,6 @@
 .footer__sns a {
     width: rem(25);
 }
-
-.header__logo-link {}
 
 .footer__copyright small {
     font-size: rem(12);

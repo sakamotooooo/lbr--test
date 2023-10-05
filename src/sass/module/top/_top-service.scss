@@ -4,7 +4,7 @@
   max-width: rem(1440);
   margin-inline: auto;
   padding-inline: $padding-sp;
-  padding-top: rem(44);
+  padding-top: rem(50);
   position: relative;
 
   @include mq(md) {
@@ -171,7 +171,7 @@
 }
 
 .top-service__button {
-  margin-top: 0;
+  margin-top: rem(40);
 
   @include mq(md) {
     margin-top: rem(70);

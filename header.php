@@ -4,11 +4,11 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name=“robots” content=“noindex”>
-	<title>エルビーアール</title>
+  <?php get_template_part('template/title'); ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <meta name="description" content="" />
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-23W0D20H0D"></script>
 	<script>
@@ -21,6 +21,7 @@
 
 	gtag('config', 'G-23W0D20H0D');
 	</script>
+
 	<?php wp_head(); ?>
 </head>
 <?php
