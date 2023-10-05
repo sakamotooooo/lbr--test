@@ -4,11 +4,11 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-open")) {
       // $('.js-drawer-menu').fadeOut(200);
       $(this).removeClass("is-open");
-      $(".js-drawer-menu").removeClass("panelactive");
+      $(".js-drawer-menu,body").removeClass("panelactive");
     } else {
       // $('.js-drawer-menu').fadeIn(200);
       $(this).addClass("is-open");
-      $(".js-drawer-menu").toggleClass("panelactive");
+      $(".js-drawer-menu,body").toggleClass("panelactive");
     }
   });
 
@@ -38,6 +38,15 @@ jQuery(function ($) {
     $(this).next().slideToggle(300);
   });
 
+  // スムーススクール
+  $('a[href^="#"]').click(function () {
+    const speed = 600;
+    let href = $(this).attr("href");
+    let target = $(href == "#" || href == "" ? "html" : href);
+    let position = target.offset().top;
+    $("body,html").animate({ scrollTop: position }, speed, "swing");
+    return false;
+  });
   var topBtn = $(".pagetop");
   topBtn.hide();
 

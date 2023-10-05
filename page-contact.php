@@ -18,8 +18,8 @@
 	<section class="contact">
 		<div class="contact__inner inner">
 			<div class="contact__wrap">
-				<p class="contact__read">弊社へのお問い合わせは、メールフォームに必須事項をご記入の上、ご送信ください。<br>
-					基本的にE-mailで返信させていただきます。</p>
+				<h2 class="contact__read">弊社へのお問い合わせは、メールフォームに必須事項をご記入の上、ご送信ください。<br>
+					基本的にE-mailで返信させていただきます。</h2>
 				<p class="contact__text">Eメールアドレスに誤りがあると返信できないことがございますので、ご注意ください。</p>
 				<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 			</div>
@@ -78,8 +78,8 @@
 			</form>
 		</div>
 		<a class="pagetop" href="#">
-    		<div class="pagetop__arrow"></div>
-  		</a>
+			<div class="pagetop__arrow"></div>
+		</a>
 	</section>
 </main>
 <?php get_footer() ;?>
