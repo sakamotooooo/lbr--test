@@ -1583,19 +1583,21 @@ select::-ms-expand {
 
 .form-radio__item {
   display: inline-block;
+  margin-left: 21px;
+  margin-left: 1.3125rem;
 }
 
-.wpcf7-list-item + .wpcf7-list-item {
+.mw_wp_form .horizontal-item + .horizontal-item {
   margin-left: 40px;
   margin-left: 2.5rem;
 }
 @media screen and (min-width: 768px) {
-  .wpcf7-list-item + .wpcf7-list-item {
+  .mw_wp_form .horizontal-item + .horizontal-item {
     margin-left: 2.0625rem;
   }
 }
 
-.wpcf7-radio .wpcf7-list-item-label {
+.mwform-radio-field-text {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -1607,13 +1609,13 @@ select::-ms-expand {
   padding-left: 0.4375rem;
 }
 @media screen and (min-width: 768px) {
-  .wpcf7-radio .wpcf7-list-item-label {
+  .mwform-radio-field-text {
     font-size: 1rem;
     padding-left: 0.8125rem;
   }
 }
 
-.wpcf7-radio .wpcf7-list-item-label:before {
+.mwform-radio-field-text:before {
   content: "";
   display: block;
   position: absolute;
@@ -1627,19 +1629,19 @@ select::-ms-expand {
           transform: translateY(-50%);
 }
 @media screen and (min-width: 376px) {
-  .wpcf7-radio .wpcf7-list-item-label:before {
+  .mwform-radio-field-text:before {
     width: 1rem;
     height: 1rem;
     left: -0.9375rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .wpcf7-radio .wpcf7-list-item-label:before {
+  .mwform-radio-field-text:before {
     left: -0.5rem;
   }
 }
 
-.wpcf7-radio .wpcf7-list-item-label:after {
+.mwform-radio-field-text:after {
   content: "";
   display: block;
   position: absolute;
@@ -1653,19 +1655,19 @@ select::-ms-expand {
   opacity: 0;
 }
 @media screen and (min-width: 376px) {
-  .wpcf7-radio .wpcf7-list-item-label:after {
+  .mwform-radio-field-text:after {
     left: -0.75rem;
     width: 0.625rem;
     height: 0.625rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .wpcf7-radio .wpcf7-list-item-label:after {
+  .mwform-radio-field-text:after {
     left: -0.3125rem;
   }
 }
 
-input[type=radio]:checked + .wpcf7-list-item-label:after {
+input[type=radio]:checked + .mwform-radio-field-text:after {
   opacity: 1;
 }
 

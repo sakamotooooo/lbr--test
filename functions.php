@@ -50,11 +50,17 @@ function my_script_init()
 
 add_action('wp_enqueue_scripts', 'my_script_init');
 
-add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
-function wpcf7_autop_return_false()
-{
-	return false;
+// <p></p>削除
+function mvwpform_autop_filter() {
+  if (class_exists('MW_WP_Form_Admin')) {
+    $mw_wp_form_admin = new MW_WP_Form_Admin();
+    $forms = $mw_wp_form_admin->get_forms();
+    foreach ($forms as $form) {
+      add_filter('mwform_content_wpautop_mw-wp-form-' . $form->ID, '__return_false');
+    }
+  }
 }
+mvwpform_autop_filter();
 
 //ユーザー名を非表示に
 function disable_author_archive_query() {
@@ -71,22 +77,3 @@ function foo_pop($trail) {
 }};
 add_action('bcn_after_fill', 'foo_pop');
 
-
-add_filter( 'wpcf7_validate_configuration', '__return_false' );
-
-
-// Contact Form7の送信ボタンをクリックした後の遷移先設定
-add_action( 'wp_footer', 'add_origin_thanks_page' );
- function add_origin_thanks_page() {
- $thanks = home_url('/thanks/');
-   echo <<< EOC
-     <script>
-       var thanksPage = {
-         9: '{$thanks}',
-       };
-     document.addEventListener( 'wpcf7mailsent', function( event ) {
-       location = thanksPage[event.detail.contactFormId];
-     }, false );
-     </script>
-   EOC;
- }
