@@ -225,7 +225,7 @@ select::-ms-expand {
   }
 }
 
-.post-page {
+.post-page, .post-root {
   color: #024892;
   font-size: 12px;
   font-size: 0.75rem;
@@ -233,7 +233,7 @@ select::-ms-expand {
   display: inline-block;
 }
 @media screen and (min-width: 768px) {
-  .post-page {
+  .post-page, .post-root {
     font-size: 0.75rem;
   }
 }
@@ -770,8 +770,7 @@ select::-ms-expand {
   top: -1500px;
   left: 0;
   width: 100%;
-  height: 100vh; /*ナビの高さ*/
-  /*動き*/
+  height: 100vh;
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
 }
@@ -831,6 +830,7 @@ select::-ms-expand {
 .mainview {
   position: relative;
 }
+
 .mainview__title {
   position: absolute;
   top: 82%;
@@ -1214,7 +1214,7 @@ select::-ms-expand {
 }
 
 .sp-nav__item a {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 20px 0;
   padding: 1.25rem 0;
@@ -1229,7 +1229,9 @@ select::-ms-expand {
   border-top: none;
   max-width: 250px;
   max-width: 15.625rem;
-  margin: auto;
+  margin-inline: auto;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .sp-nav__contact a {
@@ -1257,6 +1259,13 @@ select::-ms-expand {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: start;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .tel-box {
+    margin-top: 0;
+  }
 }
 
 .tel-box__img {
@@ -1281,16 +1290,22 @@ select::-ms-expand {
           flex-direction: column;
 }
 
-.tel-box__number {
-  display: block;
+.tel-box__number a {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   font-size: 1.25rem;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 @media screen and (min-width: 768px) {
-  .tel-box__number {
+  .tel-box__number a {
     font-size: min(1.25rem, 2vw);
   }
+}
+
+.tel-box__number--pc {
+  font-weight: 700;
 }
 
 .tel-box__time {
@@ -1307,7 +1322,8 @@ select::-ms-expand {
           justify-content: center;
 }
 
-.wp-pagenavi span, .wp-pagenavi a {
+.wp-pagenavi span,
+.wp-pagenavi a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2152,8 +2168,8 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   height: inherit;
   background-color: #fff;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, .1)), color-stop(50%, #fff), to(#fff));
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 50%, #fff 50%, #fff 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, .1)), color-stop(80%, #fff), to(#fff));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 80%, #fff 80%, #fff 100%);
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
@@ -4080,23 +4096,6 @@ input[type=radio]:checked + .wpcf7-list-item-label:after {
   .lp-splide .splide__slide {
     width: 11.25rem;
   }
-}
-
-<<<<<<< HEAD
-.lp-splide .splide__slide img {
-=======
-.lp-swiper .swiper-wrapper {
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-
-.lp-swiper .swiper-slide img {
->>>>>>> d1e993984c131fce6519551b402fd817a984c537
-  width: 100%;
-  height: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .trouble-mv {

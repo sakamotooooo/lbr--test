@@ -23,17 +23,6 @@
 
 .pc-nav__item a::after {
   position: absolute;
-  // left: 0;
-  // content: "";
-  // width: 100%;
-  // height: rem(1);
-  // background: #FFEA2E;
-  // bottom: rem(8);
-  // visibility: hidden;
-}
-
-.pc-nav__item a:hover::after {
-  // visibility: visible;
 }
 
 .pc-nav__item.pc-nav__item--white {
@@ -61,7 +50,7 @@
 }
 
 .pc-nav__tel {
-  padding-left: min(rem(24),1.6vw);
+  padding-left: min(rem(24), 1.6vw);
   height: inherit;
   display: flex;
   align-items: center;
@@ -81,16 +70,18 @@
     height: inherit;
   }
 }
+
 .pc-nav__contact a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: inherit;
   width: inherit;
 }
+
 .pc-nav__contact span {
   font-size: min(rem(20), 2vw);
   display: inline-block;
-	color: $white;
-	font-weight: $bold;
+  color: $white;
+  font-weight: $bold;
 }

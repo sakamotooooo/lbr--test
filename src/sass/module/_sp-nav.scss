@@ -11,7 +11,7 @@
 }
 
 .sp-nav__item a {
-    display: block;
+    display: inline-block;
     width: 100%;
     padding: rem(20) 0;
     text-align: center;
@@ -23,7 +23,8 @@
 .sp-nav__contact {
     border-top: none;
     max-width: rem(250);
-    margin: auto;
+    margin-inline: auto;
+    margin-top: rem(20);
 }
 
 .sp-nav__contact a {

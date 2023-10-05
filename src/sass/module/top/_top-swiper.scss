@@ -8,24 +8,24 @@
   margin-top: rem(40);
   padding-bottom: rem(24) !important;
   background: linear-gradient(180deg, transparent 0%, transparent 45%, $blue 45%, $blue 100%);
-    @include mq(md) {
-        margin-top: rem(80);
-        background: linear-gradient(180deg, transparent 0%, transparent 20%, $blue 20%, $blue 100%);
-      }
+
+  @include mq(md) {
+    margin-top: rem(80);
+    background: linear-gradient(180deg, transparent 0%, transparent 20%, $blue 20%, $blue 100%);
+  }
 }
 
-.top-splide
-.splide__slide {
+.top-splide .splide__slide {
   max-width: rem(200);
+
   @include mq(md) {
-      width: rem(360);
+    width: rem(360);
     max-width: rem(360);
 
   }
 }
 
-.top-splide
-.splide__slide img {
+.top-splide .splide__slide img {
   max-width: rem(200);
   aspect-ratio: 200 / 125;
   width: 100%;
@@ -35,7 +35,7 @@
 
 
   @include mq(md) {
-      max-width: rem(360);
-      aspect-ratio: 360 / 225;
+    max-width: rem(360);
+    aspect-ratio: 360 / 225;
   }
 }

@@ -1,5 +1,5 @@
 <?php
-	/* Template Name:lpページ */
+/* Template Name:lpページ */
 ?>
 <?php get_header(); ?>
 
@@ -8,10 +8,8 @@
 	<section class="trouble-mv">
 		<div class="trouble-mv__inner">
 			<picture class="trouble-mv__img">
-				<source media="(min-width:767px)"
-					srcset="<?php echo get_template_directory_uri() ?>/images/trouble-mv-pc.png" />
-				<img width="106" height="83" loading="lazy"
-					src="<?php echo get_template_directory_uri() ?>/images/trouble-mv.png" alt="清掃の指導を受けている様子">
+				<source media="(min-width:767px)" srcset="<?php echo get_template_directory_uri() ?>/images/trouble-mv-pc.png" />
+				<img width="106" height="83" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/trouble-mv.png" alt="清掃の指導を受けている様子">
 			</picture>
 			<div class="trouble-mv__content">
 				<h2 class="trouble-mv__title">清掃のことなら<br>エルビーアールに<br class="u-mobile">お任せ下さい！</h2>
@@ -29,8 +27,7 @@
 		<div class="trouble-btn__items consultation">
 			<div class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
-						alt="電話アイコン">
+					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
 					<p class="consultation__telNumber">03-6276-5828</p>
@@ -86,34 +83,6 @@
 		</div>
 	</section>
 	<!-- スライド -->
-	<!-- <div class="swiper lp-swiper">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide01.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide02.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide03.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide04.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide05.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide06.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide07.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide08.jpg" alt="">
-			</div>
-		</div>
-	</div> -->
 	<div class="splide lp-splide">
 		<div class="splide__track">
 			<div class="splide__list">
@@ -143,7 +112,7 @@
 				</div>
 			</div>
 		</div>
-  </div>
+	</div>
 	<!-- 相談 -->
 	<div class="trouble-btn">
 		<p class="trouble-btn__text">
@@ -153,8 +122,7 @@
 		<div class="trouble-btn__items consultation">
 			<div class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
-						alt="電話アイコン">
+					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
 					<p class="consultation__telNumber">03-6276-5828</p>
@@ -175,10 +143,8 @@
 			<div class="lp-service__items">
 				<div class="lp-service__item">
 					<picture class="lp-service__img">
-						<source media="(min-width:767px)"
-							srcset="<?php echo get_template_directory_uri() ?>/images/lp-service-pc01.jpg" />
-						<img width="390" height="250" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/lp-service01.jpg" alt="マンション">
+						<source media="(min-width:767px)" srcset="<?php echo get_template_directory_uri() ?>/images/lp-service-pc01.jpg" />
+						<img width="390" height="250" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/lp-service01.jpg" alt="マンション">
 					</picture>
 					<div class="lp-service__content">
 						<h3 class="lp-subTitle lp-subTitle--black">マンション</h3>
@@ -193,10 +159,8 @@
 				</div>
 				<div class="lp-service__item">
 					<picture class="lp-service__img">
-						<source media="(min-width:767px)"
-							srcset="<?php echo get_template_directory_uri() ?>/images/lp-service-pc02.jpg" />
-						<img width="390" height="250" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/lp-service02.jpg" alt="ビル">
+						<source media="(min-width:767px)" srcset="<?php echo get_template_directory_uri() ?>/images/lp-service-pc02.jpg" />
+						<img width="390" height="250" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/lp-service02.jpg" alt="ビル">
 					</picture>
 					<div class="lp-service__content">
 						<h3 class="lp-subTitle lp-subTitle--black">ビル</h3>
@@ -211,10 +175,8 @@
 				</div>
 				<div class="lp-service__item">
 					<picture class="lp-service__img">
-						<source media="(min-width:767px)"
-							srcset="<?php echo get_template_directory_uri() ?>/images/lp-service-pc03.jpg" />
-						<img width="390" height="250" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/lp-service03.jpg" alt="住宅">
+						<source media="(min-width:767px)" srcset="<?php echo get_template_directory_uri() ?>/images/lp-service-pc03.jpg" />
+						<img width="390" height="250" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/lp-service03.jpg" alt="住宅">
 					</picture>
 					<div class="lp-service__content">
 						<h3 class="lp-subTitle lp-subTitle--black">住宅</h3>
@@ -237,8 +199,7 @@
 			<div class="commitment__items">
 				<div class="commitment__item">
 					<div class="commitment__img">
-						<img width="360" height="244" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/commitment-img01.jpg" alt="技術力の高い特殊清掃">
+						<img width="360" height="244" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/commitment-img01.jpg" alt="技術力の高い特殊清掃">
 					</div>
 					<div class="commitment__content">
 						<h3 class="lp-subTitle lp-subTitle--blue">技術力の高い特殊清掃</h3>
@@ -249,8 +210,7 @@
 				</div>
 				<div class="commitment__item">
 					<div class="commitment__img">
-						<img width="360" height="244" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/commitment-img02.jpg" alt="エコクリーニング">
+						<img width="360" height="244" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/commitment-img02.jpg" alt="エコクリーニング">
 					</div>
 					<div class="commitment__content">
 						<h3 class="lp-subTitle lp-subTitle--blue">エコクリーニングへのこだわり</h3>
@@ -261,8 +221,7 @@
 				</div>
 				<div class="commitment__item">
 					<div class="commitment__img">
-						<img width="360" height="244" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/commitment-img03.jpg" alt="清掃のスペシャリスト">
+						<img width="360" height="244" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/commitment-img03.jpg" alt="清掃のスペシャリスト">
 					</div>
 					<div class="commitment__content">
 						<h3 class="lp-subTitle lp-subTitle--blue">清掃のスペシャリスト</h3>
@@ -283,8 +242,7 @@
 		<div class="trouble-btn__items consultation">
 			<div class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
-						alt="電話アイコン">
+					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png" alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
 					<p class="consultation__telNumber">03-6276-5828</p>
@@ -305,8 +263,7 @@
 			<div class="achievements__items">
 				<div class="achievements__item">
 					<div class="achievements__img">
-						<img width="360" height="244" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/achievements-img01.jpg" alt="オフィスビル">
+						<img width="360" height="244" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/achievements-img01.jpg" alt="オフィスビル">
 						<span class="achievements__tag">通常清掃</span>
 					</div>
 					<div class="achievements__content">
@@ -318,8 +275,7 @@
 				</div>
 				<div class="achievements__item">
 					<div class="achievements__img">
-						<img width="360" height="244" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/achievements-img02.jpg" alt="高級マンション">
+						<img width="360" height="244" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/achievements-img02.jpg" alt="高級マンション">
 						<span class="achievements__tag">通常清掃</span>
 					</div>
 					<div class="achievements__content">
@@ -331,8 +287,7 @@
 				</div>
 				<div class="achievements__item">
 					<div class="achievements__img">
-						<img width="360" height="244" loading="lazy"
-							src="<?php echo get_template_directory_uri() ?>/images/achievements-img03.jpg" alt="水族館">
+						<img width="360" height="244" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/achievements-img03.jpg" alt="水族館">
 						<span class="achievements__tag">特殊清掃</span>
 					</div>
 					<div class="achievements__content">
@@ -356,8 +311,7 @@
 					<div class="flow__circle">
 						<p class="flow__number">STEP1</p>
 						<div class="flow__img">
-							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow01.png" alt="問い合わせ">
+							<img width="100" height="100" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/flow01.png" alt="問い合わせ">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -371,8 +325,7 @@
 					<div class="flow__circle">
 						<p class="flow__number">STEP2</p>
 						<div class="flow__img">
-							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow02.png" alt="担当者からご連絡">
+							<img width="100" height="100" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/flow02.png" alt="担当者からご連絡">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -387,8 +340,7 @@
 					<div class="flow__circle">
 						<p class="flow__number">STEP3</p>
 						<div class="flow__img">
-							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow03.png" alt="打ち合わせ">
+							<img width="100" height="100" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/flow03.png" alt="打ち合わせ">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -402,8 +354,7 @@
 					<div class="flow__circle">
 						<p class="flow__number">STEP4</p>
 						<div class="flow__img">
-							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow04.png" alt="見積書">
+							<img width="100" height="100" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/flow04.png" alt="見積書">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -417,8 +368,7 @@
 					<div class="flow__circle">
 						<p class="flow__number">STEP5</p>
 						<div class="flow__img">
-							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow05.png" alt="ご契約">
+							<img width="100" height="100" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/flow05.png" alt="ご契約">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -432,8 +382,7 @@
 					<div class="flow__circle">
 						<p class="flow__number">STEP6</p>
 						<div class="flow__img">
-							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow06.png" alt="作業">
+							<img width="100" height="100" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/flow06.png" alt="作業">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -541,6 +490,6 @@
 		<div class="pagetop__arrow"></div>
 	</a>
 </main>
-<?php get_template_part('template/contact-footer');?>
+<?php get_template_part('template/contact-footer'); ?>
 
-<?php get_footer() ;?>
+<?php get_footer(); ?>

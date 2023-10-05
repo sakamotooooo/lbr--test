@@ -1,21 +1,14 @@
 @use "global" as *;
+
 /* 共通パーツ 下層ページ上のメインビュー*/
 .mainview {
     position: relative;
-
-    @include mq(md) {
-
-    }
-}
-
-.mainview__inner {
-
 }
 
 .mainview__title {
     position: absolute;
-    top:82%;
-    left:6%;
+    top: 82%;
+    left: 6%;
     transform: translateX(-6%);
     font-weight: $medium;
     background-color: $blue;
@@ -24,19 +17,19 @@
     line-height: 1.2;
 
     @include mq(md) {
-      font-size: rem(35);
-      top:87%;
-      left:13%;
-      transform:translateX(-11.1%);
-      padding: rem(20) rem(30) rem(15) rem(25);
-     line-height: 1.1;
+        font-size: rem(35);
+        top: 87%;
+        left: 13%;
+        transform: translateX(-11.1%);
+        padding: rem(20) rem(30) rem(15) rem(25);
+        line-height: 1.1;
     }
 }
 
 .mainview__title--news-details {
     @include mq(md) {
-        top:78%;
-      }
+        top: 78%;
+    }
 }
 
 .mainview__title span {
@@ -69,7 +62,7 @@
     }
 }
 
-.mainview__sp img{
+.mainview__sp img {
     width: 100%;
     height: rem(225);
     object-fit: cover;

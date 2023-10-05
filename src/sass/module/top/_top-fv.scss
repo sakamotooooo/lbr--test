@@ -20,7 +20,7 @@
     height: inherit;
     background-color: #fff;
     left: 0;
-    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 50%, #fff 50%, #fff 100%);
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 80%, #fff 80%, #fff 100%);
     z-index: 1;
 
     @include mq(md) {
@@ -31,13 +31,9 @@
 
   .top-fv__img {
     height: 410px !important;
-<<<<<<< HEAD
     margin-left: 17%; 
     z-index: -1;
 
-=======
-    margin-left: 17%;
->>>>>>> d1e993984c131fce6519551b402fd817a984c537
 
     @include mq(md) {
       height: auto !important;
@@ -111,12 +107,8 @@
     top: 24%;
     line-height: 2;
     padding-top: rem(120);
-<<<<<<< HEAD
     z-index: 2;
     
-=======
-
->>>>>>> d1e993984c131fce6519551b402fd817a984c537
     @include mq(md) {
         padding-top: min(16vw,rem(240));
         font-size: min(1.5vw, rem(18));

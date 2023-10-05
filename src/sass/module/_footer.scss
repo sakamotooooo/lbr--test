@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer{
+.footer {
     padding-top: rem(61);
     padding-bottom: rem(13);
     background-color: $blue;
@@ -11,16 +11,9 @@
         padding-top: rem(46);
         padding-bottom: rem(11);
     }
-
-}
-.footer__inner{
-
-
-    @include mq(md) {
-    }
 }
 
-.footer__top{
+.footer__top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,23 +36,18 @@
     }
 }
 
-.footer__left{
-}
-
-.footer__logo{
+.footer__logo {
     width: rem(260);
     height: auto;
     aspect-ratio: 260 / 80;
     margin-inline: auto;
+
     @include mq("md") {
-      width: min(rem(260), 20vw);
+        width: min(rem(260), 20vw);
     }
 }
 
-.footer__logo-link{
-}
-
-.footer__access{
+.footer__access {
     margin-top: rem(68);
 
     @include mq(md) {
@@ -67,27 +55,30 @@
         line-height: 1.714;
     }
 }
-.footer__right{
+
+.footer__right {
     @include mq(md) {
         padding-top: rem(10);
         padding-right: rem(10);
     }
 }
-.footer-nav__items{
+
+.footer-nav__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    justify-content: space-between;
     max-width: rem(300);
-
 }
-.footer-nav__item{
+
+.footer-nav__item {
     width: 50%;
+
     @include mq(md) {
         width: 42%
     }
 }
 
-.footer-nav__item:nth-child(2n){
+.footer-nav__item:nth-child(2n) {
     @include mq(md) {
         width: 58%
     }
@@ -96,16 +87,15 @@
 .footer-nav__item a {
     display: inline-block;
     padding: rem(7.5) rem(3);
-
 }
 
-.footer__bottom{
-    border-top: 1px solid rgb(244,249,253,0.3);
+.footer__bottom {
+    border-top: 1px solid rgb(244, 249, 253, 0.3);
     width: 92%;
     margin-inline: auto;
 
     @include mq(md) {
-        border-top: 1px solid rgb(244,249,253,0.3);
+        border-top: 1px solid rgb(244, 249, 253, 0.3);
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
@@ -119,7 +109,6 @@
     padding-inline: $padding-sp;
     padding-top: rem(24);
 
-
     @include mq(md) {
         flex-direction: row;
         justify-content: space-between;
@@ -131,7 +120,7 @@
     }
 }
 
-.footer__sns{
+.footer__sns {
     display: flex;
     gap: rem(15);
 }
@@ -140,9 +129,8 @@
     width: rem(25);
 }
 
-.header__logo-link{
-}
+.header__logo-link {}
 
-.footer__copyright small{
+.footer__copyright small {
     font-size: rem(12);
 }
