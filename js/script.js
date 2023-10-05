@@ -4,14 +4,17 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-open")) {
       $(this).removeClass("is-open");
       $(".js-drawer-menu,body").removeClass("panelactive");
+			$('body').css('overflow', 'auto'); // スクロールを再度許可
     } else {
       $(this).addClass("is-open");
       $(".js-drawer-menu,body").toggleClass("panelactive");
+			$('body').css('overflow', 'hidden'); // スクロールを無効化
     }
   });
 
   $(".js-sp-nav__item").on("click", function () {
     $(".js-hamburger").removeClass("is-open");
+		$('body').css('overflow', 'auto'); // スクロールを再度許可
   });
 
   // ヘッダーの分だけコンテンツを下げる
@@ -36,11 +39,13 @@ jQuery(function ($) {
   });
 
   // スムーススクール
+  const headerHeight = $(".header").height();
   $('a[href^="#"]').click(function () {
     const speed = 600;
     let href = $(this).attr("href");
     let target = $(href == "#" || href == "" ? "html" : href);
-    let position = target.offset().top;
+    // ヘッダーの高さ分下げる
+    let position = target.offset().top - headerHeight;
     $("body,html").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
