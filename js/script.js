@@ -5,16 +5,19 @@ jQuery(function ($) {
       // $('.js-drawer-menu').fadeOut(200);
       $(this).removeClass("is-open");
       $(".js-drawer-menu,body").removeClass("panelactive");
+			$('body').css('overflow', 'auto'); // スクロールを再度許可
     } else {
       // $('.js-drawer-menu').fadeIn(200);
       $(this).addClass("is-open");
       $(".js-drawer-menu,body").toggleClass("panelactive");
+			$('body').css('overflow', 'hidden'); // スクロールを無効化
     }
   });
 
   $(".js-drawer-menu a").on("click", function () {
     // $('.js-drawer-menu').fadeOut();
     $(".js-hamburger").removeClass("is-open");
+		$('body').css('overflow', 'auto'); // スクロールを再度許可
   });
 
   // ヘッダーの分だけコンテンツを下げる
