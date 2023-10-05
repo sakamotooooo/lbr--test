@@ -1,10 +1,66 @@
 @use "global" as *;
-.lp-splide .splide__slide {
+// .lp-splide .splide__slide {
+//   width: rem(130);
+// 	aspect-ratio: 130 / 130;
+// 	height: auto;
+//   @include mq("md") {
+//     width: rem(180);
+//   }
+// }
+
+// .lp-swiper .swiper-wrapper {
+//   transition-timing-function: linear;
+// }
+// .lp-swiper .swiper-slide img {
+//   width: 100%;
+//   height: 100%;
+//   display: block;
+//   object-fit: cover;
+// }
+
+/*
+右から左へ
+----------------------------*/
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.slide {
+  display: -ms-grid;
+  overflow: hidden;
+}
+/*----------------------------*/
+
+.slide__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.slide__list {
+  display: flex;
+}
+.slide__list--left {
+  animation: infinity-scroll-left 90s infinite linear 0.5s both;
+}
+.lp-slide__item {
   width: rem(130);
-	aspect-ratio: 130 / 130;
-	height: auto;
+  aspect-ratio: 130 / 130;
+  height: auto;
   @include mq("md") {
     width: rem(180);
   }
 }
-
+.slide__item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
