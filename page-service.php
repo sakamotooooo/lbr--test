@@ -14,7 +14,7 @@
 				src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
 	</section>
 	<?php get_template_part('template/breadcrumb'); ?>
-	<section class="top-service">
+	<section class="service">
 		<div class="service__inner">
 			<div class="section-heading">
 				<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>

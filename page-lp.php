@@ -85,69 +85,6 @@
 			</div>
 		</div>
 	</section>
-	<!-- スライド -->
-	<!-- <div class="swiper lp-swiper">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide01.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide02.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide03.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide04.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide05.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide06.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide07.jpg" alt="">
-			</div>
-			<div class="swiper-slide">
-				<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide08.jpg" alt="">
-			</div>
-		</div>
-		</div> -->
-	<!-- <div class="splide lp-splide">
-=======
-	<div class="splide lp-splide">
->>>>>>> 83152ad5f0e0a49a2ae94aa496243b8691dbba02
-		<div class="splide__track">
-			<div class="splide__list">
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide01.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide02.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide03.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide04.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide05.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide06.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide07.jpg" alt="">
-				</div>
-				<div class="splide__slide">
-					<img src="<?php echo get_template_directory_uri() ?>/images/lp-slide08.jpg" alt="">
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 	<!--CSSで無限ループ  -->
 	<div class="slide lp-slide">
 		<div class="slide__wrap">

@@ -119,6 +119,20 @@
 //=====================
 //サービス
 //=====================
+
+.service {
+  max-width: rem(1440);
+  margin-inline: auto;
+  padding-inline: $padding-sp;
+  padding-top: rem(50);
+  position: relative;
+
+  @include mq(md) {
+    padding-inline: $padding-pc;
+    padding-top: rem(90);
+  }
+}
+
 .service__inner.inner {
   @include mq("md") {
     max-width: rem(1220);

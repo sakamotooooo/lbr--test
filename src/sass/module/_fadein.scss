@@ -4,11 +4,18 @@
 .fadeup {
     opacity: 0; /* 最初は非表示 */
     transform: translateY(30px); /* 下に30pxの位置から */
-    transition: opacity .5s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
+    transition: opacity .3s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
   }
-  /* フェードイン(スクロールした後) */
-  .fadeup.is-inview {
-    opacity: 1; /* 表示領域に入ったら表示 */
-    transform: translateY(0); /* 30px上に移動する */
-    transition-delay: .3s; /* フェード開始を0.5秒遅らせる */
-  }
+
+.fadeup.is-inview {
+  opacity: 1; /* 表示領域に入ったら表示 */
+  transform: translateY(0); /* 30px上に移動する */
+  transition: opacity .3s, transform 1s; /* 透過率と縦方向の移動を0.8秒 */
+}
+.fadeup01.is-inview {
+  transition-delay: .1s; /* フェード開始を0.5秒遅らせる */
+}
+
+.fadeup02.is-inview {
+  transition-delay: .2s; /* フェード開始を0.5秒遅らせる */
+}
