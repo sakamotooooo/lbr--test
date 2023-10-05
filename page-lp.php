@@ -27,18 +27,18 @@
 			お気軽にお問い合わせください。
 		</p>
 		<div class="trouble-btn__items consultation">
-			<div class="trouble-btn__item consultation__item">
+			<a href="tel:0362765828" class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
 					<p class="consultation__telNumber">03-6276-5828</p>
 					<p class="consultation__telTime">平日受付:9:00～18:00</p>
 				</div>
-			</div>
-			<div class="trouble-btn__item consultation__item">
-				<a href="<?php echo home_url('contact'); ?>">
+			</a>
+			<div class="trouble-btn__item consultation__item contact-btn__arrow">
+				<a href="<?php echo home_url('contact'); ?>" class="trouble-btn__btn">
 					<span>お問い合わせ</span>
 				</a>
 			</div>
@@ -114,7 +114,7 @@
 			</div>
 		</div>
 	</div> -->
-	<div class="splide lp-splide">
+	<!-- <div class="splide lp-splide">
 		<div class="splide__track">
 			<div class="splide__list">
 				<div class="splide__slide">
@@ -143,6 +143,62 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<!--CSSで無限ループ  -->
+	<div class="scroll-infinity">
+		<div class="scroll-infinity__wrap">
+			<ul class="scroll-infinity__list scroll-infinity__list--left">
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide01.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide02.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide03.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide04.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide05.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide06.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide07.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide08.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide01.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide02.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide03.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide04.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide05.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide06.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide07.jpg"
+						alt="" />
+				</li>
+				<li class="scroll-infinity__item"><img src="<?php echo get_template_directory_uri() ?>/images/lp-slide08.jpg"
+						alt="" />
+				</li>
+			</ul>
+		</div>
 	</div>
 	<!-- 相談 -->
 	<div class="trouble-btn">
@@ -151,18 +207,18 @@
 			お気軽にお問い合わせください。
 		</p>
 		<div class="trouble-btn__items consultation">
-			<div class="trouble-btn__item consultation__item">
+			<a href="tel:0362765828" class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
 					<p class="consultation__telNumber">03-6276-5828</p>
 					<p class="consultation__telTime">平日受付:9:00～18:00</p>
 				</div>
-			</div>
-			<div class="trouble-btn__item consultation__item">
-				<a href="<?php echo home_url('contact'); ?>">
+			</a>
+			<div class="trouble-btn__item consultation__item contact-btn__arrow">
+				<a href="<?php echo home_url('contact'); ?>" class="trouble-btn__btn">
 					<span>お問い合わせ</span>
 				</a>
 			</div>
@@ -281,18 +337,18 @@
 			お気軽にお問い合わせください。
 		</p>
 		<div class="trouble-btn__items consultation">
-			<div class="trouble-btn__item consultation__item">
+			<a href="tel:0362765828" class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
 					<p class="consultation__telNumber">03-6276-5828</p>
 					<p class="consultation__telTime">平日受付:9:00～18:00</p>
 				</div>
-			</div>
-			<div class="trouble-btn__item consultation__item">
-				<a href="<?php echo home_url('contact'); ?>">
+			</a>
+			<div class="trouble-btn__item consultation__item contact-btn__arrow">
+				<a href="<?php echo home_url('contact'); ?>" class="trouble-btn__btn">
 					<span>お問い合わせ</span>
 				</a>
 			</div>

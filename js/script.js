@@ -201,21 +201,21 @@ window.addEventListener("DOMContentLoaded", function () {
     },
   });
   //LPページスライダー
-  const swiperLp = new Swiper(".lp-swiper", {
-    loop: true,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
-    },
-    slidesPerView: 3,
-    spaceBetween: 0,
-    loopedSlides: 8,
-    speed: 8000,
-    allowTouchMove: false, // スワイプ無効,
-    breakpoints: {
-      768: {
-        slidesPerView: 8,
-      },
-    },
-  });
+  // const swiperLp = new Swiper(".lp-swiper", {
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 0,
+  //     disableOnInteraction: false,
+  //   },
+  //   slidesPerView: 3,
+  //   spaceBetween: 0,
+  //   loopedSlides: 8,
+  //   speed: 8000,
+  //   allowTouchMove: false, // スワイプ無効,
+  //   breakpoints: {
+  //     768: {
+  //       slidesPerView: 8,
+  //     },
+  //   },
+  // });
 });

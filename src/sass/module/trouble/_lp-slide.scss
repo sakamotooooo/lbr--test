@@ -17,3 +17,43 @@
   display: block;
   object-fit: cover;
 }
+
+
+
+@keyframes infinity-scroll-left {
+	from {
+		transform: translateX(0);
+	}
+		to {
+		transform: translateX(-100%);
+	}
+	}
+	.scroll-infinity__wrap {
+		display: flex;
+		overflow: hidden;
+	}
+	.scroll-infinity__list {
+		display: flex;
+		list-style: none;
+		padding: 0
+	}
+	.scroll-infinity__list--left {
+		animation: infinity-scroll-left 80s infinite linear 0.5s both;
+	}
+	.scroll-infinity__item {
+		width: rem(130);
+		aspect-ratio: 130 / 130;
+		height: auto;
+		@include mq("md") {
+			width: rem(180);
+		}
+	}
+	.scroll-infinity__item img{
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	}
+	.scroll-infinity__item>img {
+		width: 100%;
+	}
