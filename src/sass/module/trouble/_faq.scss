@@ -70,7 +70,6 @@
   line-height: 1.5;
   @include mq("md") {
     font-size: rem(16);
-		letter-spacing: -0.12em;
   }
 }
 .faq__wrap {

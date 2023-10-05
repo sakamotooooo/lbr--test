@@ -58,6 +58,7 @@ function wpcf7_autop_return_false() {
    return false;
 }
 
+
 // /?author=1用
 function disable_author_archive_query() {
   if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
