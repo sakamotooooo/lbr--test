@@ -78,14 +78,15 @@
 }
 .form-radio__item {
   display: inline-block;
+	margin-left: rem(14);
 }
-.wpcf7-list-item + .wpcf7-list-item {
+.mw_wp_form .horizontal-item + .horizontal-item {
   margin-left: rem(40);
   @include mq("md") {
     margin-left: rem(33);
   }
 }
-.wpcf7-radio .wpcf7-list-item-label {
+.mwform-radio-field-text {
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -98,7 +99,7 @@
     padding-left: rem(13);
   }
 }
-.wpcf7-radio .wpcf7-list-item-label:before {
+.mwform-radio-field-text:before {
   content: "";
   display: block;
   position: absolute;
@@ -118,7 +119,7 @@
     left: rem(-8);
   }
 }
-.wpcf7-radio .wpcf7-list-item-label:after {
+.mwform-radio-field-text:after {
   content: "";
   display: block;
   position: absolute;
@@ -135,10 +136,10 @@
     height: rem(10);
   }
   @include mq("md") {
-    left: rem(-5);
+    left: -5px;
   }
 }
-input[type="radio"]:checked + .wpcf7-list-item-label:after {
+input[type="radio"]:checked + .mwform-radio-field-text:after {
   opacity: 1;
 }
 .form__textarea {

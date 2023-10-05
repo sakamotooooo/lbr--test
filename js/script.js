@@ -80,3 +80,11 @@ const swiperFv = new Swiper(".fv-swiper", {
   },
   speed: 2000, // 3秒かけてフェード
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var radios = document.querySelectorAll('[name="radio"]');
+    if (radios && radios.length > 0) {
+        radios[0].checked = true;  // この例では最初のラジオボタンを選択します
+    }
+});
