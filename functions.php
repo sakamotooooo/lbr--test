@@ -73,3 +73,20 @@ add_action('bcn_after_fill', 'foo_pop');
 
 
 add_filter( 'wpcf7_validate_configuration', '__return_false' );
+
+
+// Contact Form7の送信ボタンをクリックした後の遷移先設定
+add_action( 'wp_footer', 'add_origin_thanks_page' );
+ function add_origin_thanks_page() {
+ $thanks = home_url('/thanks/');
+   echo <<< EOC
+     <script>
+       var thanksPage = {
+         9: '{$thanks}',
+       };
+     document.addEventListener( 'wpcf7mailsent', function( event ) {
+       location = thanksPage[event.detail.contactFormId];
+     }, false );
+     </script>
+   EOC;
+ }

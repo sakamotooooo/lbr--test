@@ -10,11 +10,12 @@
   background-repeat: no-repeat;
   color: $text-color;
   padding-top: rem(50);
-  padding-bottom: rem(90);  
+  padding-bottom: rem(90);
 
   @include mq(md) {
     padding-top: rem(80);
-    padding-bottom: rem(110);  
+    padding-bottom: rem(110);
+		margin-top: rem(90);
   }
 }
 
@@ -67,7 +68,7 @@
   border: 3px solid $blue;
 
   @include mq(md) {
-    padding: rem(50);
+    padding: rem(42) rem(50) rem(57);
   }
 
 }
@@ -120,7 +121,7 @@
 
 .service-contents__image--01 {
   @include mq(md) {
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 2;
   }
 }
 

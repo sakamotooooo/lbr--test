@@ -8,8 +8,10 @@
 			<span>service</span>
 			<h1>サービス</h1>
 		</div>
-		<div class="mainview__sp"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
-		<div class="mainview__pc"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
+		<div class="mainview__sp"><img loading="lazy"
+				src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
+		<div class="mainview__pc"><img loading="lazy"
+				src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
 	</section>
 	<?php get_template_part('template/breadcrumb'); ?>
 	<section class="top-service">
@@ -23,7 +25,9 @@
 					<span class="service-feature__number u-mobile">01</span>
 					<div class="service__text">
 						<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>
-						<p class="service-feature__text">例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。</p>
+						<p class="service-feature__text">
+							例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
+						</p>
 					</div>
 					<div class="service__img">
 						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
@@ -53,7 +57,9 @@
 					<span class="service-feature__number u-mobile">03</span>
 					<div class="service__text">
 						<h3 class="service-feature__heading">清掃のスペシャリスト</h3>
-						<p class="service-feature__text">独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。</p>
+						<p class="service-feature__text">
+							独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。
+						</p>
 					</div>
 					<div class="service__img">
 						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
