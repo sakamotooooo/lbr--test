@@ -2240,14 +2240,14 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   background-color: #fff;
   width: 100%;
   left: 0;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, .1)), color-stop(80%, #fff), to(#fff));
-  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 80%, #fff 80%, #fff 100%);
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), color-stop(80%, #fff), to(#fff));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, #fff 80%, #fff 100%);
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .top-fv__bg {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(80.8%, rgba(0, 0, 0, .1)), color-stop(80.8%, #fff), to(#fff));
-    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .1) 80.8%, #fff 80.8%, #fff 100%);
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(80.8%, rgba(0, 0, 0, 0)), color-stop(80.8%, #fff), to(#fff));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80.8%, #fff 80.8%, #fff 100%);
     height: min(49vw, 42.9375rem);
   }
 }
