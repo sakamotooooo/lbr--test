@@ -14,7 +14,7 @@
 					src="<?php echo get_template_directory_uri() ?>/images/trouble-mv.png" alt="清掃の指導を受けている様子">
 			</picture>
 			<div class="trouble-mv__content">
-				<h2 class="trouble-mv__title">清掃のことなら<br>エルビーアールに<br class="u-mobile">お任せ下さい！</h2>
+				<h1 class="trouble-mv__title">清掃のことなら<br>エルビーアールに<br class="u-mobile">お任せ下さい！</h1>
 				<p class="trouble-mv__text u-desktop">当社は、技術力を持つ特殊清掃のプロフェッショナルです。<br>
 					清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。</p>
 			</div>

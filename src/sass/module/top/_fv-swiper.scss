@@ -2,6 +2,14 @@
 
 .fv-swiper {
   z-index: -1 !important;
+  left: 15%;
+  height: rem(410);
+
+  @include mq(md) {
+    left: 0;
+    height: max(39vw,rem(684)) !important;
+
+}
 }
 
 @keyframes zoomUp {
