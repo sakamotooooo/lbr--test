@@ -81,10 +81,11 @@
     color: $blue;
     opacity: 0.1;
     text-transform: uppercase;
-    padding-top: rem(25);
+    padding-top: rem(40);
 
     @include mq(md) {
         font-size: min(13vw, rem(135));
         padding-top: rem(10);
+        margin-top: rem(-20);
     }
 }

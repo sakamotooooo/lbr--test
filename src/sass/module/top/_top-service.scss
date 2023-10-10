@@ -8,8 +8,8 @@
   position: relative;
 
   @include mq(md) {
-    padding-inline: $padding-pc;
-    padding-top: rem(83);
+    padding-inline: 0;
+    padding-top: rem(70);
   }
 }
 
@@ -17,7 +17,7 @@
   display: block;
   font-size: rem(16);
   margin-inline: auto;
-  margin-top: rem(46);
+  margin-top: rem(30);
   line-height: 1.75;
 
   @include mq(md) {
@@ -41,7 +41,7 @@
 
   @include mq(md) {
     font-size: rem(135);
-    top: rem(-95);
+    top: rem(-100);
     left: 0;
   }
 }
@@ -118,7 +118,27 @@
   margin-top: rem(30);
 
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(100);
+    // max-width: 92.36%;
+    // margin-left: auto;
+    margin-right: calc(50% - 50vw);
+    background-color: #F4F9FD;
+    margin-left: 8%;
+  }
+}
+
+.top-service__contents--02 {
+  @include mq("md") {
+    margin-top: rem(106);
+    margin-left: calc(50% - 50vw);
+    margin-right: 8%;
+
+  }
+}
+
+.top-service__contents--03 {
+  @include mq("md") {
+    margin-top: rem(110);
   }
 }
 
@@ -155,6 +175,7 @@
 .top-service__content--right {
   @include mq(md) {
     padding-right: rem(25);
+    padding-left: rem(26);
   }
 }
 
@@ -175,7 +196,7 @@
   margin-top: rem(40);
 
   @include mq(md) {
-    margin-top: rem(70);
+    margin-top: rem(60);
   }
 }
 

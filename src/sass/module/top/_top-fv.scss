@@ -40,21 +40,22 @@
     height: calc(100% - 24%);
     overflow: hidden;
     position: absolute;
-    top: 24%;
+    top: 27%;
     line-height: 1.42;
     z-index: 1;
     left: 5%;
 
     @include mq(md) {
+        top: 24%;
         font-size: min(5vw, rem(70));
-        left: 10%;
+        left: 9%;
     }
 
   }
   .color-blue {
     width: 17%; /* テキストの端から画像の端までの長さ */
     @include mq(md) {
-      width: 10.5%;
+      width: 12%;
 
     }
   }
@@ -63,7 +64,7 @@
     margin-left: 17%; /* テキストの端から画像の端までの長さ */
     width: 100%;
     @include mq(md) {
-      margin-left: 10.5%;
+      margin-left: 12%;
     }
   }
 
@@ -72,7 +73,7 @@
     color: #fff;
     left: -17%; /* テキストの端から画像の端までの長さ分マイナス */
     @include mq(md) {
-      left: -10.5%;
+      left: -12%;
     }
   }
 
@@ -88,16 +89,17 @@
     height: calc(100% - 24%);
     overflow: hidden;
     position: absolute;
-    top: 24%;
+    top: 27%;
     line-height: 2;
     padding-top: rem(120);
     z-index: 2;
     left: 5%;
 
     @include mq(md) {
+        top: 24%;
         padding-top: min(16vw,rem(240));
         font-size: min(1.5vw, rem(18));
-        left: 10%;
+        left: 9%;
 
 
     }
@@ -106,7 +108,7 @@
   .color-blue__sub {
     width: 17%; /* テキストの端から画像の端までの長さ */
     @include mq(md) {
-      width: 11%;
+      width: 12%;
     }
   }
 
@@ -115,7 +117,7 @@
     width: 100%;
 
     @include mq(md) {
-      margin-left: 11%;
+      margin-left: 12%;
     }
   }
 
@@ -125,7 +127,7 @@
     left: -17%; /* テキストの端から画像の端までの長さ分マイナス */
 
     @include mq(md) {
-      left: -11%;
+      left: -12%;
     }
   }
 

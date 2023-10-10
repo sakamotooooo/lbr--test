@@ -72,3 +72,11 @@
 .news-details__contents img{
     margin-top: rem(20);
 }
+
+.news-details__contents ul {
+    list-style-type: disc;
+}
+
+.news-details__contents ol {
+    list-style-type: decimal;
+}

@@ -4,10 +4,10 @@
   margin-top: rem(60);
   width: 100%;
   height: auto;
-  background-image: url(../images/border-bg.jpg);
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #e5ecf4 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   color: $text-color;
   padding-top: rem(50);
   padding-bottom: rem(90);
@@ -64,11 +64,11 @@
 .service-contents__list {
   background-color: $white;
   text-align: center;
-  padding: rem(30) rem(15);
+  padding: rem(20) rem(12);
   border: 3px solid $blue;
 
   @include mq(md) {
-    padding: rem(42) rem(50) rem(57);
+    padding: rem(42) rem(47) rem(45);
   }
 
 }
@@ -100,6 +100,13 @@
 
 }
 
+.service-contents__detail01 {
+
+  @include mq(md) {
+    margin-top: rem(36);
+  }
+}
+
 .service-contents__detail02 {
   font-size: rem(16);
   font-weight: $regular;
@@ -112,24 +119,27 @@
   display: grid;
   gap: rem(20);
 
-
   @include mq(md) {
     grid-template-columns: 1fr 1fr;
     gap: rem(20);
   }
 }
 
-.service-contents__image--01 {
-  @include mq(md) {
-    grid-column: 1 / span 2;
-  }
-}
 
 .service-contents__image {
   aspect-ratio: 330 / 200;
 
   @include mq(md) {
     aspect-ratio: initial;
+    max-height: rem(200);
+  }
+}
+
+.service-contents__image--01 {
+  @include mq(md) {
+    grid-column: 1 / span 2;
+    max-height: rem(354);
+
   }
 }
 

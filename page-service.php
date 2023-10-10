@@ -23,13 +23,13 @@
 			<div class="top-service__contents">
 				<div class="service__content service__content--right">
 					<span class="service-feature__number u-mobile">01</span>
-					<div class="service__text">
+					<div class="service__text service__text--sub01">
 						<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>
-						<p class="service-feature__text">
+						<p class="service-feature__text service-feature__text--sub01">
 							例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
 						</p>
-						<div class="service__subenglish u-desktop">
-							<span class="service__subenglish--right service__subenglish--max u-desktop">01</span>
+						<div class="service__subenglish service__subenglish--max u-desktop">
+							<span class="service__subenglish--right u-desktop">01</span>
 						</div>
 					</div>
 					<div class="service__img">
@@ -37,14 +37,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="top-service__contents">
+			<div class="top-service__contents top-service__contents--02">
 				<div class="service__content service__content--left service__content--center">
 					<span class="service-feature__number service-feature__number--blue u-mobile">02</span>
 					<div class="service__text service__text--white service__text--center">
 						<h3 class="service-feature__heading service-feature__heading--white">エコクリーニングへの<br>こだわり</h3>
 						<p class="service-feature__text">人と地球にやさしい強アルカリ電解水をメインに使用しています。清掃業界の中でもいち早く導入をし、エコクリーニングをこころがけています。</p>
-						<div class="service__subenglish u-desktop">
-							<span class="service__subenglish--left service__subenglish--max u-desktop">02</span>
+						<div class="service__subenglish service__subenglish--maxright u-desktop">
+							<span class="service__subenglish--left u-desktop">02</span>
 						</div>
 					</div>
 					<div class="service__img">
@@ -55,13 +55,13 @@
 			<div class="top-service__contents">
 				<div class="service__content service__content--right">
 					<span class="service-feature__number u-mobile">03</span>
-					<div class="service__text">
+					<div class="service__text service__text--sub03">
 						<h3 class="service-feature__heading">清掃のスペシャリスト</h3>
 						<p class="service-feature__text">
 							独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。
 						</p>
-						<div class="service__subenglish u-desktop">
-							<span class="service__subenglish--right service__subenglish--max u-desktop">03</span>
+						<div class="service__subenglish service__subenglish--max u-desktop">
+							<span class="service__subenglish--right u-desktop">03</span>
 						</div>
 					</div>
 					<div class="service__img">
