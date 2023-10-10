@@ -70,7 +70,3 @@ function foo_pop($trail) {
 		array_shift($trail->trail);
 }};
 add_action('bcn_after_fill', 'foo_pop');
-
-
-add_filter( 'wpcf7_validate_configuration', '__return_false' );
-

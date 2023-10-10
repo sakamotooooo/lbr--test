@@ -4044,6 +4044,12 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   }
 }
 
+.lp-service__inner {
+  max-width: 1550px;
+  width: 100%;
+  margin: auto;
+}
+
 .lp-service__items {
   margin-top: 35px;
   margin-top: 2.1875rem;
@@ -4536,7 +4542,7 @@ _:-ms-lang(x)::-ms-backdrop,
   height: 100%;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .solution__wrap {

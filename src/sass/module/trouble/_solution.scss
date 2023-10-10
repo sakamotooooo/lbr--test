@@ -176,7 +176,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   @include mq("md") {
     margin-top: rem(33);
     padding-top: rem(80);
