@@ -14,7 +14,7 @@ $contact = esc_url(home_url('/contact/'));
 		<div class="footer__top">
 			<div class="footer__left">
 				<div class="footer__logo">
-					<a href="<?php echo $home; ?>" class="footer__logo-link"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/logo-white.png" alt=""></a>
+					<a href="<?php echo $home; ?>" class="footer__logo-link"><img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/logo-white.png" alt="株式会社エルビーアール"></a>
 				</div>
 				<div class="footer__access">
 					<p>〒151-0053</p>

@@ -83,7 +83,7 @@
     </div>
   </section>
   <section class="top-service">
-    <div class="service__inner inner">
+    <div class="service__inner">
       <span class="top-service__englishtitle">service</span>
       <div class="section-heading">
         <span class="section-heading__subtitle section-heading__subtitle--blue js-fadeUp fadeup fadeup01">service</span>
@@ -99,12 +99,12 @@
           <div class="service__text">
             <h3 class="top-service__heading top-service__heading--01">マンション</h3>
             <p class="service-feature__text">大切な人と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
+            <div class="service__subenglish u-desktop">
+              <span class="service__subenglish--right u-desktop">apartment</span>
+            </div>
           </div>
           <div class="service__img">
             <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/lp-service-pc01.jpg" alt="">
-          </div>
-          <div class="service__bg service__bg--right service__bg--right--01 u-desktop">
-            <span class="service__subenglish service__subenglish--right">apartment</span>
           </div>
         </div>
       </div>
@@ -113,12 +113,12 @@
           <div class="service__text service__text--white">
             <h3 class="top-service__heading top-service__heading--02">ビル</h3>
             <p class="service-feature__text">毎日出社していただく皆様が気持ちよくオフィスにお越しいただけるよう、プロの視点で徹底的な清掃を実施しております。清潔な環境は労働環境の向上に繋がり、生産性や快適さを高めます。私たちはオフィスの清潔さを維持し、快適な作業環境を提供することで、皆様の業務に集中できるようお手伝いさせていただきます。</p>
+            <div class="service__subenglish u-desktop">
+              <span class="service__subenglish--left u-desktop">building</span>
+            </div>
           </div>
           <div class="service__img">
             <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/lp-service-pc02.jpg" alt="">
-          </div>
-          <div class="service__bg service__bg--left u-desktop">
-            <span class="service__subenglish service__subenglish--left">building</span>
           </div>
         </div>
       </div>
@@ -127,12 +127,12 @@
           <div class="service__text service__text--03">
             <h3 class="top-service__heading top-service__heading--03">住宅</h3>
             <p class="service-feature__text">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。普段は見過ごされるか、手が届きにくい場所でも、私たちのプロの清掃スキルと経験を活かし、最高のクオリティでお手伝いさせていただきます。清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。</p>
+            <div class="service__subenglish u-desktop">
+              <span class="service__subenglish--right u-desktop">housing</span>
+            </div>
           </div>
           <div class="service__img">
             <img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/lp-service-pc03.jpg" alt="">
-          </div>
-          <div class="service__bg service__bg--right u-desktop">
-            <span class="service__subenglish service__subenglish--right">housing</span>
           </div>
         </div>
       </div>
@@ -140,12 +140,11 @@
     <div class="top-service__button button">
       <a href="<?php echo esc_url(home_url('/service/')); ?>#service-contents">詳しく見る</a>
     </div>
-    </div>
   </section>
   	<!--CSSで無限ループ  -->
 	<div class="slide top-slide">
 		<div class="slide__wrap">
-			<ul class="slide__list slide__list--left">
+			<ul class="slide__list slide__list--left top-slide__list">
 				<li class="slide__item top-slide__item"><img
 						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
 				</li>

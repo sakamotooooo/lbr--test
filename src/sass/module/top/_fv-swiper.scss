@@ -3,13 +3,11 @@
 .fv-swiper {
   z-index: -1 !important;
   left: 15%;
-  height: rem(410);
+  height: calc(100vh - 70px) !important;
 
   @include mq(md) {
     left: 0;
-    height: max(39vw,rem(684)) !important;
-
-}
+  }
 }
 
 @keyframes zoomUp {
