@@ -1,131 +1,131 @@
 @use "global" as *;
 
 .footer {
-    padding-top: rem(61);
-    padding-bottom: rem(13);
-    background-color: $blue;
-    color: $white;
-    font-weight: normal;
-
-    @include mq(md) {
-        padding-top: rem(46);
-        padding-bottom: rem(11);
-    }
+  padding-top: rem(61);
+  padding-bottom: rem(13);
+  background-color: $blue;
+  color: $white;
+  font-weight: normal;
+  margin-top: auto;
+  @include mq(md) {
+    padding-top: rem(46);
+    padding-bottom: rem(11);
+  }
 }
 
 .footer__top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: rem(83);
-    width: 100%;
-    margin: auto;
-    padding-inline: $padding-sp;
-    font-size: rem(14);
-    padding-bottom: rem(74);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(83);
+  width: 100%;
+  margin: auto;
+  padding-inline: $padding-sp;
+  font-size: rem(14);
+  padding-bottom: rem(74);
 
-    @include mq(md) {
-        align-items: flex-start;
-        gap: rem(180);
-        max-width: rem(1050);
-        flex-direction: row;
-        justify-content: space-between;
-        padding-inline: $padding-pc;
-        padding-bottom: rem(27);
-    }
+  @include mq(md) {
+    align-items: flex-start;
+    gap: rem(180);
+    max-width: rem(1050);
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: $padding-pc;
+    padding-bottom: rem(27);
+  }
 }
 
 .footer__logo {
-    width: rem(260);
-    height: auto;
-    aspect-ratio: 260 / 80;
-    margin-inline: auto;
+  width: rem(260);
+  height: auto;
+  aspect-ratio: 260 / 80;
+  margin-inline: auto;
 
-    @include mq("md") {
-        margin-inline: initial;
-        width: min(rem(260), 20vw);
-    }
+  @include mq("md") {
+    margin-inline: initial;
+    width: min(rem(260), 20vw);
+  }
 }
 
 .footer__access {
-    margin-top: rem(68);
+  margin-top: rem(68);
 
-    @include mq(md) {
-        margin-top: rem(14);
-        line-height: 1.714;
-    }
+  @include mq(md) {
+    margin-top: rem(14);
+    line-height: 1.714;
+  }
 }
 
 .footer__right {
-    padding-left: rem(40);
-    @include mq(md) {
-        padding-top: rem(10);
-        padding-right: rem(10);
-        padding-left: 0;
-    }
+  padding-left: rem(40);
+  @include mq(md) {
+    padding-top: rem(10);
+    padding-right: rem(10);
+    padding-left: 0;
+  }
 }
 
 .footer-nav__items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: rem(300);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: rem(300);
 }
 
 .footer-nav__item {
-    width: 50%;
+  width: 50%;
 
-    @include mq(md) {
-        width: 42%
-    }
+  @include mq(md) {
+    width: 42%;
+  }
 }
 
 .footer-nav__item a {
-    display: inline-block;
-    padding: rem(7.5) rem(3);
+  display: inline-block;
+  padding: rem(7.5) rem(3);
 }
 
 .footer__bottom {
-    border-top: 1px solid rgb(244, 249, 253, 0.3);
-    width: 92%;
-    margin-inline: auto;
+  border-top: 1px solid rgb(244, 249, 253, 0.3);
+  width: 92%;
+  margin-inline: auto;
 
-    @include mq(md) {
-        border-top: 1px solid rgb(244, 249, 253, 0.3);
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-    }
+  @include mq(md) {
+    border-top: 1px solid rgb(244, 249, 253, 0.3);
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+  }
 }
 
 .footer__bottominner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: rem(18);
-    padding-inline: $padding-sp;
-    padding-top: rem(24);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: rem(18);
+  padding-inline: $padding-sp;
+  padding-top: rem(24);
 
-    @include mq(md) {
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin: auto;
-        max-width: rem(1050);
-        padding-inline: $padding-pc;
-        padding-top: rem(9);
-    }
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    max-width: rem(1050);
+    padding-inline: $padding-pc;
+    padding-top: rem(9);
+  }
 }
 
 .footer__sns {
-    display: flex;
-    gap: rem(15);
+  display: flex;
+  gap: rem(15);
 }
 
 .footer__sns a {
-    width: rem(25);
+  width: rem(25);
 }
 
 .footer__copyright small {
-    font-size: rem(12);
+  font-size: rem(12);
 }
