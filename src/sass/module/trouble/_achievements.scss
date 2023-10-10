@@ -18,6 +18,8 @@
 
 	@include mq('md') {
 		max-width: rem(1285);
+		padding-right: rem(16);
+		padding-left: rem(16);
 	}
 }
 

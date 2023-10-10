@@ -3326,6 +3326,8 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 @media screen and (min-width: 768px) {
   .achievements__inner.inner {
     max-width: 80.3125rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -3583,6 +3585,8 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 @media screen and (min-width: 768px) {
   .commitment__inner.inner {
     max-width: 80.3125rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
