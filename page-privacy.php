@@ -25,7 +25,7 @@
 				<div class="privacy__item">
 					<h3 class="privacy__title">１．事業者情報</h3>
 					<p class="privacy__text">法人名：株式会社エルビーアール</p>
-					<p class="privacy__text">住所：:〒151-0053　東京都渋谷区代々木3-43-3　アクティブ代々木105</p>
+					<p class="privacy__text">住所：〒151-0053　東京都渋谷区代々木3-43-3　アクティブ代々木105</p>
 					<p class="privacy__text"> 代表者：江﨑　淳</p>
 				</div>
 				<div class="privacy__item">
