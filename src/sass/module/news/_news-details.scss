@@ -9,9 +9,10 @@
         margin-bottom: rem(105);
     }
 }
-.news-details__content{
+.news-details__contents{
     margin-top: rem(15);
     line-height: 1.75;
+    color: $text-color;
 
     @include mq(md) {
     }
@@ -67,3 +68,7 @@
 .news-details__button a{
     margin-inline: auto;
   }
+
+.news-details__contents img{
+    margin-top: rem(20);
+}

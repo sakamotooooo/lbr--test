@@ -3,10 +3,11 @@
 .top-feature {
   width: 100%;
   height: auto;
-  background-image: url(../images/border-bg.jpg);
+  padding: rem(60) 0;
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #e5ecf4 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-top: rem(55);
   position: relative;
   padding: rem(60) $padding-sp;

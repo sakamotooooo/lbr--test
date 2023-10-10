@@ -28,12 +28,12 @@
 						<p class="service-feature__text">
 							例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
 						</p>
+						<div class="service__subenglish u-desktop">
+							<span class="service__subenglish--right service__subenglish--max u-desktop">01</span>
+						</div>
 					</div>
 					<div class="service__img">
 						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature01.jpg" alt="">
-					</div>
-					<div class="service__bg service__bg--right u-desktop">
-						<span class="service__subenglish service__subenglish--max service__subenglish--right">01</span>
 					</div>
 				</div>
 			</div>
@@ -43,12 +43,12 @@
 					<div class="service__text service__text--white service__text--center">
 						<h3 class="service-feature__heading service-feature__heading--white">エコクリーニングへの<br>こだわり</h3>
 						<p class="service-feature__text">人と地球にやさしい強アルカリ電解水をメインに使用しています。清掃業界の中でもいち早く導入をし、エコクリーニングをこころがけています。</p>
+						<div class="service__subenglish u-desktop">
+							<span class="service__subenglish--left service__subenglish--max u-desktop">02</span>
+						</div>
 					</div>
 					<div class="service__img">
 						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature02.jpg" alt="">
-					</div>
-					<div class="service__bg service__bg--left u-desktop">
-						<span class="service__subenglish service__subenglish--max service__subenglish--left">02</span>
 					</div>
 				</div>
 			</div>
@@ -60,15 +60,16 @@
 						<p class="service-feature__text">
 							独自の研修・教育を受けた若いスタッフ・熟練スタッフが丁寧な作業を行っております。老若男女問わず、全てのスタッフが楽しく仕事ができる環境をご用意。最大限の力を集結させ、お客様への満足と安心に繋がるようにサービスをご提供しております。
 						</p>
+						<div class="service__subenglish u-desktop">
+							<span class="service__subenglish--right service__subenglish--max u-desktop">03</span>
+						</div>
 					</div>
 					<div class="service__img">
 						<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/service-feature03.jpg" alt="">
 					</div>
-					<div class="service__bg service__bg--right u-desktop">
-						<span class="service__subenglish service__subenglish--max service__subenglish--right">03</span>
-					</div>
 				</div>
 			</div>
+		</div>
 	</section>
 	<section class="service-contents" id="service-contents">
 		<div class="inner">
@@ -97,7 +98,7 @@
 				<div class="service-contents__list" id="apartment">
 					<div class="section-heading">
 						<span class="section-heading__subtitle section-heading__subtitle--blue">apartment</span>
-						<h3 class="section-heading__title section-heading__title--black service-contents__title">マンション</h2>
+						<h3 class="section-heading__title section-heading__title--black service-contents__title">マンション</h3>
 					</div>
 					<p class="service-contents__detail01">大切な人々と共に過ごす空間を、快適で心地よい場所に変えるお手伝いをさせていただきます。私たちの専門的な清掃で空間の美化に取り組みます。</p>
 					<p class="service-contents__detailtop">清掃サービス一覧</p>
@@ -119,7 +120,7 @@
 				<div class="service-contents__list" id="buiding">
 					<div class="section-heading">
 						<span class="section-heading__subtitle section-heading__subtitle--blue">building</span>
-						<h3 class="section-heading__title section-heading__title--black service-contents__title">ビル</h2>
+						<h3 class="section-heading__title section-heading__title--black service-contents__title">ビル</h3>
 					</div>
 					<p class="service-contents__detail01">毎日出社していただく皆様が気持ちよくオフィスにお越しいただけるよう、<br class="u-desktop">
 						プロの視点で徹底的な清掃を実施しております。<br class="u-desktop">
@@ -146,7 +147,7 @@
 				<div class="service-contents__list" id="housing">
 					<div class="section-heading">
 						<span class="section-heading__subtitle section-heading__subtitle--blue">housing</span>
-						<h3 class="section-heading__title section-heading__title--black service-contents__title">住宅</h2>
+						<h3 class="section-heading__title section-heading__title--black service-contents__title">住宅</h3>
 					</div>
 					<p class="service-contents__detail01">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。<br class="u-desktop">
 						普段は見過ごされるか、手が届きにくい場所でも、<br class="u-desktop">

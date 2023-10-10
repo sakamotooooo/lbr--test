@@ -1417,6 +1417,7 @@ select::-ms-expand {
 .wp-pagenavi span.current {
   color: #fff;
   background-color: #024892;
+  border: 1px solid #024892;
 }
 
 .contact {
@@ -2104,10 +2105,12 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 .top-feature {
   width: 100%;
   height: auto;
-  background-image: url(../images/border-bg.jpg);
+  padding: 60px 0;
+  padding: 3.75rem 0;
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #e5ecf4 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
   background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-top: 55px;
   margin-top: 3.4375rem;
   position: relative;
@@ -2895,10 +2898,11 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   }
 }
 
-.news-details__content {
+.news-details__contents {
   margin-top: 15px;
   margin-top: 0.9375rem;
   line-height: 1.75;
+  color: #111111;
 }
 .news-details__date {
   display: block;
@@ -2952,6 +2956,11 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 
 .news-details__button a {
   margin-inline: auto;
+}
+
+.news-details__contents img {
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .news-item {
