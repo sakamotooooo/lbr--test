@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <main>
   <section class="top-fv">
-    <div class="top-fv__bg"></div>
     <h2 class="color-blue">
       <span>
         人と地球に<br />
@@ -16,14 +15,14 @@
     </p>
     <p class="color-blue__sub">
       <span>
-        社会問題になっている温暖化・エコへの取り組みを<br>
-        清掃業界を通じて、社会貢献活動を続けていきます。
+      清掃業界を通じて、温暖化・エコへの取り組みとしての<br>
+      社会貢献活動を続けていきます。
       </span>
     </p>
     <p class="color-white__sub">
       <span>
-        社会問題になっている温暖化・エコへの取り組みを<br>
-        清掃業界を通じて、社会貢献活動を続けていきます。
+      清掃業界を通じて、温暖化・エコへの取り組みとしての<br>
+      社会貢献活動を続けていきます。
       </span>
     </p>
     <div class="swiper fv-swiper">
