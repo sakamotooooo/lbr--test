@@ -19,6 +19,8 @@ $english-font-family: 'Roboto', sans-serif;
 body {
   font-family: $base-font-family;
 	overflow-x: hidden;
+	display: flex;
+  flex-direction: column;
 }
 
 // フォントウェイト
