@@ -5,30 +5,30 @@
     width: 100%;
     padding-left: 8%;
     overflow: hidden;
-    height: rem(410);
     -webkit-text-size-adjust: 100%;
+    height: calc(100vh - 70px);
+
 
     @include mq(md) {
       padding-left: 20.8%;
-      height: max(39vw,rem(684));
     }
   }
 
   .top-fv__img {
-    height: rem(410) !important;
+    height: calc(100vh - 70px) !important;
+
  
     @include mq(md) {
-            height: max(39vw,rem(684)) !important;
     }
   }
 
   .top-fv__img img {
     display: block;
     object-fit: cover;
-    height: rem(410) !important;
+    height: calc(100vh - 70px) !important;
+
 
     @include mq(md) {
-            height: max(39vw,rem(684))!important;
     }
 
   }
