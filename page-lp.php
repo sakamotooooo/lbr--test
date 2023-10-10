@@ -66,13 +66,13 @@
 			</div>
 			<div class="solution__items">
 				<div class="solution__item">
-					<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/man01.png" alt="男の人のイラスト">
+					<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/man01.svg" alt="男の人のイラスト">
 				</div>
 				<div class="solution__item">
-					<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/man02.png" alt="男の人のイラスト">
+					<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/man02.svg" alt="男の人のイラスト">
 				</div>
 				<div class="solution__item">
-					<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/woman.png" alt="女の人のイラスト">
+					<img loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/woman.svg" alt="女の人のイラスト">
 				</div>
 			</div>
 			<div class="solution__wrap">

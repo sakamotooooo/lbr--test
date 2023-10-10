@@ -3290,15 +3290,14 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 .achievements {
   padding: 60px 0;
   padding: 3.75rem 0;
-  background-image: url(../images/achievements-bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #e5ecf4 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: center center;
 }
 @media screen and (min-width: 768px) {
   .achievements {
     padding: 5rem 0;
-    background-image: url(../images/achievements-bg-pc.png);
   }
 }
 
@@ -3309,6 +3308,8 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 @media screen and (min-width: 768px) {
   .achievements__inner.inner {
     max-width: 80.3125rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -3390,7 +3391,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 .achievements__content {
   padding: 15px 18px 60px;
   padding: 0.9375rem 1.125rem 3.75rem;
-  background-color: #F4F9FD;
+  background-color: #f4f9fd;
   height: inherit;
 }
 @media screen and (min-width: 768px) {
@@ -3566,6 +3567,8 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 @media screen and (min-width: 768px) {
   .commitment__inner.inner {
     max-width: 80.3125rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -4028,6 +4031,12 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   .lp-service {
     padding: 5rem 0;
   }
+}
+
+.lp-service__inner {
+  max-width: 1550px;
+  width: 100%;
+  margin: auto;
 }
 
 .lp-service__items {
@@ -4522,7 +4531,7 @@ _:-ms-lang(x)::-ms-backdrop,
   height: 100%;
   width: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .solution__wrap {
