@@ -34,3 +34,12 @@
 	font-size: rem(16);
 	}
 }
+
+
+/* 404ページのみで、.footer の margin-top: auto; を削除し、.top-contact に margin-top: auto; を適用 */
+.error-404-content .footer {
+	margin-top: initial; /* margin-top: auto; を上書きするために初期値を設定 */
+}
+.error-404-content .top-contact {
+	margin-top: auto;
+}
