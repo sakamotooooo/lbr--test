@@ -11,7 +11,7 @@
 			src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
 </section>
 <?php get_template_part('template/breadcrumb'); ?>
-<main>
+<main class="error-page">
 	<section class="errorpage">
 		<div class="errorpage__inner inner">
 			<h1 class="errorpage__message">

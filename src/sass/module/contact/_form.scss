@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.form {
+.mw_wp_form {
   margin-top: rem(35);
   @include mq("md") {
     margin-top: rem(45);

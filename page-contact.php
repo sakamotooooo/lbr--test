@@ -23,9 +23,8 @@
 				<p class="contact__text">Eメールアドレスに誤りがあると返信できないことがございますので、ご注意ください。</p>
 				<span class="contact__fill-in">※の部分は必ずご記入ください</span>
 			</div>
-			<form action="" method="post" class="contact__form form">
-				<?php echo do_shortcode( '[mwform_formkey key="75"]' ); ?>
-			</form>
+			<?php echo do_shortcode( '[mwform_formkey key="75"]' ); ?>
+
 		</div>
 		<a class="pagetop" href="#">
 			<div class="pagetop__arrow"></div>
