@@ -16,7 +16,7 @@
 		<div class="top-contact__items consultation">
 			<a href="tel:0362765828" class="top-contact__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="17" height="30" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.svg"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">

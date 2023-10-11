@@ -29,7 +29,7 @@
 		<div class="trouble-btn__items consultation">
 			<a href="tel:0362765828" class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.svg"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
@@ -151,7 +151,7 @@
 		<div class="trouble-btn__items consultation">
 			<a href="tel:0362765828" class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.svg"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
@@ -281,7 +281,7 @@
 		<div class="trouble-btn__items consultation">
 			<a href="tel:0362765828" class="trouble-btn__item consultation__item">
 				<div class="consultation__telImg">
-					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.png"
+					<img width="18" height="31" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/phone.svg"
 						alt="電話アイコン">
 				</div>
 				<div class="consultation__telDetails">
