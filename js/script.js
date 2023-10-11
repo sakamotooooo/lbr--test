@@ -90,3 +90,22 @@ document.addEventListener("DOMContentLoaded", function() {
         radios[0].checked = true;  // この例では最初のラジオボタンを選択します
     }
 });
+
+window.onload = function() {
+	// mainタグに`error-page`クラスが存在するか確認
+	const isMainErrorPage = document.querySelector('main.error-page');
+
+	if (isMainErrorPage) {
+			const footerElement = document.querySelector('.footer');
+			const topContactElement = document.querySelector('.top-contact');
+
+			if (footerElement) {
+					footerElement.style.marginTop = 'initial';
+			}
+
+			if (topContactElement) {
+					topContactElement.style.marginTop = 'auto';
+			}
+	}
+};
+
