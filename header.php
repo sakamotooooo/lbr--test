@@ -3,12 +3,10 @@
 
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name=“robots” content=“noindex”>
   <?php get_template_part('template/title'); ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="株式会社エルビーアールは、技術力を持つ特殊清掃のプロフェッショナルです。清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。" />
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-23W0D20H0D"></script>
 	<script>

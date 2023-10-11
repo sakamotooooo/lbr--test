@@ -27,6 +27,9 @@
 	elseif (is_page('thanks')) :
 	?>
 		お問い合わせありがとうございました | 株式会社エルビーアール 
+	<?php	
+	elseif (is_page('privacy')) :
+	?>プライバシーポリシー | 株式会社エルビーアール 
 	<?php
 	elseif (is_post_type_archive('〇〇')) : ?>
 		カスタム投稿のタイトル

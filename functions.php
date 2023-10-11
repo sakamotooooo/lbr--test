@@ -77,3 +77,28 @@ function foo_pop($trail) {
 		array_shift($trail->trail);
 }};
 add_action('bcn_after_fill', 'foo_pop');
+
+
+//ヘッダーtitleタグの重複を削除
+remove_action( 'wp_head', '_wp_render_title_tag', 1 );
+//ヘッダーmetaタグの重複を削除
+
+
+function add_noindex_insert(){
+	/* 特定の固定ページの場合 */
+	if (is_page('privacy','thanks','404')) {
+		echo '<meta name="robots" content="noindex,nofollow,noarchive">'."\n";
+		echo '<meta name="googlebot" content="noindex,nofollow,noarchive">'."\n";
+	}
+}
+add_action('wp_head', 'add_noindex_insert');
+
+
+function add_description(){
+	/* 特定の固定ページの場合 */
+	if (is_front_page()) {
+		echo '  <meta name="description" content="株式会社エルビーアールは、技術力を持つ特殊清掃のプロフェッショナルです。清掃分野においては確かな専門知識を有し、お客様の要望に合わせたサービスを提供しています。" />
+		'."\n";
+	}
+}
+add_action('wp_head', 'add_description');
