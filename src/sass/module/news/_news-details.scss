@@ -75,8 +75,11 @@
 
 .news-details__contents ul {
     list-style-type: disc;
+    padding-left: rem(16);
 }
 
 .news-details__contents ol {
     list-style-type: decimal;
+    padding-left: rem(16);
+
 }
