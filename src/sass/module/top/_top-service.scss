@@ -129,7 +129,7 @@
 
 .top-service__contents--02 {
   @include mq("md") {
-    margin-top: rem(106);
+    margin-top: rem(104);
     margin-left: calc(50% - 50vw);
     margin-right: 8%;
 
@@ -138,7 +138,7 @@
 
 .top-service__contents--03 {
   @include mq("md") {
-    margin-top: rem(110);
+    margin-top: rem(104);
   }
 }
 
@@ -151,10 +151,6 @@
   bottom: rem(-4);
   background-color: $blue;
   width: rem(35);
-}
-
-.top-service__heading--02::before {
-  background-color: $white;
 }
 
 .top-service__heading::after {
@@ -179,17 +175,73 @@
   }
 }
 
+.top-service__heading--01 {
+  @include mq(md) {
+    margin-top: rem(34);
+    position: relative;
+  }
+}
+
 .top-service__heading--01::after {
   content: "apartment";
+  @include mq(md) {
+    position: absolute;
+    padding-top: rem(4);
+  }
+}
+
+.top-service__heading--01::before {
+  @include mq(md) {
+    bottom: rem(-6);
+    position: absolute;
+  }
+}
+
+.top-service__heading--02 {
+  @include mq(md) {
+    margin-top: rem(36);
+    position: relative;
+  }
+}
+
+.top-service__heading--02::before {
+  background-color: $white;
+  @include mq(md) {
+    bottom: rem(-6);
+
+  }
 }
 
 .top-service__heading--02::after {
-  color: $white;
   content: "building";
+  color: $white;
+  @include mq(md) {
+    position: absolute;
+    padding-top: rem(4);
+  }
+}
+
+.top-service__heading--03 {
+  @include mq(md) {
+    margin-top: rem(40);
+    position: relative;
+  }
+}
+
+.top-service__heading--03::before {
+  @include mq(md) {
+    position: absolute;
+    bottom: rem(-4);
+  }
 }
 
 .top-service__heading--03::after {
   content: "housing";
+
+  @include mq(md) {
+    position: absolute;
+    padding-top: rem(10);
+  }
 }
 
 .top-service__button {

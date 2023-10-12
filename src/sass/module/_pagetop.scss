@@ -3,13 +3,18 @@
     height: rem(50);
     width: rem(50);
     position: fixed;
-    right: rem(50);
-    bottom: rem(50);
+    right: rem(25);
+    bottom: rem(25);
     background: $blue;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
+
+    @include mq(md) {
+        right: rem(50);
+        bottom: rem(50);
+    }
 }
 
 .pagetop__arrow {

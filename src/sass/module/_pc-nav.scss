@@ -71,6 +71,12 @@
   }
 }
 
+.pc-nav__contact:hover{
+  @include mq(md) {
+    opacity: 0.5;
+  }
+}
+
 .pc-nav__contact a {
   display: flex;
   align-items: center;

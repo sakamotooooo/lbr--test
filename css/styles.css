@@ -999,10 +999,10 @@ select::-ms-expand {
   width: 50px;
   width: 3.125rem;
   position: fixed;
-  right: 50px;
-  right: 3.125rem;
-  bottom: 50px;
-  bottom: 3.125rem;
+  right: 25px;
+  right: 1.5625rem;
+  bottom: 25px;
+  bottom: 1.5625rem;
   background: #024892;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1014,6 +1014,12 @@ select::-ms-expand {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .pagetop {
+    right: 3.125rem;
+    bottom: 3.125rem;
+  }
 }
 
 .pagetop__arrow {
@@ -1118,6 +1124,12 @@ select::-ms-expand {
             justify-content: center;
     text-align: center;
     height: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pc-nav__contact:hover {
+    opacity: 0.5;
   }
 }
 
@@ -1439,6 +1451,10 @@ select::-ms-expand {
 .wp-pagenavi span.current {
   color: #fff;
   background-color: #024892;
+  border: 1px solid #024892;
+}
+
+.wp-pagenavi a:hover {
   border: 1px solid #024892;
 }
 
@@ -2822,7 +2838,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 
 @media screen and (min-width: 768px) {
   .top-service__contents--02 {
-    margin-top: 6.625rem;
+    margin-top: 6.5rem;
     margin-left: calc(50% - 50vw);
     margin-right: 8%;
   }
@@ -2830,7 +2846,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 
 @media screen and (min-width: 768px) {
   .top-service__contents--03 {
-    margin-top: 6.875rem;
+    margin-top: 6.5rem;
   }
 }
 
@@ -2846,10 +2862,6 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   background-color: #024892;
   width: 35px;
   width: 2.1875rem;
-}
-
-.top-service__heading--02::before {
-  background-color: #fff;
 }
 
 .top-service__heading::after {
@@ -2876,17 +2888,79 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .top-service__heading--01 {
+    margin-top: 2.125rem;
+    position: relative;
+  }
+}
+
 .top-service__heading--01::after {
   content: "apartment";
 }
+@media screen and (min-width: 768px) {
+  .top-service__heading--01::after {
+    position: absolute;
+    padding-top: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-service__heading--01::before {
+    bottom: -0.375rem;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-service__heading--02 {
+    margin-top: 2.25rem;
+    position: relative;
+  }
+}
+
+.top-service__heading--02::before {
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .top-service__heading--02::before {
+    bottom: -0.375rem;
+  }
+}
 
 .top-service__heading--02::after {
-  color: #fff;
   content: "building";
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .top-service__heading--02::after {
+    position: absolute;
+    padding-top: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-service__heading--03 {
+    margin-top: 2.5rem;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-service__heading--03::before {
+    position: absolute;
+    bottom: -0.25rem;
+  }
 }
 
 .top-service__heading--03::after {
   content: "housing";
+}
+@media screen and (min-width: 768px) {
+  .top-service__heading--03::after {
+    position: absolute;
+    padding-top: 0.625rem;
+  }
 }
 
 .top-service__button {
@@ -3034,6 +3108,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 .news-details__contents img {
   margin-top: 20px;
   margin-top: 1.25rem;
+  max-width: 100%;
 }
 
 .news-details__contents ul {
@@ -3046,6 +3121,28 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
   list-style-type: decimal;
   padding-left: 16px;
   padding-left: 1rem;
+}
+
+.news-details__contents h5,
+.news-details__contents h6 {
+  margin: 0;
+}
+
+blockquote p {
+  quotes: '"' '"' "'" "'";
+}
+
+blockquote p::before {
+  content: open-quote;
+}
+
+blockquote p::after {
+  content: close-quote;
+}
+
+.news-details__contents p a {
+  text-decoration: underline;
+  color: #007aff;
 }
 
 .news-item {
@@ -5039,7 +5136,7 @@ _:-ms-lang(x)::-ms-backdrop,
 @media screen and (min-width: 768px) {
   .service-feature__text {
     font-weight: 400;
-    margin-top: 1.75rem;
+    margin-top: 2rem;
     font-size: min(1.5vw, 1rem);
   }
 }
@@ -5158,6 +5255,7 @@ _:-ms-lang(x)::-ms-backdrop,
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    gap: 2.75rem;
   }
 }
 
@@ -5271,12 +5369,25 @@ _:-ms-lang(x)::-ms-backdrop,
 @media screen and (min-width: 768px) {
   .service__text--white {
     padding-top: 2.5rem;
+    padding-left: 0.375rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service__text--white .service-feature__text {
+    max-width: 28.75rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .service__text--03 {
     padding-top: 2.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service__text--03 .service-feature__text {
+    margin-top: 1.875rem;
   }
 }
 

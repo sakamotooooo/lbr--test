@@ -90,7 +90,7 @@
 
   @include mq(md) {
     font-weight: $regular;
-    margin-top: rem(28);
+    margin-top: rem(32);
     font-size: min(1.5vw, rem(16));
   }
 }
@@ -188,6 +188,7 @@
     background-color: $blue;
     padding-right: rem(30);
     justify-content: end;
+    gap: rem(44);
   }
 }
 
@@ -290,12 +291,25 @@
   padding-left: 0;
   @include mq("md") {
     padding-top: rem(40);
+    padding-left: rem(6);
+  }
+}
+
+.service__text--white .service-feature__text {
+  @include mq("md") {
+    max-width: rem(460);
   }
 }
 
 .service__text--03  {
   @include mq("md") {
     padding-top: rem(34);
+  }
+}
+
+.service__text--03 .service-feature__text  {
+  @include mq("md") {
+    margin-top: rem(30);
   }
 }
 
