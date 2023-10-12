@@ -204,7 +204,7 @@
 }
 .solution__wrap::before {
   left: rem(-25);
-  background-image: url(../images/work-man.png);
+  background-image: url(../images/work-man.svg);
   @include mq("md") {
     left: calc(50% - 56vw);
   }
@@ -217,7 +217,7 @@
 }
 .solution__wrap::after {
   right: rem(-25);
-  background-image: url(../images/work-woman.png);
+  background-image: url(../images/work-woman.svg);
   @include mq("md") {
     right: calc(50% - 56vw);
   }

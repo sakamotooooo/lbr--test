@@ -4,14 +4,18 @@
 <?php get_header(); ?>
 
 
-<section class="mainview">
-	<div class="mainview__sp"><img loading="lazy"
-			src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
-	<div class="mainview__pc"><img loading="lazy"
-			src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
-</section>
-<?php get_template_part('template/breadcrumb'); ?>
 <main class="error-page">
+	<section class="mainview">
+		<div class="mainview__title">
+			<span>NOT FOUND</span>
+			<h1>ページが見つかりませんでした</h1>
+		</div>
+		<div class="mainview__sp"><img loading="lazy"
+				src="<?php echo get_template_directory_uri() ?>/images/mv-service-sp.jpg" alt="servicetop"></div>
+		<div class="mainview__pc"><img loading="lazy"
+				src="<?php echo get_template_directory_uri() ?>/images/mv-service-pc.jpg" alt="servicetop"></div>
+	</section>
+	<?php get_template_part('template/breadcrumb'); ?>
 	<section class="errorpage">
 		<div class="errorpage__inner inner">
 			<h1 class="errorpage__message">

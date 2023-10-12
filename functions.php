@@ -102,3 +102,20 @@ function add_description(){
 	}
 }
 add_action('wp_head', 'add_description');
+
+// function dequeue_gutenberg_styles() {
+// 	// クラシックエディタを使用している場合
+// 	if ( ! is_use_block_editor_for_post( get_the_ID() ) ) {
+// 			wp_dequeue_style( 'wp-block-library' );
+// 	}
+// }
+// add_action( 'wp_enqueue_scripts', 'dequeue_gutenberg_styles' );
+
+// ニュース詳細の「-」を消す
+function custom_wp_title($title, $sep) {
+	if (is_singular('news') && $sep && false !== strpos($title, " $sep ")) {
+			$title = str_replace(" $sep ", " ", $title);
+	}
+	return $title;
+}
+add_filter('wp_title', 'custom_wp_title', 10, 2);

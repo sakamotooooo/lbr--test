@@ -4,13 +4,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-	margin-top: rem(22);
+	margin-top: rem(50);
   @include mq("md") {
-    margin-top: rem(44);
+    margin-top: rem(93);
   }
 }
 .company-message__img {
   margin-top: rem(35);
+	margin-inline: auto;
   max-width: rem(400);
   width: 100%;
   height: auto;
@@ -28,6 +29,7 @@
 }
 .company-message__wrap {
   margin-top: rem(25);
+	margin-inline: auto;
   @include mq("md") {
     max-width: rem(650);
     width: 100%;

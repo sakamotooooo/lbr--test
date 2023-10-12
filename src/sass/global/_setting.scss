@@ -91,3 +91,10 @@ $mediaquerys: (
     display: none;
   }
 }
+
+// タブ
+.u-tab{
+	@include mq('sm') {
+    display: none;
+	}
+}

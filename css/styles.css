@@ -28,6 +28,12 @@ body {
   }
 }
 
+@media screen and (min-width: 376px) {
+  .u-tab {
+    display: none;
+  }
+}
+
 html {
   font-size: 16px;
 }
@@ -212,6 +218,8 @@ select::-ms-expand {
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 400;
+  color: #024892;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .breadcrumbs span {
@@ -499,7 +507,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .errorpage {
-    margin-top: 3.75rem;
+    margin-top: 5.8125rem;
     margin-bottom: 6.875rem;
   }
 }
@@ -1451,14 +1459,14 @@ select::-ms-expand {
 }
 
 .contact {
-  margin-top: 49px;
-  margin-top: 3.0625rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
   margin-bottom: 90px;
   margin-bottom: 5.625rem;
 }
 @media screen and (min-width: 768px) {
   .contact {
-    margin-top: 5.625rem;
+    margin-top: 5.8125rem;
     margin-bottom: 6.875rem;
   }
 }
@@ -1834,7 +1842,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 }
 @media screen and (min-width: 768px) {
   .thanks {
-    margin-top: 3.75rem;
+    margin-top: 5.8125rem;
     margin-bottom: 6.875rem;
   }
 }
@@ -1900,7 +1908,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 }
 @media screen and (min-width: 768px) {
   .privacy {
-    margin-top: 5.625rem;
+    margin-top: 5.8125rem;
     margin-bottom: 7.125rem;
   }
 }
@@ -3025,14 +3033,14 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 }
 
 .news-details {
-  margin-top: 60px;
-  margin-top: 3.75rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
   margin-bottom: 90px;
   margin-bottom: 5.625rem;
 }
 @media screen and (min-width: 768px) {
   .news-details {
-    margin-top: 7.75rem;
+    margin-top: 5.8125rem;
     margin-bottom: 6.5625rem;
   }
 }
@@ -3210,12 +3218,12 @@ blockquote p::after {
 }
 
 .news {
-  margin-top: 35px;
-  margin-top: 2.1875rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .news {
-    margin-top: 5.9375rem;
+    margin-top: 5.8125rem;
   }
 }
 
@@ -3336,6 +3344,12 @@ blockquote p::after {
   }
 }
 
+.company-about__data span {
+  padding-left: 1em;
+  text-indent: -1em;
+  display: inline-block;
+}
+
 .company-about__current {
   font-size: 12px;
   font-size: 0.75rem;
@@ -3385,18 +3399,19 @@ blockquote p::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 22px;
-  margin-top: 1.375rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .company-message {
-    margin-top: 2.75rem;
+    margin-top: 5.8125rem;
   }
 }
 
 .company-message__img {
   margin-top: 35px;
   margin-top: 2.1875rem;
+  margin-inline: auto;
   max-width: 400px;
   max-width: 25rem;
   width: 100%;
@@ -3421,6 +3436,7 @@ blockquote p::after {
 .company-message__wrap {
   margin-top: 25px;
   margin-top: 1.5625rem;
+  margin-inline: auto;
 }
 @media screen and (min-width: 768px) {
   .company-message__wrap {
@@ -3988,7 +4004,6 @@ blockquote p::after {
 @media screen and (min-width: 768px) {
   .faq__answer {
     font-size: 1rem;
-    letter-spacing: -0.12em;
   }
 }
 
@@ -4755,7 +4770,7 @@ _:-ms-lang(x)::-ms-backdrop,
 .solution__wrap::before {
   left: -25px;
   left: -1.5625rem;
-  background-image: url(../images/work-man.png);
+  background-image: url(../images/work-man.svg);
 }
 @media screen and (min-width: 768px) {
   .solution__wrap::before {
@@ -4776,7 +4791,7 @@ _:-ms-lang(x)::-ms-backdrop,
 .solution__wrap::after {
   right: -25px;
   right: -1.5625rem;
-  background-image: url(../images/work-woman.png);
+  background-image: url(../images/work-woman.svg);
 }
 @media screen and (min-width: 768px) {
   .solution__wrap::after {
@@ -5153,14 +5168,14 @@ _:-ms-lang(x)::-ms-backdrop,
   max-width: 90rem;
   margin-inline: auto;
   padding-inline: 15px;
-  padding-top: 42px;
-  padding-top: 2.625rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .service {
     padding-inline: 25px;
-    padding-top: 5rem;
+    padding-top: 5.8125rem;
   }
 }
 

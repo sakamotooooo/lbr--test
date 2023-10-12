@@ -4,17 +4,17 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-open")) {
       $(this).removeClass("is-open");
       $(".js-drawer-menu,body").removeClass("panelactive");
-			$('body').css('overflow', 'auto'); // スクロールを再度許可
+      $("body").css("overflow", "auto"); // スクロールを再度許可
     } else {
       $(this).addClass("is-open");
       $(".js-drawer-menu,body").toggleClass("panelactive");
-			$('body').css('overflow', 'hidden'); // スクロールを無効化
+      $("body").css("overflow", "hidden"); // スクロールを無効化
     }
   });
 
   $(".js-sp-nav__item").on("click", function () {
     $(".js-hamburger").removeClass("is-open");
-		$('body').css('overflow', 'auto'); // スクロールを再度許可
+    $("body").css("overflow", "auto"); // スクロールを再度許可
   });
 
   // ヘッダーの分だけコンテンツを下げる
@@ -83,29 +83,30 @@ const swiperFv = new Swiper(".fv-swiper", {
   speed: 2000, // 3秒かけてフェード
 });
 
-
-document.addEventListener("DOMContentLoaded", function() {
-    var radios = document.querySelectorAll('[name="radio"]');
-    if (radios && radios.length > 0) {
-        radios[0].checked = true;  // この例では最初のラジオボタンを選択します
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  var radios = document.querySelectorAll('[name="radio"]');
+  if (radios && radios.length > 0) {
+    radios[0].checked = true; // この例では最初のラジオボタンを選択します
+  }
 });
 
-window.onload = function() {
-	// mainタグに`error-page`クラスが存在するか確認
-	const isMainErrorPage = document.querySelector('main.error-page');
+document.addEventListener("DOMContentLoaded", function () {
+  // 画面の再描画の直前に関数を実行する
+  requestAnimationFrame(function () {
+    // mainタグに`error-page`クラスが存在するか確認
+    const isMainErrorPage = document.querySelector("main.error-page");
 
-	if (isMainErrorPage) {
-			const footerElement = document.querySelector('.footer');
-			const topContactElement = document.querySelector('.top-contact');
+    if (isMainErrorPage) {
+      const footerElement = document.querySelector(".footer");
+      const topContactElement = document.querySelector(".top-contact");
 
-			if (footerElement) {
-					footerElement.style.marginTop = 'initial';
-			}
+      if (footerElement) {
+        footerElement.style.marginTop = "initial";
+      }
 
-			if (topContactElement) {
-					topContactElement.style.marginTop = 'auto';
-			}
-	}
-};
-
+      if (topContactElement) {
+        topContactElement.style.marginTop = "auto";
+      }
+    }
+  });
+});

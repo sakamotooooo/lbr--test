@@ -8,10 +8,9 @@
 	<section class="trouble-mv">
 		<div class="trouble-mv__inner">
 			<picture class="trouble-mv__img">
-				<source media="(min-width:767px)"
-					srcset="<?php echo get_template_directory_uri() ?>/images/trouble-mv-pc.png" />
+				<source media="(min-width:767px)" srcset="<?php echo get_template_directory_uri() ?>/images/lp-mv-pc2.png" />
 				<img width="106" height="83" loading="lazy"
-					src="<?php echo get_template_directory_uri() ?>/images/trouble-mv.png" alt="清掃の指導を受けている様子">
+					src="<?php echo get_template_directory_uri() ?>/images/lp-mv-sp1.png" alt="清掃の指導を受けている様子">
 			</picture>
 			<div class="trouble-mv__content">
 				<h1 class="trouble-mv__title">清掃のことなら<br>エルビーアールに<br class="u-mobile">お任せ下さい！</h1>
@@ -355,7 +354,7 @@
 						<p class="flow__number">STEP1</p>
 						<div class="flow__img">
 							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow01.png" alt="問い合わせ">
+								src="<?php echo get_template_directory_uri() ?>/images/flow01.svg" alt="問い合わせ">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -370,7 +369,7 @@
 						<p class="flow__number">STEP2</p>
 						<div class="flow__img">
 							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow02.png" alt="担当者からご連絡">
+								src="<?php echo get_template_directory_uri() ?>/images/flow02.svg" alt="担当者からご連絡">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -386,7 +385,7 @@
 						<p class="flow__number">STEP3</p>
 						<div class="flow__img">
 							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow03.png" alt="打ち合わせ">
+								src="<?php echo get_template_directory_uri() ?>/images/flow03.svg" alt="打ち合わせ">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -401,7 +400,7 @@
 						<p class="flow__number">STEP4</p>
 						<div class="flow__img">
 							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow04.png" alt="見積書">
+								src="<?php echo get_template_directory_uri() ?>/images/flow04.svg" alt="見積書">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -416,7 +415,7 @@
 						<p class="flow__number">STEP5</p>
 						<div class="flow__img">
 							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow05.png" alt="ご契約">
+								src="<?php echo get_template_directory_uri() ?>/images/flow05.svg" alt="ご契約">
 						</div>
 					</div>
 					<div class="flow__content">
@@ -431,7 +430,7 @@
 						<p class="flow__number">STEP6</p>
 						<div class="flow__img">
 							<img width="100" height="100" loading="lazy"
-								src="<?php echo get_template_directory_uri() ?>/images/flow06.png" alt="作業">
+								src="<?php echo get_template_directory_uri() ?>/images/flow06.svg" alt="作業">
 						</div>
 					</div>
 					<div class="flow__content">

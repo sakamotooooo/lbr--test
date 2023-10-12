@@ -20,6 +20,8 @@
 .breadcrumbs span {
   font-size: rem(12);
   font-weight: $regular;
+  color: $blue;
+  display: inline-block;
   @include mq("md") {
     font-size: rem(12);
   }
