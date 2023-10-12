@@ -148,44 +148,44 @@
 		<div class="slide__wrap">
 			<ul class="slide__list slide__list--left top-slide__list">
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide01.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide02.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide03.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide04.png" alt="">
 				</li>
 			</ul>
 			<ul class="slide__list slide__list--left">
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide01.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide02.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide03.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide04.png" alt="">
 				</li>
 			</ul>
       <ul class="slide__list slide__list--left">
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide01.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide01.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide02.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide02.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide03.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide03.png" alt="">
 				</li>
 				<li class="slide__item top-slide__item"><img
-						src="<?php echo get_template_directory_uri() ?>/images/slide04.jpg" alt="">
+						src="<?php echo get_template_directory_uri() ?>/images/slide04.png" alt="">
 				</li>
 			</ul>
 		</div>

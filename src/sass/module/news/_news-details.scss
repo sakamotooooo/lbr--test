@@ -71,6 +71,7 @@
 
 .news-details__contents img{
     margin-top: rem(20);
+    max-width: 100%;
 }
 
 .news-details__contents ul {
@@ -82,4 +83,26 @@
     list-style-type: decimal;
     padding-left: rem(16);
 
+}
+
+.news-details__contents h5,
+.news-details__contents h6 {
+    margin: 0;
+}
+
+blockquote p {
+    quotes: '"' '"' "'" "'";
+}
+
+blockquote p::before {
+    content: open-quote;
+}
+
+blockquote p::after {
+    content: close-quote;
+}
+
+.news-details__contents p a {
+    text-decoration:underline;
+    color:#007aff ;
 }

@@ -39,7 +39,6 @@
 	<?php elseif (is_single('')) : 
 		wp_title(''); 
 	?>
-	 | 株式会社エルビーアール 
 	<?php
 	elseif (is_404()) : //404ページ
 		echo '404ページ';
