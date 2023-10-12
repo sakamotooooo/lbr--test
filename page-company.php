@@ -15,7 +15,7 @@
 	</section>
 	<?php get_template_part('template/breadcrumb');?>
 	<section class="company-message">
-		<div class="company-message inner">
+		<div class="company-message__inner inner">
 			<div class="section-heading">
 				<span class="section-heading__subtitle section-heading__subtitle--blue">message</span>
 				<h2 class="section-heading__title section-heading__title--black">代表挨拶</h2>
@@ -102,27 +102,27 @@
 					<div class="company-about__wrap">
 						<dt class="company-about__title">加盟団体</dt>
 						<dd class="company-about__data">
-							&#x30FB;公益社団法人 全国ビルメンテナンス協会会員<br>
-							&#x30FB;公益社団法人 渋谷法人会 会員<br>
-							&#x30FB;東京商工会議所 会員<br>
+							・公益社団法人 全国ビルメンテナンス協会会員<br>
+							・公益社団法人 渋谷法人会 会員<br>
+							・東京商工会議所 会員<br>
 						</dd>
 					</div>
 					<div class="company-about__wrap">
 						<dt class="company-about__title">許認可証<p class="company-about__current">（2022年8月末現在）</p>
 						</dt>
 						<dd class="company-about__data">
-							&#x30FB;労働者派遣事業許可（派13-314277）<br>
-							&#x30FB;建築物清掃業登録証明（東京都31清第1101号）<br>
-							&#x30FB;産業廃棄物収集運搬業許可証（第13-00-214295）<br>
-							&#x30FB;建築物清掃業登録証明書（30健研建登第1204号）<br>
-							&#x30FB;労働者派遣事業許可証（許可番号13-314277）<br>
-							&#x30FB;産業廃棄物収集運搬許可証（01100214295号、1300214295号）<br>
-							&#x30FB;産業廃棄物収集運搬修了証（119079057号）<br>
-							&#x30FB;派遣元責任者講習受講証明<br class="u-mobile">（002-220603131-029、002-220603131-030）<br>
-							&#x30FB;1級ビルクリーニング技能検定合格者（3名）<br>
-							&#x30FB;3級ビルクリーニング技能検定合格者（3名）<br>
-							&#x30FB;清掃作業監督者講習会修了証書（清第33953号）<br>
-							&#x30FB;石材メンテナンス講習修了証書（第40号）<br>
+							<span>・労働者派遣事業許可（派13-314277）</span><br>
+							<span>・建築物清掃業登録証明（東京都31清第1101号）</span><br>
+							<span>・産業廃棄物収集運搬業許可証（第13-00-214295）</span><br>
+							<span>・建築物清掃業登録証明書（30健研建登第1204号）</span><br>
+							<span>・労働者派遣事業許可証（許可番号13-314277）</span><br>
+							<span>・産業廃棄物収集運搬許可証（01100214295号、1300214295号）</span><br>
+							<span>・産業廃棄物収集運搬修了証（119079057号）</span><br>
+							<span>・派遣元責任者講習受講証明<br class="u-mobile">（002-220603131-029、002-220603131-030）</span><br>
+							<span>・1級ビルクリーニング技能検定合格者（3名）</span><br>
+							<span>・3級ビルクリーニング技能検定合格者（3名）</span><br>
+							<span>・清掃作業監督者講習会修了証書（清第33953号）</span><br>
+							<span>・石材メンテナンス講習修了証書（第40号）</span><br>
 						</dd>
 					</div>
 				</dl>

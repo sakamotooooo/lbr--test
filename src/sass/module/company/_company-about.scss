@@ -59,6 +59,11 @@
 	 margin-top: 0;
 	}
 }
+.company-about__data span{
+	padding-left:1em;
+	text-indent:-1em;
+	display: inline-block;
+}
 .company-about__current {
   font-size: rem(12);
 	margin-top: rem(3);
