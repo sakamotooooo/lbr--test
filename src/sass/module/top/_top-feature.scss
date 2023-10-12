@@ -9,13 +9,21 @@
   background-repeat: repeat;
   background-position: center center;
   margin-top: rem(40);
-  position: relative;
-  padding: rem(80) $padding-sp;
+  padding: rem(56) $padding-sp;
+  padding-bottom: rem(30);
 
   @include mq(md) {
     margin-top: rem(55);
     padding: rem(80) $padding-pc;
+  }
+}
 
+.top-feature__inner{
+  position: relative;
+
+  @include mq(md) {
+    max-width: rem(1440);
+    margin-inline: auto;
   }
 }
 
@@ -27,12 +35,23 @@
   color: $blue;
   opacity: 0.1;
   text-transform: uppercase;
-  top: rem(-50);
-  right: 0;
+  top: rem(-110);
+  right: rem(-10);
+
 
   @include mq(md) {
+    text-align: right;
+    display: block;
     font-size: rem(135);
-    top: rem(-95);
+    top: rem(-170);
+    right: rem(-30);
+  }
+}
+
+.top-feature__englishtitle--inner {
+  @include mq(md) {
+    max-width: rem(1440);
+    height: auto;
   }
 }
 

@@ -142,6 +142,8 @@
 
     @include mq(md) {
         margin-top: rem(55);
+        position: relative;
+        max-width: rem(1440);
     }
 }
 
