@@ -1892,7 +1892,7 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 }
 @media screen and (min-width: 768px) {
   .privacy {
-    margin-top: 5.625rem;
+    margin-top: 5.8125rem;
     margin-bottom: 7.125rem;
   }
 }
@@ -2959,14 +2959,14 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 }
 
 .news-details {
-  margin-top: 60px;
-  margin-top: 3.75rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
   margin-bottom: 90px;
   margin-bottom: 5.625rem;
 }
 @media screen and (min-width: 768px) {
   .news-details {
-    margin-top: 7.75rem;
+    margin-top: 5.8125rem;
     margin-bottom: 6.5625rem;
   }
 }
@@ -3121,12 +3121,12 @@ input[type=radio]:checked + .mwform-radio-field-text:after {
 }
 
 .news {
-  margin-top: 35px;
-  margin-top: 2.1875rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 @media screen and (min-width: 768px) {
   .news {
-    margin-top: 5.9375rem;
+    margin-top: 5.8125rem;
   }
 }
 
@@ -5071,14 +5071,14 @@ _:-ms-lang(x)::-ms-backdrop,
   max-width: 90rem;
   margin-inline: auto;
   padding-inline: 15px;
-  padding-top: 42px;
-  padding-top: 2.625rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
   .service {
     padding-inline: 25px;
-    padding-top: 5rem;
+    padding-top: 5.8125rem;
   }
 }
 
