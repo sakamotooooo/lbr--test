@@ -156,3 +156,18 @@
     font-size: rem(30);
   }
 }
+
+.service__contents {
+  @include mq(md) {
+    margin-top: rem(106);
+    margin-left: 6%;
+
+  }
+}
+
+.service__content--right01 .service__text--sub01 {
+  @include mq(md) {
+    padding-top: 0;
+    padding-left: rem(50);
+  }
+} 

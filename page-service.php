@@ -20,8 +20,8 @@
 				<span class="section-heading__subtitle section-heading__subtitle--blue">feature</span>
 				<h2 class="section-heading__title section-heading__title--black">エルビーアールのこだわり</h2>
 			</div>
-			<div class="top-service__contents">
-				<div class="service__content service__content--right">
+			<div class="top-service__contents service__contents">
+				<div class="service__content service__content--right service__content--right01">
 					<span class="service-feature__number u-mobile">01</span>
 					<div class="service__text service__text--sub01">
 						<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>

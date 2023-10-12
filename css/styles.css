@@ -5037,6 +5037,20 @@ _:-ms-lang(x)::-ms-backdrop,
 }
 
 @media screen and (min-width: 768px) {
+  .service__contents {
+    margin-top: 6.625rem;
+    margin-left: 6%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service__content--right01 .service__text--sub01 {
+    padding-top: 0;
+    padding-left: 3.125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .service-feature {
     margin-top: 5.8125rem;
     max-width: 73.125rem;
@@ -5118,6 +5132,11 @@ _:-ms-lang(x)::-ms-backdrop,
   background-color: #024892;
   width: 35px;
   width: 2.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .service-feature__heading::before {
+    bottom: -27%;
+  }
 }
 
 .service-feature__heading--white::before {
@@ -5406,8 +5425,9 @@ _:-ms-lang(x)::-ms-backdrop,
 }
 
 @media screen and (min-width: 768px) {
-  .service__text--sub01 {
-    padding-top: 0.5rem;
+  .service__content--right01 .service__text--sub01 {
+    padding-top: 0;
+    max-width: 31.25rem;
   }
 }
 
@@ -5419,7 +5439,13 @@ _:-ms-lang(x)::-ms-backdrop,
 
 @media screen and (min-width: 768px) {
   .service-feature__text--sub01 {
-    margin-top: 2.125rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .service__contents .service__content--right01 {
+    gap: min(10vw, 3.125rem);
   }
 }
 /*# sourceMappingURL=styles.css.map */
