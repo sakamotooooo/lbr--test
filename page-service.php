@@ -26,7 +26,7 @@
 					<div class="service__text service__text--sub01">
 						<h3 class="service-feature__heading">技術力の高い特殊清掃</h3>
 						<p class="service-feature__text service-feature__text--sub01">
-							例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど。他社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
+							例えば、商業施設やホテルなどに設置されているシャンデリアの清掃・大理石の研磨・ソファーのシミ汚れなど、社にはない確かな実績と技術力があります！その他の対応に関してもご相談頂き対応できる事に関しては対応致します。
 						</p>
 						<div class="service__subenglish service__subenglish--max u-desktop">
 							<span class="service__subenglish--right u-desktop">01</span>
@@ -130,7 +130,7 @@
 					</p>
 					<p class="service-contents__detailtop">清掃サービス一覧</p>
 					<p class="service-contents__detail02">日常清掃 / カーペット洗浄 / 業務用エアコン洗浄 / 床洗浄ワックス作業 / 石材洗浄 /<br class="u-desktop">
-						シャンデリアメンテナンス / 大理石などの落書き / いす清掃 / ガラス清掃
+						シャンデリアメンテナンス / いす清掃 / 大理石などの落書き落とし / ガラス清掃
 					</p>
 					<div class="service-contents__images">
 						<div class="service-contents__image service-contents__image--01">
