@@ -129,7 +129,7 @@
           <div class="service__text service__text--03">
             <h3 class="top-service__heading top-service__heading--03">住宅</h3>
             <p class="service-feature__text">プロの視点から、普段はできない清掃箇所を専門的に清掃作業を行います。普段は見過ごされるか、手が届きにくい場所でも、私たちのプロの清掃スキルと経験を活かし、最高のクオリティでお手伝いさせていただきます。清潔で快適な環境を提供し、お客様の満足度を高めるお手伝いをさせていただきます。</p>
-            <div class="service__subenglish service__subenglish--right u-desktop">
+            <div class="service__subenglish service__subenglish--right service__subenglish--right03 u-desktop">
               <span class="u-desktop">housing</span>
             </div>
           </div>

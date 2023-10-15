@@ -15,7 +15,7 @@
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(110);
-		margin-top: rem(90);
+		margin-top: rem(76);
   }
 }
 
@@ -168,6 +168,5 @@
 .service__content--right01 .service__text--sub01 {
   @include mq(md) {
     padding-top: 0;
-    padding-left: rem(50);
   }
 } 

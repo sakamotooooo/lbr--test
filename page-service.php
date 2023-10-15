@@ -37,7 +37,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="top-service__contents top-service__contents--02">
+			<div class="top-service__contents top-service__contents--02 top-service__contentssub--02">
 				<div class="service__content service__content--left service__content--center">
 					<span class="service-feature__number service-feature__number--blue u-mobile">02</span>
 					<div class="service__text service__text--white service__text--center">
@@ -52,7 +52,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="top-service__contents">
+			<div class="top-service__contents top-service__contentssub--03">
 				<div class="service__content service__content--right">
 					<span class="service-feature__number u-mobile">03</span>
 					<div class="service__text service__text--sub03">

@@ -247,9 +247,16 @@
 
   @include mq(md) {
     margin-top: rem(60);
+    margin-left: rem(30);
   }
 }
 
 .top-service__button a {
   margin-inline: auto;
+}
+
+.top-service__contentssub--02 {
+  @include mq(md) {
+    margin-right: 6%;
+  }
 }
