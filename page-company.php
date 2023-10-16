@@ -108,7 +108,7 @@
 						</dd>
 					</div>
 					<div class="company-about__wrap">
-						<dt class="company-about__title">許認可証<p class="company-about__current">（2022年8月末現在）</p>
+						<dt class="company-about__title">許認可証<p class="company-about__current">（2023年9月末現在）</p>
 						</dt>
 						<dd class="company-about__data">
 							<span>・労働者派遣事業許可（派13-314277）</span><br>
