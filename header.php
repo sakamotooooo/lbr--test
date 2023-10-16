@@ -97,8 +97,7 @@ $contact = esc_url(home_url('/contact/'));
       </ul>
     </nav>
     <div class="pc-nav__contact">
-      <a href="<?php echo $contact; ?>">
-        <span>お問い合わせ</span>
+      <a href="<?php echo $contact; ?>">お問い合わせ
       </a>
     </div>
   </div>

@@ -1110,9 +1110,6 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .pc-nav__contact {
-    color: #fff;
-    background-color: #024892;
-    width: min(15.625rem, 18vw);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1124,12 +1121,6 @@ select::-ms-expand {
             justify-content: center;
     text-align: center;
     height: inherit;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .pc-nav__contact:hover {
-    background-color: rgba(2, 72, 146, .75);
   }
 }
 
@@ -1145,13 +1136,15 @@ select::-ms-expand {
           justify-content: center;
   height: inherit;
   width: inherit;
-}
-
-.pc-nav__contact span {
+  color: #fff;
+  display: block;
+  background-color: #024892;
+  width: min(250px, 18vw);
+  width: min(15.625rem, 18vw);
   font-size: min(20px, 2vw);
   font-size: min(1.25rem, 2vw);
-  display: inline-block;
-  color: #fff;
+  padding-top: 20px;
+  padding-top: 1.25rem;
   font-weight: 700;
 }
 

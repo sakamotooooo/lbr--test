@@ -60,20 +60,12 @@
   display: none;
 
   @include mq(md) {
-    color: $white;
-    background-color: $blue;
-    width: min(rem(250), 18vw);
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: inherit;
-  }
-}
-
-.pc-nav__contact:hover{
-  @include mq(md) {
-    background-color: rgba(2, 72, 146, 0.75);
   }
 }
 
@@ -83,11 +75,11 @@
   justify-content: center;
   height: inherit;
   width: inherit;
-}
-
-.pc-nav__contact span {
-  font-size: min(rem(20), 2vw);
-  display: inline-block;
   color: $white;
+  display: block;
+  background-color: $blue;
+  width: min(rem(250), 18vw);
+  font-size: min(rem(20), 2vw);
+  padding-top: rem(20);
   font-weight: $bold;
 }
