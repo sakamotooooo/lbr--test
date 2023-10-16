@@ -73,7 +73,7 @@
 
 .pc-nav__contact:hover{
   @include mq(md) {
-    opacity: 0.5;
+    background-color: rgba(2, 72, 146, 0.75);
   }
 }
 
