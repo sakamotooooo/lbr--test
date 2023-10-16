@@ -25,11 +25,8 @@
     font-size: rem(16);
     text-align: right;
     margin-top: rem(5);
+    margin-bottom: rem(15);
     line-height: 1.75;
-
-
-    @include mq(md) {
-    }
 }
 
 .news-details__title{
